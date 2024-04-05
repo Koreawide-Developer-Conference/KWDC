@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
 
-import { openGraphImage } from "@/app/shared-metadata";
 import { prefix } from "@/constants";
 
 import "./globals.css";
@@ -12,7 +11,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "KWDC",
     description: "Koreawide Developer Conference",
-    ...openGraphImage,
   },
 };
 
