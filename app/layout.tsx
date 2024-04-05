@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
 import React from "react";
 
-import { defaultMetadata } from "@/app/shared-metadata";
+import { openGraphImage } from "@/app/shared-metadata";
 import { prefix } from "@/constants";
 
 import "./globals.css";
 
 export const metadata: Metadata = {
-  ...defaultMetadata,
+  title: "KWDC",
+  description: "Koreawide Developer Conference",
+  openGraph: {
+    title: "KWDC",
+    description: "Koreawide Developer Conference",
+    ...openGraphImage,
+  },
 };
 
 export default function RootLayout({
