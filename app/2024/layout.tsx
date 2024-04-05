@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 
-import { openGraphImage } from "@/app/shared-metadata";
+import { openGraphImage2024 } from "@/app/shared-metadata";
 
 import "@/styles/fonts/AppleSDGothicNeo.css";
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "KWDC 2024",
     description: "It's a leap year, 다음 세상으로의 도약",
-    ...openGraphImage,
+    ...openGraphImage2024,
   },
 };
 
