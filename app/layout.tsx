@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-      <html lang='ko-KR'>
+    <html lang='ko-KR'>
       <head>
         <link rel='apple-touch-icon' sizes='57x57' href={`${prefix}/icons/apple-icon-57x57.png`} />
         <link rel='apple-touch-icon' sizes='60x60' href={`${prefix}/icons/apple-icon-60x60.png`} />
@@ -38,6 +38,6 @@ export default function RootLayout({
       </head>
 
       <body>{children}</body>
-      </html>
+    </html>
   );
 }
