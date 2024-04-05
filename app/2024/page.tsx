@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
+import { prefix } from "@/constants";
 import { BrowserView, MobileView } from "react-device-detect";
 
 export default function KWDC2024() {
@@ -49,6 +51,13 @@ export default function KWDC2024() {
       </BrowserView>
       <MobileView>
         <main className='w-screen min-h-screen max-h-screen flex flex-col items-center justify-center'>
+          <Image
+            className='absolute top-2 right-3'
+            src={`${prefix}/assets/2024/icons/screen-action-buttons.svg`}
+            alt={"screen-action-buttons"}
+            width={46}
+            height={10}
+          />
           <section className='flex flex-col items-center'>
             <div className='text-white text-4xl font-bold leading-9 mb-4'>KWDC 2024</div>
             <div className='mb-10 text-center'>
