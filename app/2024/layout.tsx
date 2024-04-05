@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko-KR'>
-      <body className='font-AppleSDGothicNeo'>{children}</body>
+      <body className='font-AppleSDGothicNeo bg-black text-white'>{children}</body>
     </html>
   );
 }
