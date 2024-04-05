@@ -3,6 +3,8 @@ import React from "react";
 
 import { defaultMetadata } from "@/app/shared-metadata";
 
+import "@/styles/fonts/AppleSDGothicNeo.css";
+
 export const metadata: Metadata = {
   ...defaultMetadata,
 };
@@ -14,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko-KR'>
-      <body>{children}</body>
+      <body className='font-AppleSDGothicNeo'>{children}</body>
     </html>
   );
 }

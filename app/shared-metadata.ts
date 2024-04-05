@@ -13,6 +13,6 @@ export const defaultMetadata = {
   openGraph: {
     title: metadataTitle,
     description: metadataDescription,
-    ...openGraphImage,
+    // ...openGraphImage,
   },
 };
