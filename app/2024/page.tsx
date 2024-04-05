@@ -8,7 +8,7 @@ export default function KWDC2024() {
   return (
     <>
       <BrowserView>
-        <main className='w-screen h-screen relative flex flex-col justify-evenly'>
+        <main className='w-screen min-h-screen max-h-screen relative flex flex-col justify-evenly'>
           <section className='flex flex-col h-full px-40'>
             <div className='font-semibold text-6xl leading-10 mb-6'>KWDC 2024</div>
             <div className='flex items-end w-full'>
@@ -48,7 +48,7 @@ export default function KWDC2024() {
         </main>
       </BrowserView>
       <MobileView>
-        <main className='w-screen h-screen flex flex-col items-center justify-center'>
+        <main className='w-screen min-h-screen max-h-screen flex flex-col items-center justify-center'>
           <section className='flex flex-col items-center'>
             <div className='text-white text-4xl font-bold leading-9 mb-4'>KWDC 2024</div>
             <div className='mb-10 text-center'>
