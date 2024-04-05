@@ -25,7 +25,12 @@ export default function KWDC2024() {
             </div>
             <div className='mt-2.5 mb-[70px]'>
               <div className='text-right text-white text-xl leading-loose'>세종대학교 컨벤션홀 ABC</div>
-              <div className='text-right text-white text-xl leading-loose'>행사 및 후원문의 hello.kwdc@gmail.com</div>
+              <div className='text-right text-white text-xl leading-loose'>
+                행사 및 후원문의{" "}
+                <a href='mailto:hello.kwdc@gmail.com' className='hover:underline'>
+                  hello.kwdc@gmail.com
+                </a>
+              </div>
             </div>
             <div className='flex justify-end items-center'>
               <span className='text-white text-9xl font-semibold'>KWDC</span>
@@ -88,7 +93,7 @@ export default function KWDC2024() {
                 세종대학교 컨벤션홀 ABC
               </div>
               <div className="text-center text-white text-sm font-bold font-['Apple SD Gothic Neo'] leading-tight">
-                행사 및 후원문의 hello.kwdc@gmail.com
+                행사 및 후원문의 <a href='mailto:hello.kwdc@gmail.com'>hello.kwdc@gmail.com</a>
               </div>
             </div>
           </section>
