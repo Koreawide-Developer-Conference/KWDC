@@ -40,7 +40,6 @@ export default function RootLayout({
         <meta name='msapplication-TileColor' content='#ffffff' />
         <meta name='msapplication-TileImage' content={`${prefix}/icons/ms-icon-144x144.png`} />
         <meta name='theme-color' content='#ffffff' />
-        <meta name='naver-site-verification' content='51146d1a6f7fbf9e74244ab147b5238d360d29f6' />
       </head>
       <Analytics />
       <body>{children}</body>
