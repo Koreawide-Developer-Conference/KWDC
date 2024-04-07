@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from "react";
 
 import { prefix } from "@/constants";
+import { Firebase } from "@/firebase";
 
 import "./globals.css";
 
@@ -41,7 +42,7 @@ export default function RootLayout({
         <meta name='theme-color' content='#ffffff' />
         <meta name='naver-site-verification' content='51146d1a6f7fbf9e74244ab147b5238d360d29f6' />
       </head>
-
+      <Firebase />
       <body>{children}</body>
     </html>
   );
