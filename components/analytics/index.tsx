@@ -15,27 +15,27 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-const runClarityScript = () => {
-  const c = window;
-  const l = document;
-  const a = "clarity";
-  const r = "script";
-  const i = "lsszg76m29";
-  const t = l.createElement(r);
-  t.async = Boolean(1);
-  t.src = "https://www.clarity.ms/tag/" + i;
-  const y = l.getElementsByTagName(r)[0];
-  if (y && y.parentNode) {
-    y.parentNode.insertBefore(t, y);
-  }
-};
+const scriptContent = `
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "lsszg76m29");
+  `;
 
 export const Analytics = () => {
   React.useEffect(() => {
     if (typeof window !== "undefined") {
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
-      runClarityScript();
+      const script = document.createElement("script");
+      script.innerHTML = scriptContent;
+      script.async = true;
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+      };
     }
   }, []);
   return <></>;
