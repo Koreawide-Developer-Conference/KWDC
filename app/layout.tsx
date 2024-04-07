@@ -41,6 +41,17 @@ export default function RootLayout({
         <meta name='msapplication-TileImage' content={`${prefix}/icons/ms-icon-144x144.png`} />
         <meta name='theme-color' content='#ffffff' />
         <meta name='naver-site-verification' content='51146d1a6f7fbf9e74244ab147b5238d360d29f6' />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "lsszg76m29");
+              `,
+          }}
+        />
       </head>
       <Firebase />
       <body>{children}</body>
