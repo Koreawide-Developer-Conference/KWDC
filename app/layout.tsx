@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import React from "react";
 
 import { prefix } from "@/constants";
-import { Firebase } from "@/firebase";
 
+import { Analytics } from "../components/analytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -41,19 +41,8 @@ export default function RootLayout({
         <meta name='msapplication-TileImage' content={`${prefix}/icons/ms-icon-144x144.png`} />
         <meta name='theme-color' content='#ffffff' />
         <meta name='naver-site-verification' content='51146d1a6f7fbf9e74244ab147b5238d360d29f6' />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-                (function(c,l,a,r,i,t,y){
-                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-                })(window, document, "clarity", "script", "lsszg76m29");
-              `,
-          }}
-        />
       </head>
-      <Firebase />
+      <Analytics />
       <body>{children}</body>
     </html>
   );
