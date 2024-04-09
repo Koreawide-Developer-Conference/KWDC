@@ -10,8 +10,8 @@ export default function KWDC2024() {
   return (
     <>
       <BrowserView>
-        <main className='w-screen min-h-screen max-h-screen relative flex flex-col justify-evenly'>
-          <section className='flex flex-col h-full px-40'>
+        <main className='w-screen min-h-screen relative flex flex-col items-center'>
+          <section className='flex flex-col min-h-screen max-h-screen max-w-[1440px] w-full justify-center relative'>
             <div className='font-semibold text-6xl leading-10 mb-6'>KWDC 2024</div>
             <div className='flex items-end w-full'>
               <div className='font-extrabold text-8xl leading-tight'>
@@ -32,37 +32,38 @@ export default function KWDC2024() {
                 </a>
               </div>
             </div>
-            <div className='flex justify-end items-center'>
+            <div className='flex justify-end items-center opacity-30'>
               <span className='text-white text-9xl font-semibold'>KWDC</span>
               <span className='text-white text-9xl font-thin'>2024</span>
             </div>
-          </section>
-          <div className='w-full h-0.5 bg-white' />
-          <section className='flex justify-center gap-x-[85px]'>
-            <div className='flex flex-col'>
-              <span className='text-white text-5xl font-bold leading-10 mb-5'>It’s leap year</span>
-              <span className='text-white text-xl font-bold leading-7'>우리가 만드는 새로운 세상</span>
+            <div className='flex gap-x-3 items-center justify-center absolute bottom-20 left-0 right-0 m-auto'>
+              <span className='font-bold text-[#249947]'>더 알아보기</span>
+              <Image
+                className=''
+                src={`${prefix}/assets/2024/icons/chevron_down_circle_green.svg`}
+                alt={"screen-action-buttons"}
+                width={22}
+                height={22}
+              />
             </div>
-            <div className='text-white text-3xl leading-10'>
-              상상 속의 디바이스가 2024년, 세상에 등장했습니다. <br />
+          </section>
+          <section className='flex justify-center gap-x-[85px] my-28'>
+            <div className='text-white text-center'>
+              상상 속의 디바이스가 20z24년, 세상에 등장했습니다. <br />
               우리의 비전은 더 이상 공간에 국한되지 않고, 내 눈 앞에서 살아 숨쉬게 만들 수 있죠.
               <br />
               손바닥 위의 유리판 속 세상을 생태계로 확장시킨 우리의 세상은
               <br />
               앞으로 얼마나 더 넓어질까요? 이제 모두의 비전이 도약할 차례입니다.
+              <br />
+              <br />
+              2024. 10. 25
             </div>
           </section>
         </main>
       </BrowserView>
       <MobileView>
         <main className='w-screen min-h-screen max-h-screen flex flex-col items-center justify-center'>
-          <Image
-            className='absolute top-2 right-3'
-            src={`${prefix}/assets/2024/icons/screen-action-buttons.svg`}
-            alt={"screen-action-buttons"}
-            width={46}
-            height={10}
-          />
           <section className='flex flex-col items-center'>
             <div className='text-white text-4xl font-bold leading-9 mb-4'>KWDC 2024</div>
             <div className='mb-10 text-center'>
