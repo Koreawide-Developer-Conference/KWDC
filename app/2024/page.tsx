@@ -11,10 +11,10 @@ export default function KWDC2024() {
     <>
       <BrowserView>
         <main className='w-screen min-h-screen relative flex flex-col items-center'>
-          <section className='flex flex-col min-h-screen max-h-screen max-w-[1440px] w-full justify-center relative'>
-            <div className='font-semibold text-6xl leading-10 mb-6'>KWDC 2024</div>
+          <section className='flex flex-col min-h-screen max-h-screen max-w-[1440px] w-full justify-center relative max-3xl:px-20'>
+            <div className='font-semibold text-5xl leading-10 mb-6'>KWDC 2024</div>
             <div className='flex items-end w-full'>
-              <div className='font-extrabold text-8xl leading-tight'>
+              <div className='font-extrabold text-7xl leading-tight'>
                 <span>It&rsquo;s a leap year</span>
                 <span className='text-[#249947]'>,</span>
                 <br />
@@ -32,7 +32,7 @@ export default function KWDC2024() {
                 </a>
               </div>
             </div>
-            <div className='flex justify-end items-center opacity-30'>
+            <div className='flex justify-end items-center opacity-30 tracking-[-4px]'>
               <span className='text-white text-9xl font-semibold'>KWDC</span>
               <span className='text-white text-9xl font-thin'>2024</span>
             </div>
@@ -49,7 +49,7 @@ export default function KWDC2024() {
           </section>
           <section className='flex justify-center gap-x-[85px] my-28'>
             <div className='text-white text-center'>
-              상상 속의 디바이스가 20z24년, 세상에 등장했습니다. <br />
+              상상 속의 디바이스가 2024년, 세상에 등장했습니다. <br />
               우리의 비전은 더 이상 공간에 국한되지 않고, 내 눈 앞에서 살아 숨쉬게 만들 수 있죠.
               <br />
               손바닥 위의 유리판 속 세상을 생태계로 확장시킨 우리의 세상은
