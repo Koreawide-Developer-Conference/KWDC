@@ -11,6 +11,7 @@
     "deploy": "next build && touch ./build/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
+    "@fullpage/react-fullpage": "^0.1.42",
     "@react-spring/three": "^9.7.3",
     "@react-three/drei": "^9.108.1",
     "@react-three/fiber": "^8.16.8",
