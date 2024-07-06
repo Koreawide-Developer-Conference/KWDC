@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.42",
+    "@gsap/react": "^2.1.1",
     "@react-spring/three": "^9.7.3",
     "@react-three/drei": "^9.108.1",
     "@react-three/fiber": "^8.16.8",
@@ -19,10 +20,12 @@
     "firebase": "^10.10.0",
     "framer-motion": "^11.0.25",
     "fullpage.js": "^4.0.25",
+    "gsap": "^3.12.5",
     "next": "14.2.4",
     "react": "^18",
     "react-device-detect": "^2.2.3",
     "react-dom": "^18",
+    "react-transition-group": "^4.4.5",
     "tailwind-merge": "^2.2.2",
     "three": "^0.166.1",
     "typed.js": "^2.1.0"
