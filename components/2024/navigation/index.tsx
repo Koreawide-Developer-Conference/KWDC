@@ -8,21 +8,21 @@ export const Navigation: React.FC = () => {
   return (
     <nav className='p-0 fixed top-0 z-10 w-full flex justify-center items-center h-12 bg-white bg-opacity-50 backdrop-blur-md'>
       <div className='navbar-start flex justify-between items-center max-w-2xl w-full text-xs px-4'>
-        <Link href='/2024'>
+        <a href='/2024'>
           <Logo />
-        </Link>
-        <Link className='max-md:hidden' href=''>
+        </a>
+        <a className='max-md:hidden' href='#overview'>
           Overview
-        </Link>
-        <Link className='max-md:hidden' href=''>
+        </a>
+        <a className='max-md:hidden' href='#speaker'>
           Speaker
-        </Link>
-        <Link className='max-md:hidden' href=''>
+        </a>
+        <a className='max-md:hidden' href='#sponsorship'>
           Sponsorship
-        </Link>
-        <Link className='max-md:hidden' href=''>
+        </a>
+        <a className='max-md:hidden' href='#contact'>
           Contact
-        </Link>
+        </a>
         <div className='dropdown md:hidden'>
           <div tabIndex={0} role='button' className='btn btn-ghost btn-circle'>
             <Hamburger className='w-4 h-4' />
@@ -32,16 +32,16 @@ export const Navigation: React.FC = () => {
             className='menu menu-sm dropdown-content rounded-box z-10 mt-2 bg-white bg-opacity-50 backdrop-blur-md right-0'
           >
             <li>
-              <Link href=''>Overview</Link>
+              <a href='#overview'>Overview</a>
             </li>
             <li>
-              <Link href=''>Speaker</Link>
+              <a href='#speaker'>Speaker</a>
             </li>
             <li>
-              <Link href=''>Sponsorship</Link>
+              <a href='#sponsorship'>Sponsorship</a>
             </li>
             <li>
-              <Link href=''>Contact</Link>
+              <a href='#contact'>Contact</a>
             </li>
           </ul>
         </div>
