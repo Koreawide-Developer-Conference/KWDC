@@ -1,9 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 
-import { prefix } from "@/constants";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Typed from "typed.js";
 
