@@ -19,6 +19,7 @@ const config: Config = {
       fontFamily: {
         SFProDisplay: ["SF Pro Display", "sans-serif"],
         AppleSDGothicNeo: ["AppleSDGothicNeo", "sans-serif"],
+        Pretendard: ["Pretendard", "sans-serif"],
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
