@@ -3,6 +3,7 @@ import React from "react";
 
 import { openGraphImage2024 } from "@/app/shared-metadata";
 
+import { Navigation } from "@/components/2024";
 import "@/styles/fonts/AppleSDGothicNeo.css";
 
 export const metadata: Metadata = {
@@ -22,7 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko-KR'>
-      <body className='font-AppleSDGothicNeo bg-black text-white'>{children}</body>
+      <body className='font-AppleSDGothicNeo bg-black text-white'>
+        <Navigation />
+        {children}
+      </body>
     </html>
   );
 }
