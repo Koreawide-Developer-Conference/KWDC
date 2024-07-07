@@ -26,7 +26,11 @@ const nextConfig = {
     ];
   },
   transpilePackages: ["three"],
-  i18n,
+  i18n: {
+    locales: ["en-US", "en", "ko", "ja"],
+    defaultLocale: "en-US",
+    localeDetection: false,
+  },
 };
 
 module.exports = nextConfig;
