@@ -23,9 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko-KR'>
-      <body className='font-AppleSDGothicNeo bg-black text-white'>
-        <Navigation />
-        {children}
+      <body>
+        <main className='bg-black text-white'>
+          <Navigation />
+          {children}
+        </main>
       </body>
     </html>
   );
