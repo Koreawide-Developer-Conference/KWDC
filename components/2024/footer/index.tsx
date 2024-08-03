@@ -36,7 +36,7 @@ export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
                 • 만약 행동 강령을 위반하는 문제가 발생하면, 준비위원회는 유연한 조치를 취하여 상황을 해결하겠습니다.
               </li>
               <li>
-                위험한 행동이나 악의적인 의도가 있는 참가자는 KWDC 입장을 거부하거나 참가자를 제외시킬 수 있습니다.
+                • 위험한 행동이나 악의적인 의도가 있는 참가자는 KWDC 입장을 거부하거나 참가자를 제외시킬 수 있습니다.
               </li>
               <li> • 모든 참가자는 이 행동 강령을 따르며, 언제든지 준비위원회에 문의하여 도움을 요청할 수 있습니다.</li>
             </ul>
@@ -67,7 +67,7 @@ export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
                 measures to resolve the situation.
               </li>
               <li>
-                Participants exhibiting dangerous behavior or malicious intent may be denied entry or excluded from
+                • Participants exhibiting dangerous behavior or malicious intent may be denied entry or excluded from
                 KWDC.
               </li>
               <li>
