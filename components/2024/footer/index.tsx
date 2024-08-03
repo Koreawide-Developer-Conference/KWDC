@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 
+import { DISCORD_LINK, INSTAGRAM_LINK, LINKEDIN_LINK, MEDIUM_LINK, X_LINK, YOUTUBE_LINK } from "@/constants";
+
 interface FooterProps {
   cocHide?: boolean;
 }
@@ -32,13 +34,14 @@ export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
               <li> • 모든 참가자는 안전 표지판, 지침 및 규칙을 따라야 합니다.</li>
               <li>
                 • 만약 행동 강령을 위반하는 문제가 발생하면, 준비위원회는 유연한 조치를 취하여 상황을 해결하겠습니다.
-                하지만 위험한 행동이나 악의적인 의도가 있는 참가자는 KWDC 입장을 거부하거나 참가자를 제외시킬 수
-                있습니다.
+              </li>
+              <li>
+                위험한 행동이나 악의적인 의도가 있는 참가자는 KWDC 입장을 거부하거나 참가자를 제외시킬 수 있습니다.
               </li>
               <li> • 모든 참가자는 이 행동 강령을 따르며, 언제든지 준비위원회에 문의하여 도움을 요청할 수 있습니다.</li>
             </ul>
           </div>
-          <div className='text-[#000000E0] mb-5'>
+          <div className='text-[#000000E0] mb-5 font-normal'>
             <p className='mb-5 text-sm font-semibold'>KWDC Code of Conduct</p>
             <ul className='text-xs space-y-1'>
               <li>
@@ -61,8 +64,11 @@ export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
               <li> • All participants must follow safety signs, guidelines, and rules.</li>
               <li>
                 • If any issues arise that violate the code of conduct, the organizing committee will take flexible
-                measures to resolve the situation. However, participants exhibiting dangerous behavior or malicious
-                intent may be denied entry or excluded from KWDC.
+                measures to resolve the situation.
+              </li>
+              <li>
+                Participants exhibiting dangerous behavior or malicious intent may be denied entry or excluded from
+                KWDC.
               </li>
               <li>
                 • All participants are expected to adhere to this code of conduct and can contact the organizing
@@ -75,22 +81,22 @@ export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
       <div className='pt-10 lg:w-[1000px] px-5'>
         <p className='text-sm font-semibold text-[#000000E0] mb-2.5'>공식채널</p>
         <div className='flex gap-x-5 text-[#000000B8] font-normal text-xs mb-5'>
-          <Link href={"https://discord.com/invite/7Pu2xTM56X"} target={"_blank"} className='hover:underline'>
+          <Link href={DISCORD_LINK} target={"_blank"} className='hover:underline'>
             Discord
           </Link>
-          <Link href={"https://www.youtube.com/@KWDC23"} target={"_blank"} className='hover:underline'>
-            Youtube
+          <Link href={YOUTUBE_LINK} target={"_blank"} className='hover:underline'>
+            YouTube
           </Link>
-          <Link href={"https://www.instagram.com/hellokwdc/"} target={"_blank"} className='hover:underline'>
+          <Link href={INSTAGRAM_LINK} target={"_blank"} className='hover:underline'>
             Instagram
           </Link>
-          <Link href={"https://twitter.com/HelloKWDC"} target={"_blank"} className='hover:underline'>
+          <Link href={X_LINK} target={"_blank"} className='hover:underline'>
             X
           </Link>
-          <Link href={"https://www.linkedin.com/company/kwdc/"} target={"_blank"} className='hover:underline'>
+          <Link href={LINKEDIN_LINK} target={"_blank"} className='hover:underline'>
             LinkedIn
           </Link>
-          <Link href={"https://medium.com/kwdc23"} target={"_blank"} className='hover:underline'>
+          <Link href={MEDIUM_LINK} target={"_blank"} className='hover:underline'>
             Medium
           </Link>
         </div>

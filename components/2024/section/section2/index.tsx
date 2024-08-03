@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import { TICKET_LINK } from "@/constants";
 import ChevronRight from "@/public/assets/2024/icons/chevron_right.svg";
 
 export const Section2: React.FC = () => {
@@ -19,7 +20,7 @@ export const Section2: React.FC = () => {
         </p>
         <Link
           className='font-medium text-2xl text-center flex items-center gap-2.5 hover:underline max-lg:text-base'
-          href='https://booking.naver.com/booking/5/bizes/987066/items/6024805'
+          href={TICKET_LINK}
           target={"_blank"}
         >
           티켓 구매하기 Buy Tickets <ChevronRight />
