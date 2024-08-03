@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
 import React from "react";
 
+import { openGraphImage2024 } from "@/app/shared-metadata";
 import { prefix } from "@/constants";
 
-import { Analytics } from "../components/analytics";
+import { Analytics } from "@/components/analytics";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "KWDC",
-  description: "Koreawide Developer Conference",
+  title: "KWDC 2024",
+  description: "It's a leap year, 다음 세상으로의 도약",
   openGraph: {
-    title: "KWDC",
-    description: "Koreawide Developer Conference",
+    title: "KWDC 2024",
+    description: "It's a leap year, 다음 세상으로의 도약",
+    ...openGraphImage2024,
   },
 };
 
