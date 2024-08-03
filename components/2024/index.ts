@@ -1,3 +1,5 @@
-export * from "./spotlight";
-export * from "./textGenerateEffect";
 export * from "./navigation";
+export * from "./divider";
+export * from "./section";
+export * from "./footer";
+export * from "./typo";
