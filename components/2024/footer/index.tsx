@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface FooterProps {
@@ -8,7 +9,7 @@ export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
   return (
     <footer className='flex flex-col justify-center items-center w-screen pt-12 pb-9 bg-[#F5F5F7] px-4 max-lg:pt-5 max-lg:pb-16'>
       {!cocHide && (
-        <div className='flex flex-col max-w-[1000px]'>
+        <div className='flex flex-col lg:w-[1000px]'>
           <div className='text-[#000000E0] mb-5'>
             <p className='mb-5 text-sm font-semibold'>KWDC 행동강령</p>
             <ul className='text-xs space-y-1'>
@@ -71,6 +72,37 @@ export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
           </div>
         </div>
       )}
+      <div className='pt-10 w-[1000px]'>
+        <p className='text-sm font-semibold text-[#000000E0] mb-2.5'>공식채널</p>
+        <div className='flex gap-x-5 text-[#000000B8] font-normal text-xs mb-5'>
+          <Link href={"https://discord.com/invite/7Pu2xTM56X"} target={"_blank"} className='hover:underline'>
+            Discord
+          </Link>
+          <Link href={"https://www.youtube.com/@KWDC23"} target={"_blank"} className='hover:underline'>
+            Youtube
+          </Link>
+          <Link href={"https://www.instagram.com/hellokwdc/"} target={"_blank"} className='hover:underline'>
+            Instagram
+          </Link>
+          <Link href={"https://twitter.com/HelloKWDC"} target={"_blank"} className='hover:underline'>
+            X
+          </Link>
+          <Link href={"https://www.linkedin.com/company/kwdc/"} target={"_blank"} className='hover:underline'>
+            LinkedIn
+          </Link>
+          <Link href={"https://medium.com/kwdc23"} target={"_blank"} className='hover:underline'>
+            Medium
+          </Link>
+        </div>
+        <div className='text-deepGreen-60 text-xs mb-2.5'>
+          KWDC24 준비위원회와 직접 이야기를 나누고 싶다면&nbsp;:&nbsp;
+          <a href='mailto:hello.kwdc@gmail.com' className='hover:underline'>
+            hello.kwdc@gmail.com
+          </a>
+        </div>
+        <div className='h-px w-full bg-[#00000029]' />
+        <p className='mt-5 text-xs text-deepGreen-60'>Copyright © KWDC24. All rights reserved.</p>
+      </div>
     </footer>
   );
 };

@@ -10,12 +10,8 @@ export const Navigation: React.FC = () => {
         <a href='/2024'>
           <Logo />
         </a>
-        <div className='rounded-[30px] bg-brightGreen-100 py-2 px-7 cursor-pointer hover:bg-gray-200 transition duration-200'>
-          <Link
-            href={"https://booking.naver.com/booking/5/bizes/987066"}
-            target={"_blank"}
-            className='text-deepGreen-100'
-          >
+        <div className='rounded-[30px] bg-brightGreen-100 py-2 px-7 cursor-pointer border border-solid border-white transition duration-200 hover:bg-transparent text-deepGreen-100 hover:text-white'>
+          <Link href={"https://booking.naver.com/booking/5/bizes/987066"} target={"_blank"}>
             Buy Tickets
           </Link>
         </div>
