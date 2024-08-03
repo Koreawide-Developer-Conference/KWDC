@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { Divider, Section1, Section2, Section3 } from "@/components/2024";
+import { Divider, Footer, Section1, Section2, Section3 } from "@/components/2024";
 
 export default function KWDC2024() {
   return (
@@ -12,6 +12,8 @@ export default function KWDC2024() {
       <Section2 />
       <Divider />
       <Section3 />
+      <Divider />
+      <Footer />
     </div>
   );
 }
