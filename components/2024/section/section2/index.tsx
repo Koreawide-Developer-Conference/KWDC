@@ -6,14 +6,10 @@ import ChevronRight from "@/public/assets/2024/icons/chevron_right.svg";
 
 export const Section2: React.FC = () => {
   return (
-    <section className='flex flex-col items-center justify-center w-screen h-screen relative text-deepGreen-100 px-4'>
-      <Image
-        src={"/assets/2024/images/section2_bg.svg"}
-        alt={"background image"}
-        fill
-        priority
-        className='absolute object-cover z-0'
-      />
+    <section
+      className='flex flex-col items-center justify-center w-screen h-screen relative text-deepGreen-100 px-4'
+      id='section2'
+    >
       <div className='z-10 flex flex-col gap-10 justify-center items-center'>
         <p className='font-bold text-5xl text-center max-lg:text-3xl'>티켓 Ticket</p>
         <p className='font-medium text-2xl text-center max-lg:text-base'>

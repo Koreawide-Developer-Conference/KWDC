@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 
 import { Divider, Footer, Section1, Section2, Section3 } from "@/components/2024";
