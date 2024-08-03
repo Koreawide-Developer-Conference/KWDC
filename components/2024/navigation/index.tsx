@@ -5,7 +5,7 @@ import Logo from "@/public/assets/2024/images/logo.svg";
 
 export const Navigation: React.FC = () => {
   return (
-    <nav className='p-0 fixed top-0 z-10 w-full flex justify-center items-center h-12 bg-gray-50 bg-opacity-50 backdrop-blur-md'>
+    <nav className='p-0 fixed top-0 z-20 w-full flex justify-center items-center h-12 bg-gray-50 bg-opacity-50 backdrop-blur-md'>
       <div className='navbar-start flex justify-between items-center max-w-[1440px] w-full text-xs max-md:px-4 md:px-20'>
         <a href='/2024'>
           <Logo />
