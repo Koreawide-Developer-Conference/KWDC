@@ -7,9 +7,9 @@ interface FooterProps {
 
 export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
   return (
-    <footer className='flex flex-col justify-center items-center w-screen pt-12 pb-9 bg-[#F5F5F7] px-4 max-lg:pt-5 max-lg:pb-16'>
+    <footer className='flex flex-col justify-center items-center w-screen pt-12 pb-9 bg-[#F5F5F7] max-lg:pt-5 max-lg:pb-16'>
       {!cocHide && (
-        <div className='flex flex-col lg:w-[1000px]'>
+        <div className='flex flex-col lg:w-[1000px] px-5'>
           <div className='text-[#000000E0] mb-5'>
             <p className='mb-5 text-sm font-semibold'>KWDC 행동강령</p>
             <ul className='text-xs space-y-1'>
@@ -72,7 +72,7 @@ export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
           </div>
         </div>
       )}
-      <div className='pt-10 w-[1000px]'>
+      <div className='pt-10 w-[1000px] px-5'>
         <p className='text-sm font-semibold text-[#000000E0] mb-2.5'>공식채널</p>
         <div className='flex gap-x-5 text-[#000000B8] font-normal text-xs mb-5'>
           <Link href={"https://discord.com/invite/7Pu2xTM56X"} target={"_blank"} className='hover:underline'>
