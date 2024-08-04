@@ -171,15 +171,16 @@ section {
 }
 
 #section1 {
-    background-image: url('/assets/2024/images/section1_bg.png');
+    background-image: url('/assets/2024/images/section1_bg.webp');
 }
 
 #section2 {
-    background-image: url('/assets/2024/images/section2_bg.png');
+    background-image: url('/assets/2024/images/section2_bg.webp');
 }
 
 #section3 {
-    background-image: url('/assets/2024/images/section3_bg.png');
+    background-image: url('/assets/2024/images/section3_bg.webp');
+    background-color: #06090980;
 }
 
 
