@@ -10,8 +10,6 @@ export default function KWDC2024() {
       <Section2 />
       <Divider />
       <Section3 />
-      <Divider />
-      <Footer />
     </div>
   );
 }
