@@ -54,7 +54,7 @@ export const SPEAKERS: Speaker[] = [
     name: "Cristian Díaz",
     affiliation: "ㅤ",
     quote: "Exploring Accessible Spatial Interactions",
-    img: `${prefix}/assets/2024/images/speaker/Díaz.jpg`,
+    img: `${prefix}/assets/2024/images/speaker/Diaz.jpg`,
   },
   {
     name: "Pavel Zak",

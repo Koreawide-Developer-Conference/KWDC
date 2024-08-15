@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 import { Speaker } from "@/constants";
@@ -94,7 +95,13 @@ export const InfiniteMovingCards = ({
               className='user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]'
             ></div>
 
-            <img src={item.img} alt='' className='rounded-2xl w-[280px] h-[210px] object-cover mb-3' />
+            <Image
+              width={280}
+              height={210}
+              src={item.img}
+              alt={item.name}
+              className='rounded-2xl w-[280px] h-[210px] object-cover mb-3'
+            />
             <span className='relative z-20 text-deepGreen-100 text-xl font-bold'>{item.name}</span>
             <span className='text-lg text-deepGreen-100 font-normal'>{item.affiliation}</span>
             <div className='w-[21px] h-[14px] my-3'>
