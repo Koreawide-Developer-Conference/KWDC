@@ -38,12 +38,12 @@ export const SPEAKERS: Speaker[] = [
     quote: "macOS 자동화의 A to Z",
     img: `${prefix}/assets/2024/images/speaker/SubinKim.webp`,
   },
-  {
-    name: "윤용운",
-    affiliation: "ㅤ",
-    quote: "Welcome to the World of Ownership :)",
-    img: `${prefix}/assets/2024/images/speaker/YongunYun.webp`,
-  },
+  // {
+    // name: "윤용운",
+    // affiliation: "ㅤ",
+    // quote: "Welcome to the World of Ownership :)",
+    // img: `${prefix}/assets/2024/images/speaker/YongunYun.webp`,
+  // },
   {
     name: "조상호",
     affiliation: "플리토 / Flitto",
