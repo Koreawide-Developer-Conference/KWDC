@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang='ko-KR'>
       <body>
-        <main className='bg-deepGreen-100 text-white overflow-x-hidden'>
+        <main className='bg-deepGreen-100 text-white overflow-x-hidden flex flex-col items-center'>
           <Navigation />
           {children}
           <Footer />

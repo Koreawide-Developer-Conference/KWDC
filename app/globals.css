@@ -181,29 +181,3 @@ section {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-#section1 {
-  background-image: url("/assets/2024/images/section1_bg.png");
-}
-
-#section2 {
-  background-image: url("/assets/2024/images/section2_bg.png");
-}
-
-#section3 {
-  background-image: url("/assets/2024/images/section3_bg.png");
-}
-
-@media (max-width: 1024px) {
-  #section1 {
-    background-image: url("/assets/2024/images/section1_bg_mobile.png");
-  }
-
-  #section2 {
-    background-image: url("/assets/2024/images/section2_bg_mobile.png");
-  }
-
-  #section3 {
-    background-image: url("/assets/2024/images/section3_bg_mobile.png");
-  }
-}
