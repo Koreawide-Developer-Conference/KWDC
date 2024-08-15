@@ -16,7 +16,7 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     name: "조수환",
-    affiliation: "비바리퍼블리카 / Viva Republica",
+    affiliation: "비바 리퍼블리카 / Viva Republica",
     quote: "모두를 위한 Swift 6(Swift 6 for all)",
     img: `${prefix}/assets/2024/images/speaker/SuhwanCho.webp`,
   },
@@ -34,7 +34,7 @@ export const SPEAKERS: Speaker[] = [
   },
   {
     name: "김수빈",
-    affiliation: "비바리퍼블리카 / Viva Republica",
+    affiliation: "당근 / Daangn Inc.",
     quote: "macOS 자동화의 A to Z",
     img: `${prefix}/assets/2024/images/speaker/SubinKim.webp`,
   },
