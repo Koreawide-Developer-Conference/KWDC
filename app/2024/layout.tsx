@@ -3,7 +3,7 @@ import React from "react";
 
 import { openGraphImage2024 } from "@/app/shared-metadata";
 
-import { Navigation } from "@/components/2024";
+import { Footer, Navigation } from "@/components/2024";
 import "@/styles/fonts/AppleSDGothicNeo.css";
 
 export const metadata: Metadata = {
@@ -24,9 +24,10 @@ export default function RootLayout({
   return (
     <html lang='ko-KR'>
       <body>
-        <main className='bg-deepGreen-100 text-white overflow-x-hidden'>
+        <main className='bg-deepGreen-100 text-white overflow-x-hidden flex flex-col items-center'>
           <Navigation />
           {children}
+          <Footer />
         </main>
       </body>
     </html>
