@@ -2,9 +2,9 @@ import React from "react";
 
 import StairIcon from "@/public/assets/2024/icons/stair.svg";
 
-export const Section1: React.FC = () => {
+export const HeroSection: React.FC = () => {
   return (
-    <section className='flex flex-col pt-12 h-screen w-full items-center' id='section1'>
+    <section className='flex flex-col pt-12 h-screen w-full items-center'>
       <div className='max-w-[1440px] max-md:px-4 md:px-20 h-full w-full'>
         <div className='z-10 pt-20 flex flex-col h-full justify-between'>
           <div className='font-semibold text-6xl text-center max-lg:text-xl flex justify-between items-center'>
