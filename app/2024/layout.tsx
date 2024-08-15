@@ -7,10 +7,10 @@ import { Footer, Navigation } from "@/components/2024";
 import "@/styles/fonts/AppleSDGothicNeo.css";
 
 export const metadata: Metadata = {
-  title: "KWDC 2024",
+  title: "KWDC24",
   description: "It's a leap year, 다음 세상으로의 도약",
   openGraph: {
-    title: "KWDC 2024",
+    title: "KWDC24",
     description: "It's a leap year, 다음 세상으로의 도약",
     ...openGraphImage2024,
   },
