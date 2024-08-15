@@ -19,7 +19,7 @@ export const SpeakerSection: React.FC = () => {
           </div>
         </div>
         <div className='mt-28 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden'>
-          <InfiniteMovingCards items={SPEAKERS} direction='right' speed='slow' />
+          <InfiniteMovingCards items={SPEAKERS} direction='right' speed='normal' />
         </div>
       </div>
     </section>
