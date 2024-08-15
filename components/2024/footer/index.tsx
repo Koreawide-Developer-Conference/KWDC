@@ -102,6 +102,7 @@ export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
         </div>
         <div className='text-deepGreen-60 text-xs mb-2.5'>
           KWDC24 준비위원회와 직접 이야기를 나누고 싶다면&nbsp;:&nbsp;
+          <br className='lg:hidden' />
           <a href='mailto:hello.kwdc@gmail.com' className='hover:underline'>
             hello.kwdc@gmail.com
           </a>
