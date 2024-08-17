@@ -102,8 +102,8 @@ export const InfiniteMovingCards = ({
               <Icon />
             </div>
             <div className='relative z-20 flex flex-col gap-1'>
-              <span className='text-xl text-[#223B3A] font-normal'>{item.ko_quote}</span>
-              <span className='text-xl text-[#223B3A40] font-normal'>{item.en_quote}</span>
+              <span className='text-xl text-[#223B3A] font-normal whitespace-pre-wrap'>{item.ko_quote}</span>
+              <span className='text-xl text-[#223B3A40] font-normal whitespace-pre-wrap'>{item.en_quote}</span>
             </div>
           </li>
         ))}
