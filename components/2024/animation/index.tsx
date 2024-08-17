@@ -3,9 +3,9 @@
 import React from 'react';
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { Mesh } from "three";
+import { Mesh  } from "three";
 import { prefix } from "@/constants";
+import { GLTFLoader } from "three-stdlib";
 
 export const Animation: React.FC = () => {
 
@@ -19,8 +19,6 @@ export const Animation: React.FC = () => {
       mesh.current.scale.x = 5;
       mesh.current.scale.y = 5;
       mesh.current.scale.z = 5;
-
-      gltf.materials.color = 0xE8EEF0;
     });
 
 
