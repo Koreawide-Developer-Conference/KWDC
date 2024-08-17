@@ -9,10 +9,10 @@ import { Analytics } from "@/components/analytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "KWDC 2024",
+  title: "KWDC24",
   description: "It's a leap year, 다음 세상으로의 도약",
   openGraph: {
-    title: "KWDC 2024",
+    title: "KWDC24",
     description: "It's a leap year, 다음 세상으로의 도약",
     ...openGraphImage2024,
   },

@@ -25,6 +25,7 @@ const scriptContent = `
 
 export const Analytics = () => {
   React.useEffect(() => {
+    if (process.env.NODE_ENV === "development") return;
     if (typeof window !== "undefined") {
       const app = initializeApp(firebaseConfig);
       const analytics = getAnalytics(app);
