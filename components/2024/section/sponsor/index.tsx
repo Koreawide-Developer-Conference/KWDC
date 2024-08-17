@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-import ChevronRight from "@/public/assets/2024/icons/chevron_right_white.svg";
+import ChevronRight from "@/public/assets/2024/icons/chevron_right.svg";
 
 export const SponsorSection: React.FC = () => {
   return (
