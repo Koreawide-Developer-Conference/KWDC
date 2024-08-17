@@ -78,7 +78,7 @@ export const Footer: React.FC<FooterProps> = ({ cocHide = false }) => {
           </div>
         </div>
       )}
-      <div className='pt-10 lg:w-[1000px] px-5'>
+      <div className='pt-10 lg:w-[1000px] px-5 max-lg:w-full'>
         <p className='text-sm font-semibold text-[#000000E0] mb-2.5'>공식채널</p>
         <div className='flex gap-x-5 text-[#000000B8] font-normal text-xs mb-5'>
           <Link href={DISCORD_LINK} target={"_blank"} className='hover:underline'>

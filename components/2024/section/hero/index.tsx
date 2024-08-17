@@ -1,11 +1,13 @@
 import React from "react";
 
 import StairIcon from "@/public/assets/2024/icons/stair.svg";
+import { Animation } from "@/components/2024";
 
 export const HeroSection: React.FC = () => {
   return (
     <section className='flex flex-col pt-12 lg:h-screen min-h-screen w-full items-center'>
-      <div className='max-w-[1440px] max-lg:px-4 lg:px-20 h-full w-full'>
+      <div className='max-w-[1440px] max-lg:px-4 lg:px-20 h-full w-full relative'>
+        {/*<Animation />*/}
         <div className='z-10 pt-20 flex flex-col h-full justify-between max-lg:pt-10'>
           <div className='font-semibold text-center max-lg:text-left flex justify-between items-center max-lg:flex-col'>
             <span className='text-6xl max-lg:text-5xl max-lg:w-full'>It’s a Leap Year.</span>
