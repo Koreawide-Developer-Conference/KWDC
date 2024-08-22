@@ -86,7 +86,7 @@ export const InfoSection: React.FC = () => {
               <Cert />
             </div>
             <div>
-              <p className='font-semibold'>3개 트랙, 세션 동시 진행</p>
+              <p className='font-semibold'>행사 참여 확인증 발급 가능</p>
               <p>Certificates of Attendance Available</p>
             </div>
           </div>
