@@ -22,14 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='ko-KR'>
-      <body>
-        <main className='bg-deepGreen-100 text-white overflow-x-hidden flex flex-col items-center'>
-          <Navigation />
-          {children}
-          <Footer />
-        </main>
-      </body>
-    </html>
+    <main className='bg-deepGreen-100 text-white overflow-x-hidden flex flex-col items-center'>
+      <Navigation />
+      {children}
+      <Footer />
+    </main>
   );
 }

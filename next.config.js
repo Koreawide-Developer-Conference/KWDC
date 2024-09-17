@@ -14,15 +14,6 @@ const nextConfig = {
 
     return config;
   },
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/2024",
-        permanent: true,
-      },
-    ];
-  },
   transpilePackages: ["three"],
 };
 

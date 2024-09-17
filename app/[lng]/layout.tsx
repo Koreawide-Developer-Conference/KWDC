@@ -6,7 +6,8 @@ import { prefix } from "@/constants";
 
 import { Analytics } from "@/components/analytics";
 
-import "./globals.css";
+import "../globals.css";
+import { dir } from "i18next";
 
 export const metadata: Metadata = {
   title: "KWDC24",
@@ -20,11 +21,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: {lng}
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode,
+  params: {
+    lng: string
+  }
 }>) {
   return (
-    <html lang='ko-KR'>
+    <html lang={lng} dir={dir(lng)}>
       <head>
         <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0' />
         <link rel='apple-touch-icon' sizes='57x57' href={`${prefix}/icons/apple-icon-57x57.png`} />
