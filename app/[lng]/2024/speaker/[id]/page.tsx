@@ -11,8 +11,8 @@ export default async function SpeakerDetail({ params }: Readonly<LangProps>) {
 
   return (
     <section className='flex flex-col pt-12 lg:h-screen min-h-screen w-screen bg-white items-center'>
-      <div className='max-lg:px-4 lg:px-20 h-screen w-full flex flex-col max-md:justify-center hero_gradient items-center'>
-        <div className='max-w-[1280px] w-full max-h-[600px] flex flex-col'>
+      <div className='max-lg:px-4 lg:px-20 w-full flex flex-col max-md:justify-center hero_gradient items-center'>
+        <div className='max-w-[1280px] w-full max-h-[600px] overflow-hidden flex flex-col'>
           <div className='border-b border-b-deepGreen-100 mb-8 flex justify-between'>
             <p className='font-semibold text-deepGreen-100 text-3xl mb-2.5 mt-10 max-md:text-xl'>
               {t(`speaker${id}.title`)}
@@ -30,14 +30,14 @@ export default async function SpeakerDetail({ params }: Readonly<LangProps>) {
               <p className='text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-md:text-sm '>
                 {t(`speaker${id}.affiliation`)}
               </p>
-              <p className='text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-md:text-sm max-w-[600px]'>
+              <p className='text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-md:text-sm max-w-[700px]'>
                 {t(`speaker${id}.introduction`)}
               </p>
             </div>
             <img
               src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.img`).replace(".webp", ".png")}`}
               alt={t(`speaker${id}.name`)}
-              className='w-1/3'
+              className='w-1/3 max-h-[600px] object-contain'
             />
           </div>
         </div>
@@ -51,27 +51,48 @@ export default async function SpeakerDetail({ params }: Readonly<LangProps>) {
             .replaceAll("! ", "!\n")}
         </p>
         {t(`speaker${id}.sns`) && (
-          <div className='text-greenBlack-100 flex items-center gap-x-2'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              width='24'
-              height='24'
-              viewBox='0 0 24 24'
-              fill='none'
-              stroke='currentColor'
-              stroke-width='2'
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              className='icon icon-tabler icons-tabler-outline icon-tabler-home'
-            >
-              <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-              <path d='M5 12l-2 0l9 -9l9 9l-2 0' />
-              <path d='M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7' />
-              <path d='M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6' />
-            </svg>
-            <Link target='_blank' href={t(`speaker${id}.sns`)} className='text-greenBlack-100 hover:underline'>
-              {t(`speaker${id}.sns`)}
-            </Link>
+          <div className='text-greenBlack-100 flex items-center relative'>
+            <a target='_blank' href={t(`speaker${id}.sns`)} className='absolute -left-1'>
+              {t(`speaker${id}.sns`).includes("linkedin") && (
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='32'
+                  height='32'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  className='icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin'
+                >
+                  <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                  <path d='M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z' />
+                  <path d='M8 11l0 5' />
+                  <path d='M8 8l0 .01' />
+                  <path d='M12 16l0 -5' />
+                  <path d='M16 16v-3a2 2 0 0 0 -4 0' />
+                </svg>
+              )}
+              {(t(`speaker${id}.sns`).includes("x.com") || t(`speaker${id}.sns`).includes("twitter.com")) && (
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='32'
+                  height='32'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  stroke-width='2'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  className='icon icon-tabler icons-tabler-outline icon-tabler-brand-x'
+                >
+                  <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                  <path d='M4 4l11.733 16h4.267l-11.733 -16z' />
+                  <path d='M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772' />
+                </svg>
+              )}
+            </a>
           </div>
         )}
       </div>
