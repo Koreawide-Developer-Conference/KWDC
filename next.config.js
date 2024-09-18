@@ -1,6 +1,5 @@
 /** @type {import("next").NextConfig} */
 const nextConfig = {
-  output: process.env.NODE_ENV !== "production" ? "standalone" : "export",
   reactStrictMode: true,
   trailingSlash: true,
   compiler: {
@@ -14,6 +13,16 @@ const nextConfig = {
 
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: "/2023",
+        destination: "https://hello-kwdc.github.io/",
+        permanent: true,
+      },
+    ];
+  },
+
   transpilePackages: ["three"],
 };
 

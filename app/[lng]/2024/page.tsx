@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import React from "react";
 
 import { openGraphImage2024 } from "@/app/shared-metadata";
-import { LangProps } from "@/i18n/settings";
 
 import { HeroSection, OverviewSection, SpeakerSection, TicketSection } from "@/components/2024";
 
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function KWDC2024({ params }: Readonly<LangProps>) {
+export default function KWDC2024({ params }: any) {
   return (
     <div className='flex flex-col w-full items-center'>
       <HeroSection params={params} />

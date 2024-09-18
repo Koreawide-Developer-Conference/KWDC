@@ -2,10 +2,11 @@ import React from "react";
 
 import { prefix } from "@/constants";
 import { useTranslation } from "@/i18n";
-import { LangProps } from "@/i18n/settings";
 
-export async function generateMetadata({ params }: Readonly<LangProps>) {
-  const { t } = await useTranslation(params.lng, "speaker");
+export async function generateMetadata({ params }: any) {
+  const translation = await import(`@/i18n/locales/${params.lng}/speaker.json`);
+  const t = (key: string) => translation[key] || key;
+
   return {
     title: "KWDC24",
     description: `${t(`speaker${params.id}.title`)} - ${t(`speaker${params.id}.name`)}`,
@@ -17,10 +18,9 @@ export async function generateMetadata({ params }: Readonly<LangProps>) {
   };
 }
 
-export default async function SpeakerDetail({ params }: Readonly<LangProps>) {
+export default async function SpeakerDetail({ params }: any) {
   const id = params?.id;
   const { t } = await useTranslation(params.lng, "speaker");
-  const { t: commonT } = await useTranslation(params.lng, "common");
 
   return (
     <section className='flex flex-col pt-12 lg:h-screen min-h-screen w-screen bg-white items-center'>

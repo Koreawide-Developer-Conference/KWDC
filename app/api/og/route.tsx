@@ -4,14 +4,14 @@ import fetch from 'node-fetch';
 import React from "react";
 
 import { prefix } from "@/constants";
-import { useTranslation } from "@/i18n";
 
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
     const id = searchParams.get("id");
     const lng = searchParams.get("lng");
-    const { t } = await useTranslation(lng ?? 'en', "speaker");
+    const translation = await import(`@/i18n/locales/${lng ?? 'en'}/speaker.json`);
+    const t = (key: string) => translation[key] || key;
 
     const fontData = await fetch(
       'https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff'
