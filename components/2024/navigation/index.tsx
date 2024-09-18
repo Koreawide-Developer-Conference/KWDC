@@ -20,6 +20,15 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const href = window.location.href;
+    const hash = href.split('#')[1];
+    if (hash) {
+      scrollToSection(hash)();
+    }
+  },[])
+
   return (
     <nav className='p-0 fixed top-0 z-30 w-full flex justify-center items-center h-12 bg-gray-50 bg-opacity-50 backdrop-blur-md'>
       <div className='navbar-start flex justify-between items-center max-w-[1440px] w-full text-xs max-md:px-4 md:px-20'>
