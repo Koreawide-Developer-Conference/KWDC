@@ -9,6 +9,7 @@ export type LangProps = {
   children?: React.ReactNode;
   params: {
     lng: LangTypes;
+    id?: string;
   };
 }
 
