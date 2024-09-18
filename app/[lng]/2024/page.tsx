@@ -1,19 +1,13 @@
 import React from "react";
 
-import { useTranslation } from "@/i18n/client";
+import { LangProps } from "@/i18n/settings";
 
 import { HeroSection, InfoSection, SpeakerSection, SponsorSection, TicketSection } from "@/components/2024";
 
-export default function KWDC2024({
-  params: { lng },
-}: {
-  params: {
-    lng: string;
-  };
-}) {
+export default function KWDC2024({ params }: Readonly<LangProps>) {
   return (
     <div className='flex flex-col w-full items-center'>
-      <HeroSection />
+      <HeroSection params={params}/>
       <InfoSection />
       <SpeakerSection />
       <TicketSection />
