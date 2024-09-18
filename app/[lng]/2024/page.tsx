@@ -7,8 +7,8 @@ import { HeroSection, InfoSection, SpeakerSection, SponsorSection, TicketSection
 export default function KWDC2024({ params }: Readonly<LangProps>) {
   return (
     <div className='flex flex-col w-full items-center'>
-      <HeroSection params={params}/>
-      <InfoSection />
+      <HeroSection params={params} />
+      <InfoSection params={params} />
       <SpeakerSection />
       <TicketSection />
       <SponsorSection />
