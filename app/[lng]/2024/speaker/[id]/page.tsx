@@ -59,16 +59,16 @@ export default async function SpeakerDetail({ params }: any) {
                   </p>
                 </div>
               </div>
-              <div className='w-full flex justify-end'>
+              <div className='w-full flex justify-end max-md:flex-col max-md:items-end'>
                 <img
                   src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.img`).replace(".webp", ".png")}`}
                   alt={t(`speaker${id}.name`)}
-                  className='w-1/3 max-h-[600px] object-contain object-bottom'
+                  className='w-1/3 max-md:w-1/2 max-h-[600px] object-contain object-bottom'
                 />
                 <img
                   src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.nest.img`).replace(".webp", ".png")}`}
                   alt={t(`speaker${id}.next.name`)}
-                  className='w-1/3 max-h-[600px] object-contain'
+                  className='w-1/3 max-md:w-1/2 max-h-[600px] object-contain'
                 />
               </div>
             </div>
@@ -95,7 +95,7 @@ export default async function SpeakerDetail({ params }: any) {
           )}
         </div>
       </div>
-      <div className='max-w-[1440px] max-lg:px-4 lg:px-20 lg:py-20 max-lg:py-10 h-screen w-full flex flex-col max-md:justify-center bg-white'>
+      <div className='max-w-[1440px] max-lg:px-4 lg:px-20 lg:py-20 w-full flex flex-col max-md:justify-center bg-white'>
         <p className='font-semibold text-deepGreen-100 text-3xl my-10 max-md:text-xl'>{t(`speaker${id}.time`)}</p>
         <p className='text-xl text-greenBlack-100 font-light mb-10 max-md:text-sm whitespace-pre-wrap'>
           {t(`speaker${id}.description`)
