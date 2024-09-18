@@ -1,2 +1,2 @@
 export * from "./typo";
-export * from "./infiniteMovingCards";
+export * from './avatar'
