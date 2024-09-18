@@ -6,6 +6,7 @@ import { Footer, Navigation } from "@/components/2024";
 import "@/styles/fonts/AppleSDGothicNeo.css";
 
 
+
 export default function RootLayout({ children, params }: Readonly<LangProps>) {
   return (
     <main className='bg-deepGreen-100 text-white overflow-x-hidden flex flex-col items-center'>
