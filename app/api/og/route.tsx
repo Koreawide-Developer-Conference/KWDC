@@ -94,7 +94,7 @@ export async function GET(req: NextRequest) {
                     src={
                       process.env.NODE_ENV === "development"
                         ? `http://localhost:3000/assets/2024/images/speaker/og/${t(`speaker10.img`).replace(".webp", ".jpg")}`
-                        : `${prefix}/assets/2024/images/speaker/${t(`speaker10.img`).replace(".webp", ".jpg")}`
+                        : `${prefix}/assets/2024/images/speaker/og/${t(`speaker10.img`).replace(".webp", ".jpg")}`
                     }
                   />
                   <div
@@ -158,7 +158,7 @@ export async function GET(req: NextRequest) {
                     src={
                       process.env.NODE_ENV === "development"
                         ? `http://localhost:3000/assets/2024/images/speaker/og/${t(`speaker10.nest.img`).replace(".webp", ".jpg")}`
-                        : `${prefix}/assets/2024/images/speaker/${t(`speaker10.nest.img`).replace(".webp", ".jpg")}`
+                        : `${prefix}/assets/2024/images/speaker/og/${t(`speaker10.nest.img`).replace(".webp", ".jpg")}`
                     }
                   />
                   <div
@@ -224,7 +224,7 @@ export async function GET(req: NextRequest) {
                   src={
                     process.env.NODE_ENV === "development"
                       ? `http://localhost:3000/assets/2024/images/speaker/og/${t(`speaker${id}.img`).replace(".webp", ".jpg")}`
-                      : `${prefix}/assets/2024/images/speaker/${t(`speaker${id}.img`).replace(".webp", ".jpg")}`
+                      : `${prefix}/assets/2024/images/speaker/og/${t(`speaker${id}.img`).replace(".webp", ".jpg")}`
                   }
                 />
                 <div
