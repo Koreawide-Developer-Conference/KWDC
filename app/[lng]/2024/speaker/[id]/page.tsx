@@ -1,11 +1,10 @@
 import React from "react";
 
 import { prefix } from "@/constants";
-import { useTranslation } from "@/i18n";
+import { translation, useTranslation } from "@/i18n";
 
 export async function generateMetadata({ params }: any) {
-  const translation = await import(`@/i18n/locales/${params.lng}/speaker.json`);
-  const t = (key: string) => translation[key] || key;
+  const {t} = await translation(params.lng, 'speaker')
 
   return {
     title: "KWDC24",
@@ -20,7 +19,8 @@ export async function generateMetadata({ params }: any) {
 
 export default async function SpeakerDetail({ params }: any) {
   const id = params?.id;
-  const { t } = await useTranslation(params.lng, "speaker");
+  const { t } = await useTranslation(params.lng, 'speaker')
+
 
   return (
     <section className='flex flex-col pt-12 lg:h-screen min-h-screen w-screen bg-white items-center'>

@@ -24,3 +24,15 @@ export async function useTranslation<Ns extends FlatNamespace, KPrefix extends K
     i18n: i18nextInstance,
   };
 }
+
+export async function translation<Ns extends FlatNamespace, KPrefix extends KeyPrefix<FallbackNs<Ns>> = undefined>(
+  lng: string,
+  ns?: Ns,
+  options: { keyPrefix?: KPrefix } = {},
+) {
+  const i18nextInstance = await initI18next(lng, Array.isArray(ns) ? (ns as string[]) : (ns as string));
+  return {
+    t: i18nextInstance.getFixedT(lng, ns, options.keyPrefix),
+    i18n: i18nextInstance,
+  };
+}
