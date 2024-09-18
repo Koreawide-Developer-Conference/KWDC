@@ -24,12 +24,12 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
         <p className='text-center text-greenBlack-100 text-xl max-md:text-sm'>
           {t("subtitle")} <br />
         </p>
-        <div className='grid grid-cols-3 max-md:grid-cols-1 gap-12 py-[75px] w-full'>
+        <div className='grid grid-cols-3 max-lg:grid-cols-1 gap-12 py-[75px] w-full'>
           {Array.from({ length: 24 }).map((_, index) => {
             if (index === 9) {
               return (
                 <Link
-                  href={`/${params.lng}/2024/speaker/24`}
+                  href={`/${params.lng}/2024/speaker/10`}
                   key={index}
                   className='bg-brightGreen-100 rounded-xl w-full h-[230px] py-4 px-3.5 flex flex-col justify-around hover:scale-105 transition-transform duration-300'
                 >

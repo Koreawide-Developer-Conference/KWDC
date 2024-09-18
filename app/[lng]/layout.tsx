@@ -1,37 +1,29 @@
-import type { Metadata } from "next";
 import React from "react";
 
-import { openGraphImage2024 } from "@/app/shared-metadata";
 import { prefix } from "@/constants";
+import { dir } from "i18next";
 
 import { Analytics } from "@/components/analytics";
 
 import "../globals.css";
-import { dir } from "i18next";
 
-export const metadata: Metadata = {
-  title: "KWDC24",
-  description: "It's a leap year, 다음 세상으로의 도약",
-  openGraph: {
-    title: "KWDC24",
-    description: "It's a leap year, 다음 세상으로의 도약",
-    ...openGraphImage2024,
-  },
-};
 
 export default function RootLayout({
   children,
-  params: {lng}
+  params: { lng },
 }: Readonly<{
-  children: React.ReactNode,
+  children: React.ReactNode;
   params: {
-    lng: string
-  }
+    lng: string;
+  };
 }>) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head>
-        <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0' />
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0'
+        />
         <link rel='apple-touch-icon' sizes='57x57' href={`${prefix}/icons/apple-icon-57x57.png`} />
         <link rel='apple-touch-icon' sizes='60x60' href={`${prefix}/icons/apple-icon-60x60.png`} />
         <link rel='apple-touch-icon' sizes='72x72' href={`${prefix}/icons/apple-icon-72x72.png`} />

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Head from "next/head";
 import React from "react";
 
 import { prefix } from "@/constants";
@@ -8,41 +8,103 @@ import { LangProps } from "@/i18n/settings";
 export default async function SpeakerDetail({ params }: Readonly<LangProps>) {
   const id = params?.id;
   const { t } = await useTranslation(params.lng, "speaker");
+  const { t: commonT } = await useTranslation(params.lng, "common");
+
+
 
   return (
     <section className='flex flex-col pt-12 lg:h-screen min-h-screen w-screen bg-white items-center'>
+      <Head>
+        <title>{commonT("title")}</title>
+        <meta name='description' content={t(`speaker${id}.title`)} />
+        <meta name='og:image' content={`/api/og/${id}`} />
+        <meta name='og:title' content={commonT("title")} />
+        <meta name='og:site_name' content={commonT("title")} />
+        <meta name='og:description'  content={t(`speaker${id}.title`)} />
+        <meta name='twitter:image' content={`/api/og/${id}`} />
+      </Head>
       <div className='max-lg:px-4 lg:px-20 w-full flex flex-col max-md:justify-center hero_gradient items-center'>
         <div className='max-w-[1280px] w-full max-h-[600px] overflow-hidden flex flex-col'>
           <div className='border-b border-b-deepGreen-100 mb-8 flex justify-between'>
             <p className='font-semibold text-deepGreen-100 text-3xl mb-2.5 mt-10 max-md:text-xl'>
               {t(`speaker${id}.title`)}
             </p>
-            <p className='font-semibold text-deepGreen-100 text-3xl mb-2.5 mt-10 max-md:text-xl'>
-              {t(`speaker${id}.time`)}
-            </p>
           </div>
-          <div className='flex items-center justify-between'>
-            <div>
-              <div className='text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-md:text-sm flex items-center'>
-                <span>{t(`speaker${id}.name`)}</span>
-                {t(`speaker${id}.nickname`) && <span>&nbsp;({t(`speaker${id}.nickname`)})</span>}
+          {id === '10' ? (
+            <div className="flex items-center justify-between">
+              <div className='flex flex-col gap-y-5'>
+                <div>
+                  <div
+                    className="text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-md:text-sm flex items-center">
+                    <span>{t(`speaker${id}.name`)}</span>
+                    {t(`speaker${id}.nickname`) && <span>&nbsp;({t(`speaker${id}.nickname`)})</span>}
+                  </div>
+                  <p className="text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-md:text-sm ">
+                    {t(`speaker${id}.affiliation`)}
+                  </p>
+                  <p
+                    className="text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-md:text-sm max-w-[700px]">
+                    {t(`speaker${id}.introduction`)}
+                  </p>
+                </div>
+                <div>
+                  <div
+                    className="text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-md:text-sm flex items-center">
+                    <span>{t(`speaker${id}.nest.name`)}</span>
+                    {t(`speaker${id}.nest.nickname`) && <span>&nbsp;({t(`speaker${id}.nest.nickname`)})</span>}
+                  </div>
+                  <p className="text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-md:text-sm ">
+                    {t(`speaker${id}.nest.affiliation`)}
+                  </p>
+                  <p
+                    className="text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-md:text-sm max-w-[700px]">
+                    {t(`speaker${id}.nest.introduction`)}
+                  </p>
+                </div>
               </div>
-              <p className='text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-md:text-sm '>
-                {t(`speaker${id}.affiliation`)}
-              </p>
-              <p className='text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-md:text-sm max-w-[700px]'>
-                {t(`speaker${id}.introduction`)}
-              </p>
+              <div className='w-full flex justify-end'>
+                <img
+                  src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.img`).replace(".webp", ".png")}`}
+                  alt={t(`speaker${id}.name`)}
+                  className="w-1/3 max-h-[600px] object-contain object-bottom"
+                />
+                <img
+                  src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.nest.img`).replace(".webp", ".png")}`}
+                  alt={t(`speaker${id}.next.name`)}
+                  className="w-1/3 max-h-[600px] object-contain"
+                />
+              </div>
             </div>
-            <img
-              src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.img`).replace(".webp", ".png")}`}
-              alt={t(`speaker${id}.name`)}
-              className='w-1/3 max-h-[600px] object-contain'
-            />
-          </div>
+          ) : (
+            <div className="flex items-center justify-between">
+              <div>
+                <div
+                  className="text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-md:text-sm flex items-center">
+                  <span>{t(`speaker${id}.name`)}</span>
+                  {t(`speaker${id}.nickname`) && <span>&nbsp;({t(`speaker${id}.nickname`)})</span>}
+                </div>
+                <p className="text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-md:text-sm ">
+                  {t(`speaker${id}.affiliation`)}
+                </p>
+                <p
+                  className="text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-md:text-sm max-w-[700px]">
+                  {t(`speaker${id}.introduction`)}
+                </p>
+              </div>
+              <img
+                src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.img`).replace(".webp", ".png")}`}
+                alt={t(`speaker${id}.name`)}
+                className="w-1/3 max-h-[600px] object-contain"
+              />
+            </div>
+          )}
         </div>
       </div>
-      <div className='max-w-[1440px] max-lg:px-4 lg:px-20 lg:py-20 max-lg:py-10 h-screen w-full flex flex-col max-md:justify-center bg-white'>
+      <div
+        className='max-w-[1440px] max-lg:px-4 lg:px-20 lg:py-20 max-lg:py-10 h-screen w-full flex flex-col max-md:justify-center bg-white'>
+        <p className='font-semibold text-deepGreen-100 text-3xl my-10 max-md:text-xl'>
+          {t(`speaker${id}.time`)}
+        </p>
         <p className='text-xl text-greenBlack-100 font-light mb-10 max-md:text-sm whitespace-pre-wrap'>
           {t(`speaker${id}.description`)
             .replaceAll("\n", "")
@@ -61,9 +123,9 @@ export default async function SpeakerDetail({ params }: Readonly<LangProps>) {
                   viewBox='0 0 24 24'
                   fill='none'
                   stroke='currentColor'
-                  stroke-width='2'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                   className='icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin'
                 >
                   <path stroke='none' d='M0 0h24v24H0z' fill='none' />
@@ -82,9 +144,9 @@ export default async function SpeakerDetail({ params }: Readonly<LangProps>) {
                   viewBox='0 0 24 24'
                   fill='none'
                   stroke='currentColor'
-                  stroke-width='2'
-                  stroke-linecap='round'
-                  stroke-linejoin='round'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
                   className='icon icon-tabler icons-tabler-outline icon-tabler-brand-x'
                 >
                   <path stroke='none' d='M0 0h24v24H0z' fill='none' />
