@@ -2,10 +2,17 @@
   "title": "Leading a Leap into Imagination",
   "description": "Exploring our inspiring speakers at the KWDC24.\nThe timetable will be revealed next week.",
   "subtitle": "Stay tuned for updates!",
-  "keyword1": "Three Tracks of Vision",
-  "keyword1_description": "Engage in diverse sessions across three venues with tailored contents",
-  "keyword2": "Interactive Q&A",
-  "keyword2_description": "Visionary insights \nfrom our expert speakers \nin networking zone",
-  "keyword3": "A Leap Beyond Borders",
-  "keyword3_description": "Diverse views from speakers \nacross six countries, \nwith simultaneous translation"
+  "speaker1": {
+    "name": "Jeff Gu Kang",
+    "affiliation": "monymony",
+    "affiliationLink": "https://monymony.co",
+    "nickname": "Gobi",
+    "category": "Planning",
+    "introduction": "Founded Monymony, which services Someone, and serves as CTO. \nStarted iOS development when the iPhone was first released in Korea. Likes people with a mania for kindness.",
+    "title": "Save Someone: The Great Rating Boost Operation",
+    "description": "If there are multiple apps with the same purpose in the store, which one would you choose? Talks about how to stand out in the harsh app market with high ratings.",
+    "sns": "https://www.linkedin.com/in/jeffgukang/",
+    "time": "Baekje (B Hall) 16:20 - 16:40",
+    "img": "/assets/2024/images/speaker/Soumi.webp"
+  }
 }

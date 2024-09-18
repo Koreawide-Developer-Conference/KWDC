@@ -2,10 +2,17 @@
   "title": "함께하는 도약의 시간",
   "description": "상상 속의 디바이스가 2024년, 세상에 등장했습니다.\n돌아온 윤년의 해, 각자가 생태계에서 꿈꾸는 비전이 실현될 수 있도록 서로의 경험을\n나누고 성장하는 자리를 함께 만드는 곳, KWDC24가 되었으면 합니다.",
   "subtitle": "이제 모두의 비전이 도약할 시간입니다.",
-  "keyword1": "비전의 세 가지 차원",
-  "keyword1_description": "세 개의 공간에서 \n동시에 진행되는 다양한 세션",
-  "keyword2": "비전을 나누는 시간들",
-  "keyword2_description": "Apple 생태계에서 활약하는 \n연사자, 참가자들과의 네트워킹",
-  "keyword3": "한계를 넘어서는 도약",
-  "keyword3_description": "실시간 동시통역으로 여섯 개국의 연사들의 이야기를 만나는 시간"
+  "speaker1": {
+    "name": "강명구",
+    "affiliation": "모니모니",
+    "affiliationLink": "https://monymony.co",
+    "nickname": "강명구",
+    "category": "기획",
+    "introduction": "썸원을 서비스하는 모니모니를 창업하고 CTO를 맡고 있습니다. \n국내 아이폰이 처음 나왔을때 iOS개발을 시작하였습니다. 매니아 기질이 있는 다정한 사람들을 좋아합니다. ",
+    "title": "썸원을 살려라: 평점 올리기 대작전",
+    "description": "스토어에 같은 목적의 앱들이 여러개라면 어떤걸 받으시겠습니까? 높은 평점으로 냉혹한 앱시장에서 돋보일 수 있는 이야기를 합니다",
+    "sns": "https://www.linkedin.com/in/jeffgukang/",
+    "time": "백제 (B홀) 16:20 - 16:40",
+    "img": "/assets/2024/images/speaker/Soumi.webp"
+}
 }
