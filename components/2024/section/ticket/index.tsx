@@ -2,24 +2,25 @@ import Link from "next/link";
 import React from "react";
 
 import { TICKET_LINK } from "@/constants";
-import ChevronRight from "@/public/assets/2024/icons/chevron_right.svg";
+import { LangProps } from "@/i18n/settings";
+import Icon from "@/public/assets/2024/icons/ticket.svg";
 
-export const TicketSection: React.FC = () => {
+export const TicketSection: React.FC<LangProps> = async ({ params }) => {
   return (
-    <section className='flex flex-col items-center justify-center w-screen py-28 relative text-black px-4 bg-white'>
-      <div className='z-10 flex flex-col gap-10 justify-center items-center'>
-        <p className='font-bold text-4xl text-center max-lg:text-2xl'>티켓 Ticket</p>
-        <p className='font-medium text-xl text-center max-lg:text-sm'>
-          상상 속의 디바이스가 현실로 나타난 2024년, 비전이 확장될 KWDC24에 함께해요.
-          <br />
-          Join us at KWDC24, where the devices of 2024 come to life and visions grow.
-        </p>
+    <section
+      className='flex flex-col items-center justify-center min-h-screen w-screen relative text-black px-4 bg-white'
+      id='ticket'
+    >
+      <Icon />
+      <div className='z-10 flex flex-col justify-center items-center mt-10'>
+        <p className='font-bold text-4xl text-center max-lg:text-2xl mb-5'>Ticket</p>
+        <p className='font-medium text-xl text-center max-lg:text-sm text-greenBlack-70 mb-16'>Step into the KWDC24.</p>
         <Link
-          className='font-medium text-xl text-center flex items-center gap-2.5 hover:underline max-lg:text-sm'
+          className='font-medium text-xl text-center flex items-center bg-brightGreen-70 hover:bg-brightGreen-100 max-lg:text-sm text-deepGreen-100 py-4 px-[54px] rounded-full'
           href={TICKET_LINK}
           target={"_blank"}
         >
-          티켓 구매하기 Buy Tickets <ChevronRight />
+          Grab your seat
         </Link>
       </div>
     </section>

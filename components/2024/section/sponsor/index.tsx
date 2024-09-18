@@ -2,8 +2,9 @@ import Link from "next/link";
 import React from "react";
 
 import ChevronRight from "@/public/assets/2024/icons/chevron_right.svg";
+import { LangProps } from "@/i18n/settings";
 
-export const SponsorSection: React.FC = () => {
+export const SponsorSection: React.FC<LangProps> = ({params}) => {
   return (
     <section
       className='flex flex-col items-center justify-center w-screen py-28 relative text-black bg-white px-4'

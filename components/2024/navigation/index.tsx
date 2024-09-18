@@ -36,7 +36,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
           {languages
             .filter((lang) => lang !== params?.lng)
             .map((lang) => (
-              <Link href={`/${lang}/2024`} className='p-3 max-md:hidden'>
+              <Link key={lang} href={`/${lang}/2024`} className='p-3 max-md:hidden'>
                 {lang === "ko" ? "한국어" : lang === "en" ? "English" : "日本語"}
               </Link>
             ))}
@@ -59,7 +59,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
                 {languages
                   .filter((lang) => lang !== params?.lng)
                   .map((lang) => (
-                    <Link href={`/${lang}/2024`} className='p-3'>
+                    <Link key={lang} href={`/${lang}/2024`} className='p-3'>
                       {lang === "ko" ? "한국어" : lang === "en" ? "English" : "日本語"}
                     </Link>
                   ))}

@@ -7,7 +7,7 @@ import Image from "next/image";
 import { LangProps } from "@/i18n/settings";
 
 export const HeroSection: React.FC<LangProps> = async ({ params }) => {
-  const { t } = await useTranslation(params.lng, "section1");
+  const { t } = await useTranslation(params.lng, "hero");
   return (
     <section className='flex flex-col pt-12 lg:h-screen min-h-screen w-full items-center hero_gradient'>
       <div className='max-w-[1440px] max-lg:px-4 lg:px-20 h-screen w-full items-center flex flex-col max-md:justify-center'>

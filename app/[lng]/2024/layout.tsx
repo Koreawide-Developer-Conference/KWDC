@@ -22,7 +22,7 @@ export default function RootLayout({ children, params }: Readonly<LangProps>) {
     <main className='bg-deepGreen-100 text-white overflow-x-hidden flex flex-col items-center'>
       <Navigation params={params} />
       {children}
-      <Footer />
+      <Footer params={params}/>
     </main>
   );
 }
