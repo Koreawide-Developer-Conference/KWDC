@@ -1,2 +1,1 @@
-export const BaseURL = `https://kwdc.dev`;
-export const prefix = ''
+export const prefix = 'https://develop.kwdc.dev'
