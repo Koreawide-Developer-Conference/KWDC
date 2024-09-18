@@ -181,3 +181,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.hero_gradient {
+    background: linear-gradient(180deg, #E8EEF0 80%, #FFFFFF 100%);
+}

@@ -6,8 +6,8 @@ export const defaultNS = 'common';
 export const cookieName = 'i18next';
 export type LangTypes = typeof languages[number];
 export type LangProps = {
-  children?: React.ReactNode;
-  params?: {
+  children: React.ReactNode;
+  params: {
     lng: LangTypes;
   };
 }
