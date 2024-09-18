@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 
@@ -7,17 +9,28 @@ import Chevron from "@/public/assets/2024/icons/chevron_down_white.svg";
 import Logo from "@/public/assets/2024/images/logo.svg";
 
 export const Navigation: React.FC<LangProps> = ({ params }) => {
+  const scrollToSection = (id: string) => () => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <nav className='p-0 fixed top-0 z-30 w-full flex justify-center items-center h-12 bg-gray-50 bg-opacity-50 backdrop-blur-md'>
       <div className='navbar-start flex justify-between items-center max-w-[1440px] w-full text-xs max-md:px-4 md:px-20'>
-        <a href='/2024'>
+        <a href={`/${params.lng}/2024`} onClick={scrollToTop}>
           <Logo />
         </a>
         <div className='flex text-white items-center md:gap-x-5 '>
-          <Link href={"#overview"} className='p-3 max-md:hidden'>
+          <Link href={"#overview"} onClick={scrollToSection("overview")} className='p-3 max-md:hidden'>
             Overview
           </Link>
-          <Link href={"#speakers"} className='p-3 max-md:hidden'>
+          <Link href={"#speakers"} onClick={scrollToSection("speakers")} className='p-3 max-md:hidden'>
             Speakers
           </Link>
           {languages

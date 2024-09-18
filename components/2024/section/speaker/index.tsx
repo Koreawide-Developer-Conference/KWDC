@@ -6,7 +6,7 @@ import { InfiniteMovingCards } from "@/components/2024";
 
 export const SpeakerSection: React.FC = () => {
   return (
-    <section className='flex flex-col items-center justify-center w-screen py-28 relative text-black px-4 bg-white'>
+    <section className='flex flex-col items-center justify-center w-screen py-28 relative text-black px-4 bg-white' id='speakers'>
       <div className='max-w-[1440px] max-lg:px-0 lg:px-20 h-full w-full'>
         <div className='flex justify-between items-center max-lg:flex-col max-lg:items-start'>
           <p className='text-5xl font-bold leading-tight text-deepGreen-100 max-lg:text-3xl'>
