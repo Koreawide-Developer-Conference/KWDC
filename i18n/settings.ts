@@ -1,7 +1,16 @@
+import React from "react";
+
 export const fallbackLng = 'ko';
-export const languages = [fallbackLng, 'en', 'ja'];
+export const languages = [fallbackLng, 'en'];
 export const defaultNS = 'common';
 export const cookieName = 'i18next';
+export type LangTypes = typeof languages[number];
+export type LangProps = {
+  children?: React.ReactNode;
+  params?: {
+    lng: LangTypes;
+  };
+}
 
 export function getOptions(
   lng = fallbackLng,

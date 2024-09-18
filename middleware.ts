@@ -11,7 +11,7 @@ export const config = {
 
 const PUBLIC_FILE = /\.(.*)$/;
 
-export async function middleware(req: any) {
+export async function middleware(req: NextRequest) {
   if (
     req.nextUrl.pathname.startsWith("/_next") ||
     req.nextUrl.pathname.includes("/api/") ||
@@ -20,7 +20,7 @@ export async function middleware(req: any) {
     return;
   }
   let lng
-  if (req.cookies.has(cookieName)) lng = acceptLanguage.get(req.cookies.get(cookieName).value)
+  if (req.cookies.has(cookieName)) lng = acceptLanguage.get(req.cookies.get(cookieName)!.value)
   if (!lng) lng = acceptLanguage.get(req.headers.get('Accept-Language'))
   if (!lng) lng = fallbackLng
 
@@ -33,7 +33,7 @@ export async function middleware(req: any) {
   }
 
   if (req.headers.has('referer')) {
-    const refererUrl = new URL(req.headers.get('referer'))
+    const refererUrl = new URL(req.headers.get('referer')!)
     const lngInReferer = languages.find((l) => refererUrl.pathname.startsWith(`/${l}`))
     const response = NextResponse.next()
     if (lngInReferer) response.cookies.set(cookieName, lngInReferer)
