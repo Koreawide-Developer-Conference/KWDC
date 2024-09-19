@@ -56,7 +56,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
             <div tabIndex={0} role='button' className='btn btn-ghost'>
               <Chevron />
             </div>
-            <ul tabIndex={0} className='menu dropdown-content bg-base-100 rounded-box z-[1] mt-4 w-36 p-2 shadow'>
+            <ul tabIndex={0} className='menu dropdown-content bg-brightGreen-10 rounded-box z-[1] mt-4 w-36 p-2 shadow'>
               <li>
                 <Link href={"#overview"} className='p-3'>
                   Overview
