@@ -16,12 +16,12 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
       className='flex flex-col items-center justify-center w-screen py-28 relative text-black px-4 bg-white'
       id='speakers'
     >
-      <div className='max-w-[1440px] max-lg:px-0 lg:px-20 min-h-screen w-full flex flex-col items-center justify-center'>
+      <div className='max-w-[1440px] max-3xl:px-0 lg:px-20 min-h-screen w-full flex flex-col items-center justify-center'>
         <Icon />
-        <h2 className='my-5 text-4xl max-md:text-xl font-bold text-deepGreen-100'>{t("title")}</h2>
-        <p className='text-center text-greenBlack-70 text-xl max-md:text-sm whitespace-pre-wrap'>{t("description")}</p>
+        <h2 className='my-5 text-4xl max-3xl:text-xl font-bold text-deepGreen-100'>{t("title")}</h2>
+        <p className='text-center text-greenBlack-70 text-xl max-3xl:text-sm whitespace-pre-wrap'>{t("description")}</p>
         <br />
-        <p className='text-center text-greenBlack-100 text-xl max-md:text-sm'>
+        <p className='text-center text-greenBlack-100 text-xl max-3xl:text-sm'>
           {t("subtitle")} <br />
         </p>
         <div className='grid grid-cols-3 max-lg:grid-cols-1 gap-12 py-[75px] w-full'>
@@ -31,7 +31,7 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
                 <Link
                   href={`/${params.lng}/2024/speaker/10`}
                   key={index}
-                  className='bg-brightGreen-100 rounded-xl w-full h-[230px] py-4 px-3.5 flex flex-col justify-around max-sm:hover:scale-105 transition-transform duration-300'
+                  className='bg-brightGreen-100 rounded-xl w-full h-[230px] py-4 px-3.5 flex flex-col justify-around max-3xl:hover:scale-105 transition-transform duration-300'
                 >
                   <div className='flex flex-col'>
                     <p className='text-deepGreen-70 font-SFProDisplay mb-2'>{t(`speaker10.category`)}</p>
@@ -82,7 +82,7 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
               <Link
                 href={`/${params.lng}/2024/speaker/${index + 1}`}
                 key={index}
-                className='bg-brightGreen-100 rounded-xl w-full h-[230px] py-4 px-3.5 flex flex-col justify-around hover:scale-105 transition-transform duration-300'
+                className='bg-brightGreen-100 rounded-xl w-full h-[230px] py-4 px-3.5 flex flex-col justify-around max-3xl:hover:scale-105 transition-transform duration-300'
               >
                 <div className='flex flex-col'>
                   <p className='text-deepGreen-70 font-SFProDisplay mb-2'>{t(`speaker${index + 1}.category`)}</p>

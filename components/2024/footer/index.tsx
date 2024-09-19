@@ -12,7 +12,7 @@ interface FooterProps extends LangProps{
 export const Footer: React.FC<FooterProps> = async ({ cocHide = false, params }) => {
   const {t} = await useTranslation(params.lng, 'footer')
   return (
-    <footer className='flex flex-col justify-center items-center w-screen pt-12 pb-9 bg-[#F5F5F7] max-lg:pt-5 max-lg:pb-16'>
+    <footer className='flex flex-col justify-center items-center w-screen pt-12 pb-9 bg-[#F5F5F7] max-3xl:pt-5 max-3xl:pb-16'>
       {!cocHide && (
         <div className="flex flex-col lg:w-[1000px] px-5">
           <div className="text-[#000000E0] mb-5">
@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = async ({ cocHide = false, params })
           </div>
         </div>
       )}
-      <div className="pt-10 lg:w-[1000px] px-5 max-lg:w-full">
+      <div className="pt-10 lg:w-[1000px] px-5 max-3xl:w-full">
         <p className="text-sm font-semibold text-[#000000E0] mb-2.5">{t('channel')}</p>
         <div className="flex gap-x-5 text-[#000000B8] font-normal text-xs mb-5">
           <Link href={DISCORD_LINK} target={"_blank"} className="hover:underline">

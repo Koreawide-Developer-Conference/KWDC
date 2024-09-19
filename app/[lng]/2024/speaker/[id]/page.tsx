@@ -4,7 +4,7 @@ import { prefix } from "@/constants";
 import { translation, useTranslation } from "@/i18n";
 
 export async function generateMetadata({ params }: any) {
-  const {t} = await translation(params.lng, 'speaker')
+  const { t } = await translation(params.lng, "speaker");
 
   return {
     title: "KWDC24",
@@ -19,85 +19,84 @@ export async function generateMetadata({ params }: any) {
 
 export default async function SpeakerDetail({ params }: any) {
   const id = params?.id;
-  const { t } = await useTranslation(params.lng, 'speaker')
-
+  const { t } = await useTranslation(params.lng, "speaker");
 
   return (
-    <section className='flex flex-col pt-12 lg:h-screen min-h-screen w-screen bg-white items-center'>
-      <div className='max-lg:px-4 lg:px-20 w-full flex flex-col max-md:justify-center hero_gradient items-center'>
+    <section className='flex flex-col pt-12 max-3xl:h-screen min-h-screen w-screen bg-white items-center'>
+      <div className='max-3xl:px-4 lg:px-20 w-full flex flex-col max-3xl:justify-center hero_gradient items-center'>
         <div className='max-w-[1280px] w-full max-h-[600px] overflow-hidden flex flex-col'>
           <div className='border-b border-b-deepGreen-100 mb-8 flex justify-between'>
-            <p className='font-semibold text-deepGreen-100 text-3xl mb-2.5 mt-10 max-md:text-xl'>
+            <p className='font-semibold text-deepGreen-100 text-3xl mb-2.5 mt-10 max-3xl:text-xl'>
               {t(`speaker${id}.title`)}
             </p>
           </div>
           {id === "10" ? (
             <div className='flex items-center justify-between'>
-              <div className='flex flex-col gap-y-5'>
+              <div className='flex flex-col justify-around h-full gap-y-5'>
                 <div>
-                  <div className='text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-md:text-sm flex items-center'>
+                  <div className='text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-3xl:text-sm flex items-center'>
                     <span>{t(`speaker${id}.name`)}</span>
                     {t(`speaker${id}.nickname`) && <span>&nbsp;({t(`speaker${id}.nickname`)})</span>}
                   </div>
-                  <p className='text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-md:text-sm '>
+                  <p className='text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-3xl:text-sm '>
                     {t(`speaker${id}.affiliation`)}
                   </p>
-                  <p className='text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-md:text-sm max-w-[700px]'>
+                  <p className='text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-3xl:text-sm max-w-[700px]'>
                     {t(`speaker${id}.introduction`)}
                   </p>
                 </div>
                 <div>
-                  <div className='text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-md:text-sm flex items-center'>
+                  <div className='text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-3xl:text-sm flex items-center'>
                     <span>{t(`speaker${id}.nest.name`)}</span>
                     {t(`speaker${id}.nest.nickname`) && <span>&nbsp;({t(`speaker${id}.nest.nickname`)})</span>}
                   </div>
-                  <p className='text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-md:text-sm '>
+                  <p className='text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-3xl:text-sm '>
                     {t(`speaker${id}.nest.affiliation`)}
                   </p>
-                  <p className='text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-md:text-sm max-w-[700px]'>
+                  <p className='text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-3xl:text-sm max-w-[700px]'>
                     {t(`speaker${id}.nest.introduction`)}
                   </p>
                 </div>
               </div>
-              <div className='w-full flex justify-end max-md:flex-col max-md:items-end'>
+              <div className='w-full flex justify-end max-3xl:flex-col max-3xl:items-end'>
                 <img
                   src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.img`).replace(".webp", ".png")}`}
                   alt={t(`speaker${id}.name`)}
-                  className='w-1/3 max-md:w-1/2 max-h-[600px] object-contain object-bottom'
+                  className='w-1/3 max-3xl:w-1/6 max-2xl:w-1/4 max-xl:w-1/3 max-h-[600px] object-contain object-bottom'
                 />
                 <img
                   src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.nest.img`).replace(".webp", ".png")}`}
                   alt={t(`speaker${id}.next.name`)}
-                  className='w-1/3 max-md:w-1/2 max-h-[600px] object-contain'
+                  className='w-1/3 max-3xl:w-1/6 max-2xl:w-1/4 max-xl:w-1/3 max-h-[600px] object-contain'
                 />
               </div>
             </div>
           ) : (
             <div className='flex items-center justify-between'>
               <div>
-                <div className='text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-md:text-sm flex items-center'>
+                <div className='text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-3xl:text-sm flex items-center'>
                   <span>{t(`speaker${id}.name`)}</span>
                   {t(`speaker${id}.nickname`) && <span>&nbsp;({t(`speaker${id}.nickname`)})</span>}
                 </div>
-                <p className='text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-md:text-sm '>
+                <p className='text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-3xl:text-sm '>
                   {t(`speaker${id}.affiliation`)}
                 </p>
-                <p className='text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-md:text-sm max-w-[700px]'>
+                <p className='text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-3xl:text-sm max-w-[700px]'>
                   {t(`speaker${id}.introduction`)}
                 </p>
               </div>
               <img
                 src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.img`).replace(".webp", ".png")}`}
                 alt={t(`speaker${id}.name`)}
-                className='w-1/3 max-h-[600px] object-contain'
+                className='w-1/3 max-h-[600px] max-3xl:w-1/5 max-2xl:w-1/3 max-xl:w-1/2 object-contain object-bottom'
               />
             </div>
           )}
         </div>
       </div>
-      <div className='max-w-[1440px] max-lg:px-4 lg:px-20 lg:py-20 w-full flex flex-col max-md:justify-center bg-white'>
-        <p className='font-semibold text-deepGreen-100 text-3xl my-10 max-md:text-xl'>{t(`speaker${id}.time`)}</p>
-        <p className='text-xl text-greenBlack-100 font-light mb-10 max-md:text-sm whitespace-pre-wrap'>
+      <div className='max-w-[1440px] max-3xl:px-4 lg:px-20 lg:py-20 w-full flex flex-col max-3xl:justify-center bg-white'>
+        <p className='font-semibold text-deepGreen-100 text-3xl my-10 max-3xl:text-xl'>{t(`speaker${id}.time`)}</p>
+        <p className='text-xl text-greenBlack-100 font-light mb-10 max-3xl:text-sm whitespace-pre-wrap'>
           {t(`speaker${id}.description`)
             .replaceAll("\n", "")
             .replaceAll(". ", ".\n")

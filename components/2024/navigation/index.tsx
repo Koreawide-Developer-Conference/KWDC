@@ -34,21 +34,21 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
 
   return (
     <nav className='p-0 fixed top-0 z-30 w-full flex justify-center items-center h-12 bg-gray-50 bg-opacity-50 backdrop-blur-md'>
-      <div className='navbar-start flex justify-between items-center max-w-[1440px] w-full text-xs max-md:px-4 md:px-20'>
+      <div className='navbar-start flex justify-between items-center max-w-[1440px] w-full text-xs max-3xl:px-4 md:px-20'>
         <a href={`/${params.lng}/2024`} onClick={scrollToTop}>
           <Logo />
         </a>
         <div className='flex text-white items-center md:gap-x-5 '>
-          <Link href={"#overview"} onClick={scrollToSection("overview")} className='p-3 max-md:hidden'>
+          <Link href={"#overview"} onClick={scrollToSection("overview")} className='p-3 max-3xl:hidden'>
             Overview
           </Link>
-          <Link href={"#speakers"} onClick={scrollToSection("speakers")} className='p-3 max-md:hidden'>
+          <Link href={"#speakers"} onClick={scrollToSection("speakers")} className='p-3 max-3xl:hidden'>
             Speakers
           </Link>
           {languages
             .filter((lang) => lang !== params?.lng)
             .map((lang) => (
-              <Link key={lang} href={pathname.includes('/ko/') ? pathname.replace('/ko/', '/en/') : pathname.replace('/en/', '/ko/')} className='p-3 max-md:hidden'>
+              <Link key={lang} href={pathname.includes('/ko/') ? pathname.replace('/ko/', '/en/') : pathname.replace('/en/', '/ko/')} className='p-3 max-3xl:hidden'>
                 {lang === "ko" ? "한국어" : lang === "en" ? "English" : "日本語"}
               </Link>
             ))}

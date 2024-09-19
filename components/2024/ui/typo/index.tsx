@@ -26,7 +26,7 @@ export const TypoAnimation: React.FC<TypoAnimationProps> = ({ text }) => {
   }, [text]);
 
   return (
-    <div className='font-semibold text-6xl leading-10 mb-5 text-center max-lg:text-5xl'>
+    <div className='font-semibold text-6xl leading-10 mb-5 text-center max-3xl:text-5xl'>
       <span ref={el} className='' />
     </div>
   );
