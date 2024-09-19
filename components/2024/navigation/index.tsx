@@ -38,17 +38,17 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
         <a href={`/${params.lng}/2024`} onClick={scrollToTop}>
           <Logo />
         </a>
-        <div className='flex text-white items-center md:gap-x-5 '>
-          <Link href={"#overview"} onClick={scrollToSection("overview")} className='p-3 max-3xl:hidden'>
+        <div className='flex text-white items-center md:gap-x-5'>
+          <Link href={"#overview"} onClick={scrollToSection("overview")} className='p-3 max-sm:hidden'>
             Overview
           </Link>
-          <Link href={"#speakers"} onClick={scrollToSection("speakers")} className='p-3 max-3xl:hidden'>
+          <Link href={"#speakers"} onClick={scrollToSection("speakers")} className='p-3 max-sm:hidden'>
             Speakers
           </Link>
           {languages
             .filter((lang) => lang !== params?.lng)
             .map((lang) => (
-              <Link key={lang} href={pathname.includes('/ko/') ? pathname.replace('/ko/', '/en/') : pathname.replace('/en/', '/ko/')} className='p-3 max-3xl:hidden'>
+              <Link key={lang} href={pathname.includes('/ko/') ? pathname.replace('/ko/', '/en/') : pathname.replace('/en/', '/ko/')} className='p-3 max-sm:hidden'>
                 {lang === "ko" ? "한국어" : lang === "en" ? "English" : "日本語"}
               </Link>
             ))}

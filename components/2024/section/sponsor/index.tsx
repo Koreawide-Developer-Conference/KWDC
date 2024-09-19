@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 import { useTranslation } from "@/i18n";
@@ -15,7 +16,9 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
       <div className='flex flex-col justify-center items-center'>
         <Sponsor />
         <p className='text-greenBlack-100 font-bold text-4xl max-3xl:text-2xl mt-5'>{t("title")}</p>
-        <Flitto className='my-[150px]' />
+        <Link href={"https://www.flitto.com/"} target='_blank'>
+          <Flitto className='my-[150px] cursor-pointer' />
+        </Link>
         <p className='text-greenBlack-70 font-medium text-xl max-3xl:text-lg text-center whitespace-pre-wrap'>
           {t("description")}
         </p>
