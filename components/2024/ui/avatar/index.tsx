@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 interface AvatarProps {
   src: string;
@@ -29,7 +30,9 @@ export const Avatar: React.FC<AvatarProps> = ({ src, alt, name }) => {
       </div>
     </div>
   ) : (
-    <img
+    <Image
+      width={60}
+      height={60}
       src={src}
       alt={alt}
       className='w-[60px] h-[60px] object-cover rounded-full'

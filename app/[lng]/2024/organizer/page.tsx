@@ -3,6 +3,7 @@ import React from "react";
 
 import { openGraphImage2024 } from "@/app/shared-metadata";
 import { translation, useTranslation } from "@/i18n";
+import Image from "next/image";
 
 export async function generateMetadata({ params }: any) {
   const { t } = await translation(params.lng, "organizer");
@@ -48,7 +49,9 @@ export default async function Organizer({ params }: any) {
                 }).map((_, idx) => (
                   <Link href={`/${params.lng}/2024/organizer/${name}/${idx + 1}`} key={idx}>
                     <div className='rounded-xl overflow-hidden'>
-                      <img
+                      <Image
+                        width={300}
+                        height={600}
                         src={`/assets/2024/images/organizer/${t(`${name}.member${idx + 1}.img`)}`}
                         alt={t(`${name}.member${idx + 1}.name`)}
                         className='h-auto w-auto object-cover aspect-[3/4] transition-all hover:scale-105 bg-brightGreen-10'
