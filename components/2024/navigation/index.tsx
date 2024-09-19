@@ -58,12 +58,12 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
             </div>
             <ul tabIndex={0} className='menu dropdown-content bg-brightGreen-10 rounded-box z-[1] mt-4 w-36 p-2 shadow'>
               <li>
-                <Link href={"#overview"} className='p-3'>
+                <Link href={`/${params.lng}/2024#overview`} className='p-3'>
                   Overview
                 </Link>
               </li>
               <li>
-                <Link href={"#speakers"} className='p-3'>
+                <Link href={`/${params.lng}/2024#speakers`} className='p-3'>
                   Speakers
                 </Link>
               </li>

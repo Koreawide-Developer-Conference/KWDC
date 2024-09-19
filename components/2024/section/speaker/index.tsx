@@ -31,7 +31,7 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
                 <Link
                   href={`/${params.lng}/2024/speaker/10`}
                   key={index}
-                  className='bg-brightGreen-100 rounded-xl w-full h-[230px] py-4 px-3.5 flex flex-col justify-around hover:scale-105 transition-transform duration-300'
+                  className='bg-brightGreen-100 rounded-xl w-full h-[230px] py-4 px-3.5 flex flex-col justify-around max-sm:hover:scale-105 transition-transform duration-300'
                 >
                   <div className='flex flex-col'>
                     <p className='text-deepGreen-70 font-SFProDisplay mb-2'>{t(`speaker10.category`)}</p>
