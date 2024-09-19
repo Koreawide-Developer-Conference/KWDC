@@ -1,29 +1,24 @@
-import Link from "next/link";
 import React from "react";
 
-import ChevronRight from "@/public/assets/2024/icons/chevron_right.svg";
+import { useTranslation } from "@/i18n";
 import { LangProps } from "@/i18n/settings";
+import Sponsor from "@/public/assets/2024/icons/sponsor.svg";
+import Flitto from "@/public/assets/2024/logos/flitto.svg";
 
-export const SponsorSection: React.FC<LangProps> = ({params}) => {
+export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
+  const { t } = await useTranslation(params.lng, "sponsor");
   return (
     <section
-      className='flex flex-col items-center justify-center w-screen py-28 relative text-black bg-white px-4'
-      id='section3'
+      className='flex flex-col items-center justify-center w-screen h-screen relative text-black bg-white px-4'
+      id='sponsors'
     >
-      <div className='z-10 flex flex-col gap-10 justify-center items-center'>
-        <p className='font-bold text-4xl text-center max-lg:text-2xl'>후원 Sponsorship</p>
-        <p className='font-medium text-xl text-center max-lg:text-sm'>
-          기업의 후원은 애플 생태계와 구성원들의 성장과 발전에 소중한 양분이 됩니다.
-          <br />
-          Corporate sponsorship fuels the growth of the community and its members.
+      <div className='flex flex-col justify-center items-center'>
+        <Sponsor />
+        <p className='text-greenBlack-100 font-bold text-4xl max-sm:text-2xl mt-5'>{t("title")}</p>
+        <Flitto className='my-[150px]' />
+        <p className='text-greenBlack-70 font-medium text-xl max-sm:text-lg text-center whitespace-pre-wrap'>
+          {t("description")}
         </p>
-        <Link
-          className='font-medium text-xl text-center flex items-center gap-2.5 hover:underline max-lg:text-sm'
-          href='mailto:hello.kwdc@gmail.com'
-          target={"_blank"}
-        >
-          후원 메일 문의 Sponsorship Inquiries <ChevronRight />
-        </Link>
       </div>
     </section>
   );

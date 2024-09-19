@@ -12,11 +12,11 @@ export const TicketSection: React.FC<LangProps> = async ({ params }) => {
       id='ticket'
     >
       <Icon />
-      <div className='z-10 flex flex-col justify-center items-center mt-10'>
+      <div className='z-10 flex flex-col justify-center items-center mt-5'>
         <p className='font-bold text-4xl text-center max-lg:text-2xl mb-5'>Ticket</p>
         <p className='font-medium text-xl text-center max-lg:text-sm text-greenBlack-70 mb-16'>Step into the KWDC24.</p>
         <Link
-          className='font-medium text-xl text-center flex items-center bg-brightGreen-70 hover:bg-brightGreen-100 max-lg:text-sm text-deepGreen-100 py-4 px-[54px] rounded-full'
+          className='font-medium text-xl text-center flex items-center bg-brightGreen-70 max-smhover:bg-brightGreen-100 max-lg:text-sm text-deepGreen-100 py-4 px-[54px] rounded-full'
           href={TICKET_LINK}
           target={"_blank"}
         >

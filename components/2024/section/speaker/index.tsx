@@ -18,7 +18,7 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
     >
       <div className='max-w-[1440px] max-lg:px-0 lg:px-20 min-h-screen w-full flex flex-col items-center justify-center'>
         <Icon />
-        <h2 className='my-2.5 text-4xl max-md:text-xl font-bold text-deepGreen-100'>{t("title")}</h2>
+        <h2 className='my-5 text-4xl max-md:text-xl font-bold text-deepGreen-100'>{t("title")}</h2>
         <p className='text-center text-greenBlack-70 text-xl max-md:text-sm whitespace-pre-wrap'>{t("description")}</p>
         <br />
         <p className='text-center text-greenBlack-100 text-xl max-md:text-sm'>

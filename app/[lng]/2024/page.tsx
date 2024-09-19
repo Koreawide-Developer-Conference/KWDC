@@ -3,7 +3,7 @@ import React from "react";
 
 import { openGraphImage2024 } from "@/app/shared-metadata";
 
-import { HeroSection, OverviewSection, SpeakerSection, TicketSection } from "@/components/2024";
+import { HeroSection, OverviewSection, SpeakerSection, SponsorSection, TicketSection } from "@/components/2024";
 
 export const metadata: Metadata = {
   title: "KWDC24",
@@ -21,8 +21,7 @@ export default function KWDC2024({ params }: any) {
       <HeroSection params={params} />
       <OverviewSection params={params} />
       <SpeakerSection params={params} />
-      {/*TODO Sponsor 확정 후 게시*/}
-      {/*<SponsorSection params={params}/>*/}
+      <SponsorSection params={params}/>
       <TicketSection params={params} />
     </div>
   );

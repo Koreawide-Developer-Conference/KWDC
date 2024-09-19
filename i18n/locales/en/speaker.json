@@ -15,18 +15,6 @@
     "img": "soohwan_joshua_cho.webp"
   },
   "speaker2": {
-    "name": "Sangho Cho",
-    "affiliation": "Flitto",
-    "nickname": "Jake",
-    "category": "Develop",
-    "introduction": "I am contemplating the wise use of SwiftUI.",
-    "title": "Why Your View Stutters (feat. Instruments)",
-    "description": "Introducing the process of detecting and debugging hangs in SwiftUI-based apps using Instruments.",
-    "sns": "http://www.linkedin.com/in/sangho-cho",
-    "time": "Silla (C Hall) 11:00 - 11:40",
-    "img": "sangho_cho.webp"
-  },
-  "speaker3": {
     "name": "Yebin Vivi Kim",
     "affiliation": "Hyundai Motor Company",
     "nickname": "vivi",
@@ -37,6 +25,18 @@
     "sns": "https://www.linkedin.com/in/vivi-kim",
     "time": "Baekje (B Hall) 11:00 - 11:40",
     "img": "vivi.webp"
+  },
+  "speaker3": {
+    "name": "Sangho Cho",
+    "affiliation": "Flitto",
+    "nickname": "Jake",
+    "category": "Develop",
+    "introduction": "I am contemplating the wise use of SwiftUI.",
+    "title": "Why Your View Stutters (feat. Instruments)",
+    "description": "Introducing the process of detecting and debugging hangs in SwiftUI-based apps using Instruments.",
+    "sns": "http://www.linkedin.com/in/sangho-cho",
+    "time": "Silla (C Hall) 11:00 - 11:40",
+    "img": "sangho_cho.webp"
   },
   "speaker4": {
     "name": "Pavel Zak",
@@ -51,18 +51,6 @@
     "img": "pavel.webp"
   },
   "speaker5": {
-    "name": "Kohki Miki",
-    "affiliation": "LY Corporation",
-    "nickname": "giginet",
-    "category": "Develop",
-    "introduction": "Mobile DevOps Engineer @ LY Corp. I work to improve Developer Experience for LINE. A maintainer for some open-sourced developer tools like fastlane, Carthage, XcodeGen, and so on,",
-    "title": "Building Intuitive Developer Tools in Swift",
-    "description": "Create developer tools in Swift! This talk explains how to build intutive developer tools and improve Developer Experience.",
-    "sns": "https://twitter.com/giginet",
-    "time": "Silla (C Hall) 12:50 - 13:30",
-    "img": "giginet.webp"
-  },
-  "speaker6": {
     "name": "Cristian Díaz",
     "affiliation": "",
     "nickname": "elkraneo",
@@ -73,6 +61,18 @@
     "sns": "",
     "time": "Baekje (B Hall) 12:50 - 13:30",
     "img": "elkraneo.webp"
+  },
+  "speaker6": {
+    "name": "Kohki Miki",
+    "affiliation": "LY Corporation",
+    "nickname": "giginet",
+    "category": "Develop",
+    "introduction": "Mobile DevOps Engineer @ LY Corp. I work to improve Developer Experience for LINE. A maintainer for some open-sourced developer tools like fastlane, Carthage, XcodeGen, and so on,",
+    "title": "Building Intuitive Developer Tools in Swift",
+    "description": "Create developer tools in Swift! This talk explains how to build intutive developer tools and improve Developer Experience.",
+    "sns": "https://twitter.com/giginet",
+    "time": "Silla (C Hall) 12:50 - 13:30",
+    "img": "giginet.webp"
   },
   "speaker7": {
     "name": "Rudrank Riyam",
@@ -87,18 +87,6 @@
     "img": "rudrank.webp"
   },
   "speaker8": {
-    "name": "Jaeeun Lee",
-    "affiliation": "Amazon Web Services",
-    "nickname": "Meticulous Jaeeun",
-    "category": "Develop",
-    "introduction": "I explore the possibilities of technology and write books to lower the entry barriers so that everyone can use it. I hope to explain any complex technology in simple language, and I believe that better results can be achieved through trust rather than pressure. I hope for a world where anyone can develop.",
-    "title": "Designing Next-Generation AI Experiences with Apple Intelligence",
-    "description": "Learn about Apple’s generative AI, 'Apple Intelligence,' unveiled at WWDC24. Analyze the innovative application of deep learning technology in Apple Intelligence and explain its core architecture in depth. Propose ways to design beyond the limits of iOS applications using next-generation AI technology and explore its practical applications. This is an opportunity to think together about the new possibilities that AI will open up for the future of iOS development.",
-    "sns": "http://linkedin.com/in/jaeeun-lee-bb5592a2",
-    "time": "Silla (C Hall) 13:40 - 14:20",
-    "img": "jaeeun.webp"
-  },
-  "speaker9": {
     "name": "Xu Chi",
     "affiliation": "",
     "nickname": "xChester",
@@ -109,6 +97,18 @@
     "sns": "https://x.com/xchester16",
     "time": "Baekje (B Hall) 13:40 - 14:20",
     "img": "xChester.webp"
+  },
+  "speaker9": {
+    "name": "Jaeeun Lee",
+    "affiliation": "Amazon Web Services",
+    "nickname": "Meticulous Jaeeun",
+    "category": "Develop",
+    "introduction": "I explore the possibilities of technology and write books to lower the entry barriers so that everyone can use it. I hope to explain any complex technology in simple language, and I believe that better results can be achieved through trust rather than pressure. I hope for a world where anyone can develop.",
+    "title": "Designing Next-Generation AI Experiences with Apple Intelligence",
+    "description": "Learn about Apple’s generative AI, 'Apple Intelligence,' unveiled at WWDC24. Analyze the innovative application of deep learning technology in Apple Intelligence and explain its core architecture in depth. Propose ways to design beyond the limits of iOS applications using next-generation AI technology and explore its practical applications. This is an opportunity to think together about the new possibilities that AI will open up for the future of iOS development.",
+    "sns": "http://linkedin.com/in/jaeeun-lee-bb5592a2",
+    "time": "Silla (C Hall) 13:40 - 14:20",
+    "img": "jaeeun.webp"
   },
   "speaker10": {
     "name": "Changhyeon Yoon",
@@ -135,18 +135,6 @@
     }
   },
   "speaker11": {
-    "name": "Jaehun Choe",
-    "affiliation": "Modu Labs - XRC",
-    "nickname": "Jayden",
-    "category": "Develop",
-    "introduction": "I am an AI service SW/HW developer. I will cover the philosophy/market trends of Vision Pro's SW/HW and AI development/Apple Intelligence on Vision Pro.",
-    "title": "Implementing AI Companion on VisionOS",
-    "description": "Explore Vision Pro HW/SW technology and market trends, and delve into Apple Intelligence.",
-    "sns": "https://www.linkedin.com/in/jaydenchoe",
-    "time": "Silla (C Hall) 14:30 - 15:10",
-    "img": "jayden.webp"
-  },
-  "speaker12": {
     "name": "Changwoo Kim",
     "affiliation": "Apple",
     "nickname": "",
@@ -157,6 +145,18 @@
     "sns": "https://www.linkedin.com/in/changwoo-kim-4a1942a0/",
     "time": "Baekje (B Hall) 14:30 - 15:10",
     "img": "changwoo_kim.webp"
+  },
+  "speaker12": {
+    "name": "Jaehun Choe",
+    "affiliation": "Modu Labs - XRC",
+    "nickname": "Jayden",
+    "category": "Develop",
+    "introduction": "I am an AI service SW/HW developer. I will cover the philosophy/market trends of Vision Pro's SW/HW and AI development/Apple Intelligence on Vision Pro.",
+    "title": "Implementing AI Companion on VisionOS",
+    "description": "Explore Vision Pro HW/SW technology and market trends, and delve into Apple Intelligence.",
+    "sns": "https://www.linkedin.com/in/jaydenchoe",
+    "time": "Silla (C Hall) 14:30 - 15:10",
+    "img": "jayden.webp"
   },
   "speaker13": {
     "name": "Taehyeon Jake Lee",
@@ -171,18 +171,6 @@
     "img": "jake.webp"
   },
   "speaker14": {
-    "name": "Košir Klemen",
-    "affiliation": "Betashares",
-    "nickname": "",
-    "category": "Develop",
-    "introduction": "Senior iOS Developer at Betashares. I've been trying to make cool apps for 10 years now.",
-    "title": "Prepare Your App for Apple Intelligence",
-    "description": "We've all heard about Apple Intelligence. Brief walktthrough about what it is, and a look at how you can integrate it into your app.",
-    "sns": "https://www.linkedin.com/in/klemenkosir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    "time": "Silla (C Hall) 15:20 - 15:40",
-    "img": "klemen.webp"
-  },
-  "speaker15": {
     "name": "Jung Kim",
     "affiliation": "CodeSquad",
     "nickname": "godrm",
@@ -193,6 +181,18 @@
     "sns": "https://x.com/godrm",
     "time": "Baekje (B Hall) 15:20 - 15:40",
     "img": "godrm.webp"
+  },
+  "speaker15": {
+    "name": "Košir Klemen",
+    "affiliation": "Betashares",
+    "nickname": "",
+    "category": "Develop",
+    "introduction": "Senior iOS Developer at Betashares. I've been trying to make cool apps for 10 years now.",
+    "title": "Prepare Your App for Apple Intelligence",
+    "description": "We've all heard about Apple Intelligence. Brief walktthrough about what it is, and a look at how you can integrate it into your app.",
+    "sns": "https://www.linkedin.com/in/klemenkosir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "time": "Silla (C Hall) 15:20 - 15:40",
+    "img": "klemen.webp"
   },
   "speaker16": {
     "name": "Subin Kim",
@@ -207,18 +207,6 @@
     "img": "subin_kim.webp"
   },
   "speaker17": {
-    "name": "Joongkyu Park",
-    "affiliation": "PFCT",
-    "nickname": "",
-    "category": "Develop",
-    "introduction": "I want to create software that moves people.",
-    "title": "A System for Friendly Errors in Fintech Apps",
-    "description": "Introducing a system to create friendly errors closest to the user.",
-    "sns": "https://www.linkedin.com/in/joongkyu-park/",
-    "time": "Silla (C Hall) 15:50 - 16:10",
-    "img": "park_jungkyu.webp"
-  },
-  "speaker18": {
     "name": "Kyunghyun Lee",
     "affiliation": "Vimosoft",
     "nickname": "Kei",
@@ -229,6 +217,18 @@
     "sns": "",
     "time": "Baekje (B Hall) 15:50 - 16:10",
     "img": "kei.webp"
+  },
+  "speaker18": {
+    "name": "Joongkyu Park",
+    "affiliation": "PFCT",
+    "nickname": "",
+    "category": "Develop",
+    "introduction": "I want to create software that moves people.",
+    "title": "A System for Friendly Errors in Fintech Apps",
+    "description": "Introducing a system to create friendly errors closest to the user.",
+    "sns": "https://www.linkedin.com/in/joongkyu-park/",
+    "time": "Silla (C Hall) 15:50 - 16:10",
+    "img": "park_jungkyu.webp"
   },
   "speaker19": {
     "name": "MB KWON",
@@ -243,18 +243,6 @@
     "img": "mb_kwon.webp"
   },
   "speaker20": {
-    "name": "Riana Soumi",
-    "affiliation": "DeNA",
-    "nickname": "",
-    "category": "Develop",
-    "introduction": "iOS developer at DeNA, traveler, youtuber",
-    "title": "Meet Swift Testing: Transforming the Way iOS Developers Test",
-    "description": "We will dive into why testing is crucial for robust iOS development, explore Apple’s new Swift Testing library, and compare it to XCTest. I’ll also share insights from my own journey of migrating tests, highlighting key benefits and challenges along the way.",
-    "sns": "https://x.com/riana_soumi",
-    "time": "Silla (C Hall) 16:20 - 16:40",
-    "img": "riana.webp"
-  },
-  "speaker21": {
     "name": "Jeff Gu Kang",
     "affiliation": "Mony Mony",
     "nickname": "Gobi",
@@ -265,6 +253,18 @@
     "sns": "https://www.linkedin.com/in/jeffgukang/",
     "time": "Baekje (B Hall) 16:20 - 16:40",
     "img": "gobi.webp"
+  },
+  "speaker21": {
+    "name": "Riana Soumi",
+    "affiliation": "DeNA",
+    "nickname": "",
+    "category": "Develop",
+    "introduction": "iOS developer at DeNA, traveler, youtuber",
+    "title": "Meet Swift Testing: Transforming the Way iOS Developers Test",
+    "description": "We will dive into why testing is crucial for robust iOS development, explore Apple’s new Swift Testing library, and compare it to XCTest. I’ll also share insights from my own journey of migrating tests, highlighting key benefits and challenges along the way.",
+    "sns": "https://x.com/riana_soumi",
+    "time": "Silla (C Hall) 16:20 - 16:40",
+    "img": "riana.webp"
   },
   "speaker22": {
     "name": "Yuki Aki",
@@ -279,18 +279,6 @@
     "img": "freddi.webp"
   },
   "speaker23": {
-    "name": "Dai Ming",
-    "affiliation": "",
-    "nickname": "",
-    "category": "Develop",
-    "introduction": "iOS developer, previously worked at Alibaba and Didi Chuxing. \ndeveloper of the Yanqi APP and the open-source software SwiftPamphletApp.",
-    "title": "The Evolution of iOS Performance Optimization",
-    "description": "The content focuses on performance optimization strategies related to memory, startup time, and package size. I will present the most effective current solutions. I will also discuss the evolution of these strategies.",
-    "sns": "https://x.com/daiming_cn",
-    "time": "Silla (C Hall) 16:50 - 17:30",
-    "img": "daiming.webp"
-  },
-  "speaker24": {
     "name": "YongWoon Yun",
     "affiliation": "",
     "nickname": "Neil",
@@ -301,5 +289,17 @@
     "sns": "",
     "time": "Baekje (B Hall) 16:50 - 17:10",
     "img": "neil.webp"
+  },
+  "speaker24": {
+    "name": "Dai Ming",
+    "affiliation": "",
+    "nickname": "",
+    "category": "Develop",
+    "introduction": "iOS developer, previously worked at Alibaba and Didi Chuxing. \ndeveloper of the Yanqi APP and the open-source software SwiftPamphletApp.",
+    "title": "The Evolution of iOS Performance Optimization",
+    "description": "The content focuses on performance optimization strategies related to memory, startup time, and package size. I will present the most effective current solutions. I will also discuss the evolution of these strategies.",
+    "sns": "https://x.com/daiming_cn",
+    "time": "Silla (C Hall) 16:50 - 17:30",
+    "img": "daiming.webp"
   }
 }

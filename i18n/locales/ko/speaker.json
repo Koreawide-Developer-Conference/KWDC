@@ -1,5 +1,5 @@
 {
-  "title": "함께하는 도약의 시간",
+  "title": "상상력의 도약을 이끄는 여정",
   "description": "상상 속의 디바이스가 2024년, 세상에 등장했습니다.\n돌아온 윤년의 해, 각자가 생태계에서 꿈꾸는 비전이 실현될 수 있도록 서로의 경험을\n나누고 성장하는 자리를 함께 만드는 곳, KWDC24가 되었으면 합니다.",
   "subtitle": "이제 모두의 비전이 도약할 시간입니다.",
   "speaker1": {
@@ -15,18 +15,6 @@
     "img": "soohwan_joshua_cho.webp"
   },
   "speaker2": {
-    "name": "조상호",
-    "affiliation": "Flitto",
-    "nickname": "Jake",
-    "category": "개발",
-    "introduction": "현명한 SwiftUI 사용을 위해 고민합니다.",
-    "title": "당신의 View가 버벅이는 이유(feat. Instruments)",
-    "description": "Instruments를 이용하여 SwiftUI 기반의 앱에서 발생하는 Hang을 탐지하고, 이를 디버깅하는 과정을 소개합니다.",
-    "sns": "http://www.linkedin.com/in/sangho-cho",
-    "time": "신라 (C홀) 11:00 - 11:40",
-    "img": "sangho_cho.webp"
-  },
-  "speaker3": {
     "name": "김예빈",
     "affiliation": "현대자동차",
     "nickname": "vivi",
@@ -37,6 +25,18 @@
     "sns": "https://www.linkedin.com/in/vivi-kim",
     "time": "백제 (B홀) 11:00 - 11:40",
     "img": "vivi.webp"
+  },
+  "speaker3": {
+    "name": "조상호",
+    "affiliation": "Flitto",
+    "nickname": "Jake",
+    "category": "개발",
+    "introduction": "현명한 SwiftUI 사용을 위해 고민합니다.",
+    "title": "당신의 View가 버벅이는 이유(feat. Instruments)",
+    "description": "Instruments를 이용하여 SwiftUI 기반의 앱에서 발생하는 Hang을 탐지하고, 이를 디버깅하는 과정을 소개합니다.",
+    "sns": "http://www.linkedin.com/in/sangho-cho",
+    "time": "신라 (C홀) 11:00 - 11:40",
+    "img": "sangho_cho.webp"
   },
   "speaker4": {
     "name": "Pavel Zak",
@@ -51,18 +51,6 @@
     "img": "pavel.webp"
   },
   "speaker5": {
-    "name": "Kohki Miki",
-    "affiliation": "LY Corporation",
-    "nickname": "giginet",
-    "category": "개발",
-    "introduction": "모바일 DevOps 엔지니어 @ LY Corp. LINE의 개발자 경험을 개선하기 위해 일하고 있습니다. fastlane, Carthage, XcodeGen 등 몇 가지 오픈 소스 개발 도구의 유지 관리자입니다.",
-    "title": "직관적인 개발자 도구 만들기 (Swift)",
-    "description": "Swift로 개발자 도구를 만드세요! 해당 세션에서는 직관적인 개발자 도구를 만드는 방법과 개발자 경험을 개선하는 방법을 설명합니다.",
-    "sns": "https://twitter.com/giginet",
-    "time": "신라 (C홀) 12:50 - 13:30",
-    "img": "giginet.webp"
-  },
-  "speaker6": {
     "name": "Cristian Díaz",
     "affiliation": "",
     "nickname": "elkraneo",
@@ -73,6 +61,18 @@
     "sns": "",
     "time": "백제 (B홀) 12:50 - 13:30",
     "img": "elkraneo.webp"
+  },
+  "speaker6": {
+    "name": "Kohki Miki",
+    "affiliation": "LY Corporation",
+    "nickname": "giginet",
+    "category": "개발",
+    "introduction": "모바일 DevOps 엔지니어 @ LY Corp. LINE의 개발자 경험을 개선하기 위해 일하고 있습니다. fastlane, Carthage, XcodeGen 등 몇 가지 오픈 소스 개발 도구의 유지 관리자입니다.",
+    "title": "직관적인 개발자 도구 만들기 (Swift)",
+    "description": "Swift로 개발자 도구를 만드세요! 해당 세션에서는 직관적인 개발자 도구를 만드는 방법과 개발자 경험을 개선하는 방법을 설명합니다.",
+    "sns": "https://twitter.com/giginet",
+    "time": "신라 (C홀) 12:50 - 13:30",
+    "img": "giginet.webp"
   },
   "speaker7": {
     "name": "Rudrank Riyam",
@@ -87,18 +87,6 @@
     "img": "rudrank.webp"
   },
   "speaker8": {
-    "name": "이재은",
-    "affiliation": "Amazon Web Services",
-    "nickname": "꼼꼼한 재은씨",
-    "category": "개발",
-    "introduction": "기술의 가능성을 탐구하고, 원하는 모든 이가 이용할 수 있도록 진입 장벽을 낮추기 위해 책을 씁니다. 어떤 복잡한 기술도 쉬운 언어로 설명할 수 있기를 바라고, 압박보다는 신뢰를 통해 더 나은 결과를 얻을 수 있다고 믿습니다. 누구나 개발할 수 있는 세상을 희망합니다. ",
-    "title": "애플의 생성형 AI, Apple Intelligence로 차세대 AI 경험 설계하기",
-    "description": "WWDC24에서 공개된 애플의 생성형 AI, '애플 인텔리전스'에 대해 알아봅니다. 딥러닝 기술이 애플 인텔리전스에 혁신적으로 적용된 방식을 분석하고, 그 핵심 아키텍처를 심층적으로 설명합니다. 차세대 AI 기술을 활용해 iOS 애플리케이션의 한계를 뛰어넘는 설계 방식을 제안하며, 실무에서의 적용 가능성을 모색합니다. iOS 개발의 미래와 AI가 열어갈 새로운 가능성에 대해 함께 고민해볼 수 있는 기회입니다. ",
-    "sns": "http://linkedin.com/in/jaeeun-lee-bb5592a2",
-    "time": "신라 (C홀) 13:40 - 14:20",
-    "img": "jaeeun.webp"
-  },
-  "speaker9": {
     "name": "Xu Chi",
     "affiliation": "",
     "nickname": "xChester",
@@ -109,6 +97,18 @@
     "sns": "https://x.com/xchester16",
     "time": "백제 (B홀) 13:40 - 14:20",
     "img": "xChester.webp"
+  },
+  "speaker9": {
+    "name": "이재은",
+    "affiliation": "Amazon Web Services",
+    "nickname": "꼼꼼한 재은씨",
+    "category": "개발",
+    "introduction": "기술의 가능성을 탐구하고, 원하는 모든 이가 이용할 수 있도록 진입 장벽을 낮추기 위해 책을 씁니다. 어떤 복잡한 기술도 쉬운 언어로 설명할 수 있기를 바라고, 압박보다는 신뢰를 통해 더 나은 결과를 얻을 수 있다고 믿습니다. 누구나 개발할 수 있는 세상을 희망합니다. ",
+    "title": "애플의 생성형 AI, Apple Intelligence로 차세대 AI 경험 설계하기",
+    "description": "WWDC24에서 공개된 애플의 생성형 AI, '애플 인텔리전스'에 대해 알아봅니다. 딥러닝 기술이 애플 인텔리전스에 혁신적으로 적용된 방식을 분석하고, 그 핵심 아키텍처를 심층적으로 설명합니다. 차세대 AI 기술을 활용해 iOS 애플리케이션의 한계를 뛰어넘는 설계 방식을 제안하며, 실무에서의 적용 가능성을 모색합니다. iOS 개발의 미래와 AI가 열어갈 새로운 가능성에 대해 함께 고민해볼 수 있는 기회입니다. ",
+    "sns": "http://linkedin.com/in/jaeeun-lee-bb5592a2",
+    "time": "신라 (C홀) 13:40 - 14:20",
+    "img": "jaeeun.webp"
   },
   "speaker10": {
     "name": "윤창현",
@@ -135,18 +135,6 @@
     }
   },
   "speaker11": {
-    "name": "최재훈",
-    "affiliation": "모두의 연구소 XRC랩",
-    "nickname": "Jayden",
-    "category": "개발",
-    "introduction": "인공지능 서비스 SW/HW 개발자입니다. 비전 프로의 sw/hw 철학/시장 동향과 비전 프로에서 인공지능 개발/애플 인텔리전스를 다루고자 합니다. ",
-    "title": "VisionOS에서 구현하는 AI Companion",
-    "description": "Sup/ Vision Pro HW / SW 기술과 시장 트렌드를 파헤치고 애플 인텔리전스를 톺아봅니다",
-    "sns": "https://www.linkedin.com/in/jaydenchoe",
-    "time": "신라 (C홀) 14:30 - 15:10",
-    "img": "jayden.webp"
-  },
-  "speaker12": {
     "name": "김창우",
     "affiliation": "Apple",
     "nickname": "",
@@ -157,6 +145,18 @@
     "sns": "https://www.linkedin.com/in/changwoo-kim-4a1942a0/",
     "time": "백제 (B홀) 14:30 - 15:10",
     "img": "changwoo_kim.webp"
+  },
+  "speaker12": {
+    "name": "최재훈",
+    "affiliation": "모두의 연구소 XRC랩",
+    "nickname": "Jayden",
+    "category": "개발",
+    "introduction": "인공지능 서비스 SW/HW 개발자입니다. 비전 프로의 sw/hw 철학/시장 동향과 비전 프로에서 인공지능 개발/애플 인텔리전스를 다루고자 합니다. ",
+    "title": "VisionOS에서 구현하는 AI Companion",
+    "description": "Sup/ Vision Pro HW / SW 기술과 시장 트렌드를 파헤치고 애플 인텔리전스를 톺아봅니다",
+    "sns": "https://www.linkedin.com/in/jaydenchoe",
+    "time": "신라 (C홀) 14:30 - 15:10",
+    "img": "jayden.webp"
   },
   "speaker13": {
     "name": "이태현",
@@ -171,18 +171,6 @@
     "img": "jake.webp"
   },
   "speaker14": {
-    "name": "Košir Klemen",
-    "affiliation": "Betashares",
-    "nickname": "",
-    "category": "개발",
-    "introduction": "Betashares의 Senior iOS Developer입니다. 10년 동안 멋진 앱을 만들기 위해 노력해왔습니다.",
-    "title": "Apple Intelligence을 위한 앱 준비하기",
-    "description": "Apple Intelligence에 대해 모두 들어보셨을 겁니다. 그것이 무엇인지 간단히 설명하고, 앱에 통합하는 방법을 살펴봅니다.",
-    "sns": "https://www.linkedin.com/in/klemenkosir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    "time": "신라 (C홀) 15:20 - 15:40",
-    "img": "klemen.webp"
-  },
-  "speaker15": {
     "name": "김정",
     "affiliation": "코드스쿼드",
     "nickname": "godrm",
@@ -193,6 +181,18 @@
     "sns": "https://x.com/godrm",
     "time": "백제 (B홀) 15:20 - 15:40",
     "img": "godrm.webp"
+  },
+  "speaker15": {
+    "name": "Košir Klemen",
+    "affiliation": "Betashares",
+    "nickname": "",
+    "category": "개발",
+    "introduction": "Betashares의 Senior iOS Developer입니다. 10년 동안 멋진 앱을 만들기 위해 노력해왔습니다.",
+    "title": "Apple Intelligence을 위한 앱 준비하기",
+    "description": "Apple Intelligence에 대해 모두 들어보셨을 겁니다. 그것이 무엇인지 간단히 설명하고, 앱에 통합하는 방법을 살펴봅니다.",
+    "sns": "https://www.linkedin.com/in/klemenkosir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "time": "신라 (C홀) 15:20 - 15:40",
+    "img": "klemen.webp"
   },
   "speaker16": {
     "name": "김수빈",
@@ -207,18 +207,6 @@
     "img": "subin_kim.webp"
   },
   "speaker17": {
-    "name": "박중규",
-    "affiliation": "PFCT (피에프씨테크놀로지스)",
-    "nickname": "",
-    "category": "개발",
-    "introduction": "감동을 주는 소프트웨어를 만들고 싶습니다.",
-    "title": "핀테크 앱의 친절한 에러를 위한 시스템",
-    "description": "사용자와 가장 가까운 곳에서 친절한 에러를 만들기 위한 시스템을 소개합니다.",
-    "sns": "https://www.linkedin.com/in/joongkyu-park/",
-    "time": "신라 (C홀) 15:50 - 16:10",
-    "img": "park_jungkyu.webp"
-  },
-  "speaker18": {
     "name": "이경현",
     "affiliation": "Vimosoft (비모소프트)",
     "nickname": "Kei",
@@ -229,6 +217,18 @@
     "sns": "",
     "time": "백제 (B홀) 15:50 - 16:10",
     "img": "kei.webp"
+  },
+  "speaker18": {
+    "name": "박중규",
+    "affiliation": "PFCT (피에프씨테크놀로지스)",
+    "nickname": "",
+    "category": "개발",
+    "introduction": "감동을 주는 소프트웨어를 만들고 싶습니다.",
+    "title": "핀테크 앱의 친절한 에러를 위한 시스템",
+    "description": "사용자와 가장 가까운 곳에서 친절한 에러를 만들기 위한 시스템을 소개합니다.",
+    "sns": "https://www.linkedin.com/in/joongkyu-park/",
+    "time": "신라 (C홀) 15:50 - 16:10",
+    "img": "park_jungkyu.webp"
   },
   "speaker19": {
     "name": "권문범",
@@ -243,18 +243,6 @@
     "img": "mb_kwon.webp"
   },
   "speaker20": {
-    "name": "Riana Soumi",
-    "affiliation": "DeNA",
-    "nickname": "",
-    "category": "개발",
-    "introduction": "DeNA의 iOS 개발자, 여행자, 유튜버",
-    "title": "Swift Testing 만나보기: iOS 개발자 테스트 방식의 변화",
-    "description": "견고한 iOS 개발을 위해 테스트가 왜 중요한지 알아보고, Apple의 새로운 Swift Testing 라이브러리를 탐구하며 XCTest와 비교합니다. 테스트를 마이그레이션하는 과정에서 얻은 통찰력과 주요 이점 및 도전 과제를 공유합니다.",
-    "sns": "https://x.com/riana_soumi",
-    "time": "신라 (C홀) 16:20 - 16:40",
-    "img": "riana.webp"
-  },
-  "speaker21": {
     "name": "강명구",
     "affiliation": "모니모니",
     "nickname": "Gobi",
@@ -265,6 +253,18 @@
     "sns": "https://www.linkedin.com/in/jeffgukang/",
     "time": "백제 (B홀) 16:20 - 16:40",
     "img": "gobi.webp"
+  },
+  "speaker21": {
+    "name": "Riana Soumi",
+    "affiliation": "DeNA",
+    "nickname": "",
+    "category": "개발",
+    "introduction": "DeNA의 iOS 개발자, 여행자, 유튜버",
+    "title": "Swift Testing 만나보기: iOS 개발자 테스트 방식의 변화",
+    "description": "견고한 iOS 개발을 위해 테스트가 왜 중요한지 알아보고, Apple의 새로운 Swift Testing 라이브러리를 탐구하며 XCTest와 비교합니다. 테스트를 마이그레이션하는 과정에서 얻은 통찰력과 주요 이점 및 도전 과제를 공유합니다.",
+    "sns": "https://x.com/riana_soumi",
+    "time": "신라 (C홀) 16:20 - 16:40",
+    "img": "riana.webp"
   },
   "speaker22": {
     "name": "Yuki Aki",
@@ -279,18 +279,6 @@
     "img": "freddi.webp"
   },
   "speaker23": {
-    "name": "Dai Ming",
-    "affiliation": "",
-    "nickname": "",
-    "category": "개발",
-    "introduction": "iOS 개발자, 이전에 Alibaba와 Didi Chuxing에서 근무했습니다. \nYanqi APP 및 오픈 소스 소프트웨어 SwiftPamphletApp의 개발자입니다.",
-    "title": "iOS 성능 최적화의 진화",
-    "description": "이 내용은 메모리, 시작 시간 및 패키지 크기와 관련된 성능 최적화 전략에 중점을 둡니다. 가장 효과적인 현재 솔루션을 제시하고 이러한 전략의 진화에 대해 논의할 것입니다.",
-    "sns": "https://x.com/daiming_cn",
-    "time": "신라 (C홀) 16:50 - 17:30",
-    "img": "daiming.webp"
-  },
-  "speaker24": {
     "name": "윤용운",
     "affiliation": "",
     "nickname": "Neil",
@@ -301,5 +289,17 @@
     "sns": "",
     "time": "백제 (B홀) 16:50 - 17:10",
     "img": "neil.webp"
+  },
+  "speaker24": {
+    "name": "Dai Ming",
+    "affiliation": "",
+    "nickname": "",
+    "category": "개발",
+    "introduction": "iOS 개발자, 이전에 Alibaba와 Didi Chuxing에서 근무했습니다. \nYanqi APP 및 오픈 소스 소프트웨어 SwiftPamphletApp의 개발자입니다.",
+    "title": "iOS 성능 최적화의 진화",
+    "description": "이 내용은 메모리, 시작 시간 및 패키지 크기와 관련된 성능 최적화 전략에 중점을 둡니다. 가장 효과적인 현재 솔루션을 제시하고 이러한 전략의 진화에 대해 논의할 것입니다.",
+    "sns": "https://x.com/daiming_cn",
+    "time": "신라 (C홀) 16:50 - 17:30",
+    "img": "daiming.webp"
   }
 }
