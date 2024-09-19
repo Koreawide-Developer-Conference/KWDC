@@ -46,7 +46,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
             Speakers
           </Link>
           <Link href={`/${params.lng}/2024/organizer`} onClick={scrollToSection("speakers")} className='p-3 max-sm:hidden'>
-            Organizer
+            Organizers
           </Link>
           {languages
             .filter((lang) => lang !== params?.lng)
@@ -72,7 +72,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
               </li>
               <li>
                 <Link href={`/${params.lng}/2024/organizer`} className="p-3">
-                  Organizer
+                  Organizers
                 </Link>
               </li>
               <li>
