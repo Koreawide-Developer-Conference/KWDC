@@ -50,11 +50,11 @@ export default async function Organizer({ params }: any) {
                   <Link href={`/${params.lng}/2024/organizer/${name}/${idx + 1}`} key={idx}>
                     <div className='rounded-xl overflow-hidden'>
                       <Image
-                        width={300}
-                        height={600}
+                        width={320}
+                        height={480}
                         src={`/assets/2024/images/organizer/${t(`${name}.member${idx + 1}.img`)}`}
                         alt={t(`${name}.member${idx + 1}.name`)}
-                        className='h-auto w-auto object-cover aspect-[3/4] transition-all hover:scale-105 bg-brightGreen-10'
+                        className='h-[480px] max-sm:h-auto w-full object-cover aspect-[3/4] transition-all hover:scale-105 bg-brightGreen-10'
                       />
                     </div>
                     <p className='font-semibold text-deepGreen-100 text-xl mt-2.5 max-lg:text-lg'>
