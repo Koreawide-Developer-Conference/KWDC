@@ -1,0 +1,248 @@
+{
+  "title": "🚀 TEAM KWDC24",
+  "subtitle": "Introducing the KWDC24 Organizing Committee, as special as a leap year.",
+  "team_sponsor": {
+    "title": "Sponsor Team",
+    "team_count": "7",
+    "member1": {
+      "name": "Eunbin Kwon",
+      "nickname": "Seri",
+      "sns": "https://2unbini.github.io/about/",
+      "img": "seri.webp",
+      "short_introduction": "百覺不如一行, 有志者事竟成",
+      "extra_team": ""
+    },
+    "member2": {
+      "name": "Haesu Yun",
+      "nickname": "Tag",
+      "sns": "https://github.com/Haesus",
+      "img": "tag.webp",
+      "short_introduction": "I want to be a bridge between users and data\uD83D\uDE03",
+      "extra_team": ""
+    },
+    "member3": {
+      "name": "Changhyeon Yoon",
+      "nickname": "Kevin",
+      "sns": "https://changhyeon.net",
+      "img": "kevin.webp",
+      "short_introduction": "I develop with the philosophy that the best technology is one that anyone can use easily and freely at any time.",
+      "extra_team": "Design Team"
+    },
+    "member4": {
+      "name": "Mungi Kim",
+      "nickname": "Mungi",
+      "sns": "https://www.linkedin.com/in/moonggi/",
+      "img": "mungi.webp",
+      "short_introduction": "I am a developer who loves to communicate.\nWould you like to network with me?😉",
+      "extra_team": "Planning Team"
+    },
+    "member5": {
+      "name": "Sujin Lee",
+      "nickname": "Daisy",
+      "sns": "https://www.linkedin.com/in/sujin-lee-pm/",
+      "img": "daisy.webp",
+      "short_introduction": "I am a PM who loves technology and people.",
+      "extra_team": ""
+    },
+    "member6": {
+      "name": "Inho Choi",
+      "nickname": "Toby",
+      "sns": "https://bouncy-damselfly-3e6.notion.site/79fbc31b554141cba127f28c4a133873",
+      "img": "toby.webp",
+      "short_introduction": "iOS developer who wants to make the world more convenient.",
+      "extra_team": "Agency Execution Team"
+    },
+    "member7": {
+      "name": "Huiseon Jang",
+      "nickname": "Neoguri",
+      "sns": "https://www.linkedin.com/in/neoguri",
+      "img": "neoguri.webp",
+      "short_introduction": "If we are together with KWDC, we will all be happy❤\uFE0F",
+      "extra_team": "Planning Team"
+    }
+  },
+  "team_speaker": {
+    "title": "Speaker Team",
+    "team_count": "3",
+    "member1": {
+      "name": "Dongheon Lee",
+      "nickname": "",
+      "sns": "https://www.linkedin.com/in/signatur3/",
+      "img": "dongheon_lee.webp",
+      "short_introduction": "I want to go home!",
+      "extra_team": ""
+    },
+    "member2": {
+      "name": "Gyeongseop Ko",
+      "nickname": "Sup",
+      "sns": "https://www.linkedin.com/in/kyungsupgo/",
+      "img": "sup.webp",
+      "short_introduction": "Towards a better world!",
+      "extra_team": ""
+    },
+    "member3": {
+      "name": "Jaeseong Lee",
+      "nickname": "",
+      "sns": "https://github.com/x-0o0",
+      "img": "jaesung_lee.webp",
+      "short_introduction": "",
+      "extra_team": ""
+    }
+  },
+  "team_public_relation": {
+    "title": "Public Relation Team",
+    "team_count": "1",
+    "member1": {
+      "name": "Yeeun Hwang",
+      "nickname": "Yeni",
+      "sns": "https://www.linkedin.com/in/yeniful",
+      "img": "yeni.webp",
+      "short_introduction": "Code Pray Love",
+      "extra_team": ""
+    }
+  },
+  "team_design": {
+    "title": "Design Team",
+    "team_count": "7",
+    "member1": {
+      "name": "Mijin Choi",
+      "nickname": "Maeve",
+      "sns": "https://www.linkedin.com/in/mejinchoi/",
+      "img": "maeve.webp",
+      "short_introduction": "",
+      "extra_team": ""
+    },
+    "member2": {
+      "name": "Eunjin Kim",
+      "nickname": "Niz",
+      "sns": "https://www.instagram.com/niz.gc/",
+      "img": "niz.webp",
+      "short_introduction": "",
+      "extra_team": ""
+    },
+    "member3": {
+      "name": "Seoyeon Hong",
+      "nickname": "Ana",
+      "sns": "https://www.instagram.com/wha_t_oday",
+      "img": "ana.webp",
+      "short_introduction": "Interested in creating designs with a reason in iOS.💙",
+      "extra_team": ""
+    },
+    "member4": {
+      "name": "Changhyeon Yoon",
+      "nickname": "Kevin",
+      "sns": "https://changhyeon.net",
+      "img": "kevin.webp",
+      "short_introduction": "I develop with the philosophy that the best technology is one that anyone can use easily and freely at any time.",
+      "extra_team": "Sponsor Team"
+    },
+    "member5": {
+      "name": "Haeun Kim",
+      "nickname": "Hani",
+      "sns": "https://www.instagram.com/haeunkim.on/",
+      "img": "hani.webp",
+      "short_introduction": "Run Hani in the Apple ecosystem 🍏",
+      "extra_team": ""
+    },
+    "member6": {
+      "name": "Sarang Oh",
+      "nickname": "Sarrng",
+      "sns": "",
+      "img": "sarrng.webp",
+      "short_introduction": "",
+      "extra_team": ""
+    },
+    "member7": {
+      "name": "Dain Kim",
+      "nickname": "Dani",
+      "sns": "https://velog.io/@dainiskdaiin/posts",
+      "img": "dani.webp",
+      "short_introduction": "A designer working with KWDC, So lucky Dani!",
+      "extra_team": ""
+    }
+  },
+  "team_agency_execution": {
+    "title": "Agency Execution Team",
+    "team_count": "1",
+    "member1": {
+      "name": "Inho Choi",
+      "nickname": "Toby",
+      "sns": "https://bouncy-damselfly-3e6.notion.site/79fbc31b554141cba127f28c4a133873",
+      "img": "toby.webp",
+      "short_introduction": "iOS developer who wants to make the world more convenient.",
+      "extra_team": "Sponsor Team"
+    }
+  },
+  "team_planning": {
+    "title": "Planning Team",
+    "team_count": "7",
+    "member1": {
+      "name": "Eunyeong Kim",
+      "nickname": "Young",
+      "sns": "https://x.com/unnnyong",
+      "img": "young.webp",
+      "short_introduction": "Apple eco-system developer",
+      "extra_team": "Finance Team"
+    },
+    "member2": {
+      "name": "Hyeonho Lee",
+      "nickname": "",
+      "sns": "https://bite.works",
+      "img": "hyunho_lee.webp",
+      "short_introduction": "Freelance designer, videographer, photographer, and contents creator. Apple design enthusiast.",
+      "extra_team": ""
+    },
+    "member3": {
+      "name": "Huiseon Jang",
+      "nickname": "Neoguri",
+      "sns": "https://www.linkedin.com/in/neoguri",
+      "img": "neoguri.webp",
+      "short_introduction": "If we are together with KWDC, we will all be happy❤\uFE0F",
+      "extra_team": "Planning Team"
+    },
+    "member4": {
+      "name": "Doi Lee",
+      "nickname": "Joy",
+      "sns": "",
+      "img": "joy.webp",
+      "short_introduction": "",
+      "extra_team": ""
+    },
+    "member5": {
+      "name": "Jinuk Choi",
+      "nickname": "Joel",
+      "sns": "https://www.linkedin.com/in/jinuk/",
+      "img": "joel.webp",
+      "short_introduction": "Let's create a refreshing community together\uD83D\uDE4C",
+      "extra_team": ""
+    },
+    "member6": {
+      "name": "Mungi Kim",
+      "nickname": "Mungi",
+      "sns": "https://www.linkedin.com/in/moonggi/",
+      "img": "mungi.webp",
+      "short_introduction": "I am a developer who loves to communicate.\nWould you like to network with me?😉",
+      "extra_team": "Sponsor Team"
+    },
+    "member7": {
+      "name": "Changgyo Seo",
+      "nickname": "Dunk",
+      "sns": "https://github.com/Dunkkkk",
+      "img": "dunk.webp",
+      "short_introduction": "To infinity and beyond!",
+      "extra_team": ""
+    }
+  },
+  "team_finance": {
+    "title": "Finance Team",
+    "team_count": "1",
+    "member1": {
+      "name": "Eunyeong Kim",
+      "nickname": "Young",
+      "sns": "https://x.com/unnnyong",
+      "img": "young.webp",
+      "short_introduction": "Apple eco-system developer",
+      "extra_team": "Planning Team"
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "title": "🚀 TEAM KWDC24",
+  "subtitle": "윤년만큼 특별한 KWDC24 준비위원회를 소개합니다.",
+  "team_sponsor": {
+    "title": "스폰서팀",
+    "team_count": "7",
+    "member1": {
+      "name": "권은빈",
+      "nickname": "Seri",
+      "sns": "https://2unbini.github.io/about/",
+      "img": "seri.webp",
+      "short_introduction": "百覺不如一行, 有志者事竟成",
+      "extra_team": ""
+    },
+    "member2": {
+      "name": "윤해수",
+      "nickname": "Tag",
+      "sns": "https://github.com/Haesus",
+      "img": "tag.webp",
+      "short_introduction": "유저와 데이터의 징검다리가 되고 싶습니다\uD83D\uDE03",
+      "extra_team": ""
+    },
+    "member3": {
+      "name": "윤창현",
+      "nickname": "Kevin",
+      "sns": "https://changhyeon.net",
+      "img": "kevin.webp",
+      "short_introduction": "누구나 언제든지 편하고 자유롭게 쓸 수 있는 기술이야말로 가장 뛰어난 기술이라는 철학으로 개발하고 있습니다.",
+      "extra_team": "디자인팀"
+    },
+    "member4": {
+      "name": "김문기",
+      "nickname": "뭉기",
+      "sns": "https://www.linkedin.com/in/moonggi/",
+      "img": "mungi.webp",
+      "short_introduction": "소통하는 것을 좋아하는 개발자입니다.\n저랑 네트워킹 하실래요??\uD83D\uDE09",
+      "extra_team": "기획팀"
+    },
+    "member5": {
+      "name": "이수진",
+      "nickname": "Daisy",
+      "sns": "https://www.linkedin.com/in/sujin-lee-pm/",
+      "img": "daisy.webp",
+      "short_introduction": "기술과 사람을 좋아하는 PM입니다. ",
+      "extra_team": ""
+    },
+    "member6": {
+      "name": "최인호",
+      "nickname": "Toby",
+      "sns": "https://bouncy-damselfly-3e6.notion.site/79fbc31b554141cba127f28c4a133873",
+      "img": "toby.webp",
+      "short_introduction": "세상을 더 편리하게 만들고 싶은 iOS 개발자입니다.",
+      "extra_team": "대관/실행사팀"
+    },
+    "member7": {
+      "name": "장희선",
+      "nickname": "Neoguri",
+      "sns": "https://www.linkedin.com/in/neoguri",
+      "img": "neoguri.webp",
+      "short_introduction": "KWDC 함께하면 우리 모두 행보가자나❤\uFE0F",
+      "extra_team": "기획팀"
+    }
+  },
+  "team_speaker": {
+    "title": "스피커팀",
+    "team_count": "3",
+    "member1": {
+      "name": "이동헌",
+      "nickname": "",
+      "sns": "https://www.linkedin.com/in/signatur3/",
+      "img": "dongheon_lee.webp",
+      "short_introduction": "집에 가고 싶어요!",
+      "extra_team": ""
+    },
+    "member2": {
+      "name": "고경섭",
+      "nickname": "Sup",
+      "sns": "https://www.linkedin.com/in/kyungsupgo/",
+      "img": "sup.webp",
+      "short_introduction": "보다 멋진 세상으로!",
+      "extra_team": ""
+    },
+    "member3": {
+      "name": "이재성",
+      "nickname": "",
+      "sns": "https://github.com/x-0o0",
+      "img": "jaesung_lee.webp",
+      "short_introduction": "",
+      "extra_team": ""
+    }
+  },
+  "team_public_relation": {
+    "title": "홍보팀",
+    "team_count": "1",
+    "member1": {
+      "name": "황예은",
+      "nickname": "Yeni",
+      "sns": "https://www.linkedin.com/in/yeniful",
+      "img": "yeni.webp",
+      "short_introduction": "Code Pray Love",
+      "extra_team": ""
+    }
+  },
+  "team_design": {
+    "title": "디자인팀",
+    "team_count": "7",
+    "member1": {
+      "name": "최미진",
+      "nickname": "Maeve",
+      "sns": "https://www.linkedin.com/in/mejinchoi/",
+      "img": "maeve.webp",
+      "short_introduction": "",
+      "extra_team": ""
+    },
+    "member2": {
+      "name": "김은진",
+      "nickname": "Niz",
+      "sns": "https://www.instagram.com/niz.gc/",
+      "img": "niz.webp",
+      "short_introduction": "",
+      "extra_team": ""
+    },
+    "member3": {
+      "name": "홍서연",
+      "nickname": "Ana",
+      "sns": "https://www.instagram.com/wha_t_oday",
+      "img": "ana.webp",
+      "short_introduction": "iOS와 이유가 있는 디자인을 만드는 데 관심이 있습니다.\uD83D\uDC99 ",
+      "extra_team": ""
+    },
+    "member4": {
+      "name": "윤창현",
+      "nickname": "Kevin",
+      "sns": "https://changhyeon.net",
+      "img": "kevin.webp",
+      "short_introduction": "누구나 언제든지 편하고 자유롭게 쓸 수 있는 기술이야말로 가장 뛰어난 기술이라는 철학으로 개발하고 있습니다.",
+      "extra_team": "스폰서팀"
+    },
+    "member5": {
+      "name": "김하은",
+      "nickname": "Hani",
+      "sns": "https://www.instagram.com/haeunkim.on/",
+      "img": "hani.webp",
+      "short_introduction": "애플생태계에서 달려라 하니 \uD83C\uDF4F",
+      "extra_team": ""
+    },
+    "member6": {
+      "name": "오사랑",
+      "nickname": "Sarrng",
+      "sns": "",
+      "img": "sarrng.webp",
+      "short_introduction": "",
+      "extra_team": ""
+    },
+    "member7": {
+      "name": "김다인",
+      "nickname": "Dani",
+      "sns": "https://velog.io/@dainiskdaiin/posts",
+      "img": "dani.webp",
+      "short_introduction": "케떱디시와 함께하는 디자이너라니 완전 러키비키잖아~!",
+      "extra_team": ""
+    }
+  },
+  "team_agency_execution": {
+    "title": "대관/실행사팀",
+    "team_count": "1",
+    "member1": {
+      "name": "최인호",
+      "nickname": "Toby",
+      "sns": "https://bouncy-damselfly-3e6.notion.site/79fbc31b554141cba127f28c4a133873",
+      "img": "toby.webp",
+      "short_introduction": "세상을 더 편리하게 만들고 싶은 iOS 개발자입니다.",
+      "extra_team": "스폰서팀"
+    }
+  },
+  "team_planning": {
+    "title": "기획팀",
+    "team_count": "7",
+    "member1": {
+      "name": "김은영",
+      "nickname": "Young",
+      "sns": "https://x.com/unnnyong",
+      "img": "young.webp",
+      "short_introduction": "Apple eco-system developer",
+      "extra_team": "총무팀"
+    },
+    "member2": {
+      "name": "이현호",
+      "nickname": "",
+      "sns": "https://bite.works",
+      "img": "hyunho_lee.webp",
+      "short_introduction": "Freelance designer, videographer, photographer, and contents creator. Apple design enthusiast.",
+      "extra_team": ""
+    },
+    "member3": {
+      "name": "장희선",
+      "nickname": "Neoguri",
+      "sns": "https://www.linkedin.com/in/neoguri",
+      "img": "neoguri.webp",
+      "short_introduction": "KWDC 함께하면 우리 모두 행보가자나❤\uFE0F",
+      "extra_team": "스폰서팀"
+    },
+    "member4": {
+      "name": "이도이",
+      "nickname": "Joy",
+      "sns": "",
+      "img": "joy.webp",
+      "short_introduction": "",
+      "extra_team": ""
+    },
+    "member5": {
+      "name": "최진욱",
+      "nickname": "Joel",
+      "sns": "https://www.linkedin.com/in/jinuk/",
+      "img": "joel.webp",
+      "short_introduction": "산뜻한 커뮤니티 함께 만들어요\uD83D\uDE4C",
+      "extra_team": ""
+    },
+    "member6": {
+      "name": "김문기",
+      "nickname": "뭉기",
+      "sns": "https://www.linkedin.com/in/moonggi/",
+      "img": "mungi.webp",
+      "short_introduction": "소통하는 것을 좋아하는 개발자입니다.\n저랑 네트워킹 하실래요??\uD83D\uDE09",
+      "extra_team": "스폰서팀"
+    },
+    "member7": {
+      "name": "서창교",
+      "nickname": "Dunk",
+      "sns": "https://github.com/Dunkkkk",
+      "img": "dunk.webp",
+      "short_introduction": "To infinity and beyond!",
+      "extra_team": ""
+    }
+  },
+  "team_finance": {
+    "title": "총무팀",
+    "team_count": "1",
+    "member1": {
+      "name": "김은영",
+      "nickname": "Young",
+      "sns": "https://x.com/unnnyong",
+      "img": "young.webp",
+      "short_introduction": "Apple eco-system developer",
+      "extra_team": "기획팀"
+    }
+  }
+}

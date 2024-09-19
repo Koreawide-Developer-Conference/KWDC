@@ -150,6 +150,8 @@ body {
     sans-serif;
 
   scroll-behavior: smooth;
+  overscroll-behavior: none;
+
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;

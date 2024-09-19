@@ -45,6 +45,9 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
           <Link href={"#speakers"} onClick={scrollToSection("speakers")} className='p-3 max-sm:hidden'>
             Speakers
           </Link>
+          <Link href={`/${params.lng}/2024/organizer`} onClick={scrollToSection("speakers")} className='p-3 max-sm:hidden'>
+            Organizer
+          </Link>
           {languages
             .filter((lang) => lang !== params?.lng)
             .map((lang) => (
@@ -56,29 +59,37 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
             <div tabIndex={0} role='button' className='btn btn-ghost'>
               <Chevron />
             </div>
-            <ul tabIndex={0} className='menu dropdown-content bg-brightGreen-10 rounded-box z-[1] mt-4 w-36 p-2 shadow'>
+            <ul tabIndex={0} className="menu dropdown-content bg-brightGreen-10 rounded-box z-[1] mt-4 w-36 p-2 shadow">
               <li>
-                <Link href={`/${params.lng}/2024#overview`} className='p-3'>
+                <Link href={`/${params.lng}/2024#overview`} className="p-3">
                   Overview
                 </Link>
               </li>
               <li>
-                <Link href={`/${params.lng}/2024#speakers`} className='p-3'>
+                <Link href={`/${params.lng}/2024#speakers`} className="p-3">
                   Speakers
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${params.lng}/2024/organizer`} className="p-3">
+                  Organizer
                 </Link>
               </li>
               <li>
                 {languages
                   .filter((lang) => lang !== params?.lng)
                   .map((lang) => (
-                    <Link key={lang} href={pathname.includes('/ko/') ? pathname.replace('/ko/', '/en/') : pathname.replace('/en/', '/ko/')} className='p-3'>
+                    <Link key={lang}
+                          href={pathname.includes("/ko/") ? pathname.replace("/ko/", "/en/") : pathname.replace("/en/", "/ko/")}
+                          className="p-3">
                       {lang === "ko" ? "한국어" : "English"}
                     </Link>
                   ))}
               </li>
             </ul>
           </div>
-          <div className='rounded-[30px] bg-brightGreen-100 py-2 px-7 cursor-pointer border border-solid border-white transition duration-200 hover:bg-transparent text-deepGreen-100 hover:text-white'>
+          <div
+            className='rounded-[30px] bg-brightGreen-100 py-2 px-7 cursor-pointer border border-solid border-white transition duration-200 hover:bg-transparent text-deepGreen-100 hover:text-white'>
             <Link href={TICKET_LINK} target={"_blank"}>
               Buy Tickets
             </Link>

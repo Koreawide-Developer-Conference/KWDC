@@ -62,12 +62,12 @@ export default async function SpeakerDetail({ params }: any) {
                 <img
                   src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.img`).replace(".webp", ".png")}`}
                   alt={t(`speaker${id}.name`)}
-                  className='w-1/3 max-3xl:w-1/6 max-2xl:w-1/4 max-xl:w-1/3 max-h-[600px] object-contain object-bottom'
+                  className='w-1/3 max-3xl:w-1/6 max-2xl:w-1/4 max-xl:w-1/2 max-h-[600px] object-contain object-bottom'
                 />
                 <img
                   src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.nest.img`).replace(".webp", ".png")}`}
                   alt={t(`speaker${id}.next.name`)}
-                  className='w-1/3 max-3xl:w-1/6 max-2xl:w-1/4 max-xl:w-1/3 max-h-[600px] object-contain'
+                  className='w-1/3 max-3xl:w-1/6 max-2xl:w-1/4 max-xl:w-1/2 max-h-[600px] object-contain object-bottom'
                 />
               </div>
             </div>
