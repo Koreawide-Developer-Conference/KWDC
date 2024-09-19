@@ -18,7 +18,7 @@ export default function RootLayout({
   };
 }>) {
   return (
-    <html lang={lng} dir={dir(lng)}>
+    <html lang={lng} dir={dir(lng)} data-theme="light">
       <head>
         <meta
           name='viewport'
