@@ -45,6 +45,9 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
           <Link href={`/${params.lng}/2024/#speakers`} onClick={scrollToSection("speakers")} className='p-3 max-sm:hidden'>
             Speakers
           </Link>
+          <Link href={`/${params.lng}/2024/#sponsors`} onClick={scrollToSection("sponsors")} className='p-3 max-sm:hidden'>
+            Sponsors
+          </Link>
           <Link href={`/${params.lng}/2024/organizer`} onClick={scrollToSection("speakers")} className='p-3 max-sm:hidden'>
             Organizers
           </Link>
@@ -68,6 +71,11 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
               <li>
                 <Link href={`/${params.lng}/2024#speakers`} className="p-3">
                   Speakers
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${params.lng}/2024#sponsors`} className="p-3">
+                  Sponsors
                 </Link>
               </li>
               <li>
