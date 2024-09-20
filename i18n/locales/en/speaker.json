@@ -29,7 +29,7 @@
   "speaker3": {
     "name": "Sangho Cho",
     "affiliation": "Flitto",
-    "nickname": "Jake",
+    "nickname": "",
     "category": "Develop",
     "introduction": "I am contemplating the wise use of SwiftUI.",
     "title": "Why Your View Stutters (feat. Instruments)",
@@ -159,7 +159,7 @@
     "img": "jayden.webp"
   },
   "speaker13": {
-    "name": "Taehyeon Jake Lee",
+    "name": "Taehyeon Lee",
     "affiliation": "TMAP Mobility",
     "nickname": "Jake",
     "category": "Develop",
