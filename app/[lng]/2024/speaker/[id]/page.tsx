@@ -2,6 +2,7 @@ import React from "react";
 
 import { prefix } from "@/constants";
 import { translation, useTranslation } from "@/i18n";
+import Image from "next/image";
 
 export async function generateMetadata({ params }: any) {
   const { t } = await translation(params.lng, "speaker");
@@ -59,12 +60,16 @@ export default async function SpeakerDetail({ params }: any) {
                 </div>
               </div>
               <div className='w-full flex justify-end max-3xl:flex-col max-3xl:items-end'>
-                <img
+                <Image
+                  width={300}
+                  height={600}
                   src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.img`).replace(".webp", ".png")}`}
                   alt={t(`speaker${id}.name`)}
                   className='w-1/3 max-3xl:w-1/6 max-2xl:w-1/4 max-xl:w-1/2 max-h-[600px] object-contain object-bottom'
                 />
-                <img
+                <Image
+                  width={300}
+                  height={600}
                   src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.nest.img`).replace(".webp", ".png")}`}
                   alt={t(`speaker${id}.next.name`)}
                   className='w-1/3 max-3xl:w-1/6 max-2xl:w-1/4 max-xl:w-1/2 max-h-[600px] object-contain object-bottom'
@@ -85,7 +90,9 @@ export default async function SpeakerDetail({ params }: any) {
                   {t(`speaker${id}.introduction`)}
                 </p>
               </div>
-              <img
+              <Image
+                width={300}
+                height={600}
                 src={`${prefix}/assets/2024/images/speaker/profile/${t(`speaker${id}.img`).replace(".webp", ".png")}`}
                 alt={t(`speaker${id}.name`)}
                 className='w-1/3 max-h-[600px] max-3xl:w-1/5 max-2xl:w-1/3 max-xl:w-1/2 object-contain object-bottom'

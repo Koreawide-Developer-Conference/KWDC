@@ -126,8 +126,8 @@ export async function GET(req: NextRequest) {
               style={{
                 width: 200,
                 position: "absolute",
-                right: 20,
-                bottom: 20,
+                right: 50,
+                bottom: 50,
               }}
               src={
                 process.env.NODE_ENV === "development"

@@ -63,7 +63,7 @@
   },
   "team_speaker": {
     "title": "스피커팀",
-    "team_count": "3",
+    "team_count": "4",
     "member1": {
       "name": "이동헌",
       "nickname": "",
@@ -85,13 +85,21 @@
       "nickname": "",
       "sns": "https://github.com/x-0o0",
       "img": "jaesung_lee.webp",
+      "short_introduction": "3rd Party 말고 진짜 파티\uD83E\uDD73가 되길 바라며 import KWDC !",
+      "extra_team": ""
+    },
+    "member4": {
+      "name": "임동주",
+      "nickname": "Atlas",
+      "sns": "https://www.linkedin.com/in/artieee/",
+      "img": "atlas.webp",
       "short_introduction": "",
       "extra_team": ""
     }
   },
   "team_public_relation": {
     "title": "홍보팀",
-    "team_count": "1",
+    "team_count": "3",
     "member1": {
       "name": "황예은",
       "nickname": "Yeni",
@@ -99,11 +107,27 @@
       "img": "yeni.webp",
       "short_introduction": "Code Pray Love",
       "extra_team": ""
+    },
+    "member2": {
+      "name": "김하은",
+      "nickname": "Hani",
+      "sns": "https://www.instagram.com/haeunkim.on/",
+      "img": "hani.webp",
+      "short_introduction": "애플생태계에서 달려라 하니 \uD83C\uDF4F",
+      "extra_team": ""
+    },
+    "member3": {
+      "name": "민경태",
+      "nickname": "Min",
+      "sns": "https://github.com/applebuddy",
+      "img": "min.webp",
+      "short_introduction": "우리 함께 공유하며 성장해요~! ",
+      "extra_team": ""
     }
   },
   "team_design": {
     "title": "디자인팀",
-    "team_count": "7",
+    "team_count": "6",
     "member1": {
       "name": "최미진",
       "nickname": "Maeve",
@@ -137,14 +161,6 @@
       "extra_team": "스폰서팀"
     },
     "member5": {
-      "name": "김하은",
-      "nickname": "Hani",
-      "sns": "https://www.instagram.com/haeunkim.on/",
-      "img": "hani.webp",
-      "short_introduction": "애플생태계에서 달려라 하니 \uD83C\uDF4F",
-      "extra_team": ""
-    },
-    "member6": {
       "name": "오사랑",
       "nickname": "Sarrng",
       "sns": "",
@@ -152,7 +168,7 @@
       "short_introduction": "",
       "extra_team": ""
     },
-    "member7": {
+    "member6": {
       "name": "김다인",
       "nickname": "Dani",
       "sns": "https://velog.io/@dainiskdaiin/posts",

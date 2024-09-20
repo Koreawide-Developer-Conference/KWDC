@@ -2,6 +2,7 @@ import React from "react";
 
 import { prefix } from "@/constants";
 import { translation, useTranslation } from "@/i18n";
+import Image from "next/image";
 
 export async function generateMetadata({ params }: any) {
   const id = params?.id;
@@ -165,9 +166,12 @@ export default async function SpeakerDetail({ params }: any) {
                 {t(`${team}.member${id}.extra_team`) && <span className='badge badge-greenBlack-70 badge-outline'>{t(`${team}.member${id}.extra_team`)}</span>}
               </div>
             </div>
-            <img
+            <Image
               src={`/assets/2024/images/organizer/profile/${t(`${team}.member${id}.img`).replace(".webp", ".png")}`}
               alt={t(`speaker${id}.name`)}
+              width={300}
+              height={600}
+              priority
               className='min-w-1/3 w-1/3 max-w-1/3 max-sm:min-w-1/2 max-sm:w-1/2 max-sm:max-w-1/2 max-h-[600px] max-sm:max-h-[300px] object-contain object-bottom'
             />
           </div>
