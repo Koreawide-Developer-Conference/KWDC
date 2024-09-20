@@ -63,7 +63,7 @@
   },
   "team_speaker": {
     "title": "Speaker Team",
-    "team_count": "3",
+    "team_count": "4",
     "member1": {
       "name": "Dongheon Lee",
       "nickname": "",
@@ -81,17 +81,25 @@
       "extra_team": ""
     },
     "member3": {
-      "name": "Jaeseong Lee",
+      "name": "Jaesung Lee",
       "nickname": "",
       "sns": "https://github.com/x-0o0",
       "img": "jaesung_lee.webp",
+      "short_introduction": "Hoping for a real party, not a 3rd party\uD83E\uDD73, import KWDC!",
+      "extra_team": ""
+    },
+    "member4": {
+      "name": "Dongjoo Lim",
+      "nickname": "Atlas",
+      "sns": "https://www.linkedin.com/in/artieee/",
+      "img": "atlas.webp",
       "short_introduction": "",
       "extra_team": ""
     }
   },
   "team_public_relation": {
     "title": "Public Relation Team",
-    "team_count": "1",
+    "team_count": "3",
     "member1": {
       "name": "Yeeun Hwang",
       "nickname": "Yeni",
@@ -106,6 +114,14 @@
       "sns": "https://www.instagram.com/haeunkim.on/",
       "img": "hani.webp",
       "short_introduction": "Run Hani in the Apple ecosystem 🍏",
+      "extra_team": ""
+    },
+    "member3": {
+      "name": "Kyungtae Min",
+      "nickname": "Min",
+      "sns": "https://github.com/applebuddy",
+      "img": "min.webp",
+      "short_introduction": "Let's share and grow together~!",
       "extra_team": ""
     }
   },
