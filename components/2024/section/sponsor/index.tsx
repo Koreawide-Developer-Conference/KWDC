@@ -30,12 +30,12 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
           <Diamond className='mb-5'/>
           <Card />
         </div>
-        <div className='w-full bg-brightGreen-100 rounded-3xl grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 py-[100px] my-20'>
+        <div className='w-full bg-brightGreen-60 rounded-3xl grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 py-[100px] my-20'>
           <Card />
           <Card />
           <Card />
         </div>
-        <div className='w-full bg-brightGreen-100 rounded-3xl grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 py-[50px]'>
+        <div className='w-full bg-brightGreen-30 rounded-3xl grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 py-[50px]'>
           <Card />
           <Card />
           <Card />
