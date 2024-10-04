@@ -13,7 +13,6 @@ export const TicketSection: React.FC<LangProps> = ({ params }) => {
   React.useEffect(() => {
     fetch('/api/geo').then(async (res) => {
       const { country } = await res.json();
-      console.log({country});
       if (country === 'KR') {
         setTicketLink(TICKET_LINK);
       } else {
