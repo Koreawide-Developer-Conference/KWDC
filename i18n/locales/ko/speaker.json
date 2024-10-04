@@ -118,7 +118,7 @@
     "introduction": "미리디에서 Software Engineer로 미리캔버스를 개발하고 있습니다.",
     "title": "모니터링을 통해 Mobile Application에서 발생하는 모든 것을 톺아보기",
     "description": "모바일 앱에서 발생하는 이벤트들을 확인하는 것은 어렵습니다. \n해당 세션에서는 Datadog을 통해 모바일 앱에서 발생하는 모든 것을 확인하여 이슈 트래킹을 하는 방법과 Session Replay를 통해 UI/UX를 개선할 수 있는 방법, 유저의 행동 트래킹하여 인사이트를 얻는 방법에 대해 소개합니다.",
-    "sns": "www.linkedin.com/in/yooniversedev",
+    "sns": "https://www.linkedin.com/in/yooniversedev",
     "time": "고구려 (A홀) 14:30 - 15:10",
     "img": "kevin.webp",
     "nest": {
