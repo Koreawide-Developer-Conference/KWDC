@@ -1,15 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
-import { TICKET_LINK } from "@/constants";
+
+
+import { GLOBAL_TICKET_LINK, TICKET_LINK } from "@/constants";
 import { LangProps, languages } from "@/i18n/settings";
 import Chevron from "@/public/assets/2024/icons/chevron_down_white.svg";
 import Logo from "@/public/assets/2024/images/logo.svg";
-import { usePathname } from "next/navigation";
+
 
 export const Navigation: React.FC<LangProps> = ({ params }) => {
+  const [ticketLink, setTicketLink] = React.useState(TICKET_LINK);
   const pathname = usePathname();
   const scrollToSection = (id: string) => () => {
     const el = document.getElementById(id);
@@ -29,6 +33,18 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
     if (hash) {
       scrollToSection(hash)();
     }
+  },[])
+
+  React.useEffect(() => {
+    fetch('/api/geo').then(async (res) => {
+      const { country } = await res.json();
+      console.log({country});
+      if (country === 'KR') {
+        setTicketLink(TICKET_LINK);
+      } else {
+        setTicketLink(GLOBAL_TICKET_LINK);
+      }
+    })
   },[])
 
 
@@ -90,7 +106,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
           </div>
           <div
             className='rounded-[30px] bg-brightGreen-100 py-2 px-7 cursor-pointer border border-solid border-white transition duration-200 hover:bg-transparent text-deepGreen-100 hover:text-white'>
-            <Link href={TICKET_LINK} target={"_blank"}>
+            <Link href={ticketLink} target={"_blank"}>
               Buy Tickets
             </Link>
           </div>

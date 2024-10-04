@@ -99,7 +99,7 @@
   },
   "team_public_relation": {
     "title": "홍보팀",
-    "team_count": "3",
+    "team_count": "4",
     "member1": {
       "name": "황예은",
       "nickname": "Yeni",
@@ -123,6 +123,14 @@
       "img": "min.webp",
       "short_introduction": "우리 함께 공유하며 성장해요~! ",
       "extra_team": ""
+    },
+    "member4": {
+      "name": "오사랑",
+      "nickname": "Sarrng",
+      "sns": "",
+      "img": "sarrng.webp",
+      "short_introduction": "",
+      "extra_team": "디자인팀"
     }
   },
   "team_design": {
@@ -166,7 +174,7 @@
       "sns": "",
       "img": "sarrng.webp",
       "short_introduction": "",
-      "extra_team": ""
+      "extra_team": "홍보팀"
     },
     "member6": {
       "name": "김다인",

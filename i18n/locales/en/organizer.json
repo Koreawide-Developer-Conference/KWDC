@@ -99,7 +99,7 @@
   },
   "team_public_relation": {
     "title": "Public Relation Team",
-    "team_count": "3",
+    "team_count": "4",
     "member1": {
       "name": "Yeeun Hwang",
       "nickname": "Yeni",
@@ -123,6 +123,14 @@
       "img": "min.webp",
       "short_introduction": "Let's share and grow together~!",
       "extra_team": ""
+    },
+    "member4": {
+      "name": "Sarang Oh",
+      "nickname": "Sarrng",
+      "sns": "",
+      "img": "sarrng.webp",
+      "short_introduction": "",
+      "extra_team": "Design Team"
     }
   },
   "team_design": {
@@ -166,7 +174,7 @@
       "sns": "",
       "img": "sarrng.webp",
       "short_introduction": "",
-      "extra_team": ""
+      "extra_team": "Public Relation Team"
     },
     "member6": {
       "name": "Dain Kim",
