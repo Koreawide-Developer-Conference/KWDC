@@ -1,3 +1,8 @@
 {
-  "title": "Thank you to our sponsors"
+  "title": "Thank you to our sponsors",
+  "diamond": "Diamond Sponsorship",
+  "platinum": "Platinum Sponsorship",
+  "gold": "Gold Sponsorship",
+  "in-kind": "In-kind Sponsorship"
+
 }
