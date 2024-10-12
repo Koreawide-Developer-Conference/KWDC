@@ -50,7 +50,7 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
         </div>
         <div className='w-full rounded-3xl flex flex-col justify-center items-center mb-[100px]'>
           <p className='text-greenBlack-100 font-semibold text-2xl mt-5 mb-20'>{t("in-kind")}</p>
-          <div className='flex gap-x-10 items-center'>
+          <div className='flex gap-x-10 max-md:gap-x-5 items-center'>
           <Link href={"https://www.inflearn.com/"} target='_blank' className='max-md:scale-50'>
             <Inflearn />
           </Link>
