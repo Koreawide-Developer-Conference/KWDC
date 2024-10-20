@@ -183,7 +183,7 @@
     "img": "godrm.webp"
   },
   "speaker15": {
-    "name": "Košir Klemen",
+    "name": "Klemen Košir",
     "affiliation": "Betashares",
     "nickname": "",
     "category": "개발",
@@ -275,7 +275,7 @@
     "title": "Xcode의 차세대 얼리 어답터 되기",
     "description": "새로운 Xcode와 베타 버전의 얼리 어답터가 되는 방법, OSS 문제 해결, Swift 버그, 새로운 API 및 Swift Assist를 다루고, Xcode 출시 후 빠르게 릴리스하는 방법을 LINE 앱의 경험을 통해 배웁니다.",
     "sns": "https://twitter.com/___freddi___",
-    "time": "고구려 (A홀) 16:50 - 17:10",
+    "time": "고구려 (A홀) 16:50 - 17:30",
     "img": "freddi.webp"
   },
   "speaker23": {
