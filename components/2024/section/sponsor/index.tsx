@@ -61,7 +61,7 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
 
         <div className='w-full rounded-3xl flex flex-col justify-center items-center mb-[100px]'>
           <p className='text-greenBlack-100 font-semibold text-2xl mt-5 mb-20'>{indi_t("title")}</p>
-          <AnimatedTooltip items={Array.from({ length : 12 }).map((_, idx) => ({
+          <AnimatedTooltip items={Array.from({ length : 13 }).map((_, idx) => ({
             id: indi_t(`sponsor${idx + 1}.name`),
             name: indi_t(`sponsor${idx + 1}.name`),
             affiliation: indi_t(`sponsor${idx + 1}.affiliation`),

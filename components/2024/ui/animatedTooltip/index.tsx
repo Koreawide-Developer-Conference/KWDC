@@ -59,7 +59,7 @@ export const AnimatedTooltip = ({
                 <div className='absolute inset-x-10 z-30 w-[20%] -bottom-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px ' />
                 <div className='absolute left-10 w-[40%] z-30 -bottom-px bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px ' />
                 <div className='font-bold text-white relative z-30 text-base'>{item.name}</div>
-                {item.affiliation && <div className='text-white text-xs'>{item.affiliation}</div>}
+                {/*{item.affiliation && <div className='text-white text-xs'>{item.affiliation}</div>}*/}
               </motion.div>
             )}
           </AnimatePresence>
@@ -74,7 +74,7 @@ export const AnimatedTooltip = ({
             />
           ) : (
             <div className='avatar placeholder'>
-              <div className='bg-neutral text-neutral-content w-[100px] h-[100px] rounded-full'>
+              <div className='bg-neutral text-neutral-content text-center whitespace-pre-wrap w-[100px] h-[100px] rounded-full'>
                 <span>{item.name}</span>
               </div>
             </div>
