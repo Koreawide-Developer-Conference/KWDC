@@ -24,11 +24,7 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
         <p className='text-center text-greenBlack-100 text-xl max-3xl:text-sm'>
           {t("subtitle")} <br />
         </p>
-        <div className='grid grid-cols-3 max-lg:grid-cols-1 gap-12 w-full'>
-          <DownloadTimeTable lng={params.lng} label={`${t("download")} - A Hall`} hall={"a"} />
-          <DownloadTimeTable lng={params.lng} label={`${t("download")} - B Hall`} hall={"b"} />
-          <DownloadTimeTable lng={params.lng} label={`${t("download")} - C Hall`} hall={"c"} />
-        </div>
+        <DownloadTimeTable lng={params.lng} label={`${t("download")}`} />
         <div className='grid grid-cols-3 max-lg:grid-cols-1 gap-12 py-[75px] w-full'>
           {Array.from({ length: 24 }).map((_, index) => {
             if (index === 9) {

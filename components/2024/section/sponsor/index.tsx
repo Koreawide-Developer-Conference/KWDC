@@ -11,9 +11,11 @@ import Inflearn from "@/public/assets/2024/logos/inflearn.svg";
 import LottieFiles from "@/public/assets/2024/logos/lottieFiles.svg";
 import RevenueCat from "@/public/assets/2024/logos/revenueCat.svg";
 import Slid from "@/public/assets/2024/logos/slid.png";
+import { AnimatedTooltip } from "@/components/2024/ui/animatedTooltip";
 
 export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
   const { t } = await useTranslation(params.lng, "sponsor");
+  const { t: indi_t } = await useTranslation(params.lng, "individual_sponsor");
   return (
     <section
       className='flex flex-col items-center justify-center w-screen min-h-screen relative text-black bg-white px-4'
@@ -50,10 +52,22 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
             <Link href={"https://home.slid.cc/"} target='_blank' className='max-md:scale-50'>
               <Image src={Slid} width={170} height={39} alt='slid' />
             </Link>
-            <Link href={"https://developeracademy.postech.ac.kr/"} target='_blank' className='scale-50 max-md:scale-[30%]'>
+            <Link href={"https://developeracademy.postech.ac.kr/"} target='_blank'
+                  className='scale-50 max-md:scale-[30%]'>
               <Academy />
             </Link>
           </div>
+        </div>
+
+        <div className='w-full rounded-3xl flex flex-col justify-center items-center mb-[100px]'>
+          <p className='text-greenBlack-100 font-semibold text-2xl mt-5 mb-20'>{indi_t("title")}</p>
+          <AnimatedTooltip items={Array.from({ length : 11}).map((_, idx) => ({
+            id: indi_t(`sponsor${idx + 1}.name`),
+            name: indi_t(`sponsor${idx + 1}.name`),
+            affiliation: indi_t(`sponsor${idx + 1}.affiliation`),
+            image: idx === 0 ? '' : indi_t(`sponsor${idx + 1}.image`),
+          }))}/>
+
         </div>
       </div>
     </section>

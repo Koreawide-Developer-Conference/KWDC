@@ -1,1 +1,1 @@
-export const prefix = 'https://develop.kwdc.dev'
+export const prefix = 'https://kwdc.dev'

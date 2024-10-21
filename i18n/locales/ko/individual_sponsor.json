@@ -1,0 +1,63 @@
+{
+  "title": "개인 후원",
+  "sponsor1": {
+    "name": "안정민",
+    "affiliation": "카카오뱅크",
+    "image": "jeongmin.webp"
+  },
+  "sponsor2": {
+    "name": "장진호",
+    "affiliation": "",
+    "image": "jinho.webp"
+  },
+  "sponsor3": {
+    "name": "박종욱",
+    "affiliation": "(주)뉴로어소시에이츠",
+    "image": "jonguk.webp"
+  },
+  "sponsor4": {
+    "name": "vivi",
+    "affiliation": "",
+    "image": "vivi.webp"
+  },
+  "sponsor5": {
+    "name": "이수진",
+    "affiliation": "",
+    "image": "sujin.webp"
+  },
+  "sponsor6": {
+    "name": "김현수",
+    "affiliation": "SK PLANET",
+    "image": "hyunsu.webp"
+  },
+  "sponsor7": {
+    "name": "HOYEHROEI(하업서)",
+    "affiliation": "SK PLANET",
+    "image": "hoyehroei.webp"
+  },
+  "sponsor8": {
+    "name": "구범모",
+    "affiliation": "",
+    "image": "beommo.webp"
+  },
+  "sponsor9": {
+    "name": "이민아",
+    "affiliation": "Apple Developer Academy @ POSTECH",
+    "image": "mina.webp"
+  },
+  "sponsor10": {
+    "name": "박제민",
+    "affiliation": "SK PLANET",
+    "image": "jemin.webp"
+  },
+  "sponsor11": {
+    "name": "문상봉",
+    "affiliation": "플리토(Flitto)",
+    "image": "sangbong.webp"
+  },
+  "sponsor12": {
+    "name": "이강덕",
+    "affiliation": "SK PLANET",
+    "image": "gangdeok.webp"
+  }
+}

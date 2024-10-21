@@ -1,0 +1,63 @@
+{
+  "title": "Individual Sponsors",
+  "sponsor1": {
+    "name": "AN JEONGMIN",
+    "affiliation": "Kakao Bank",
+    "image": "jeongmin.webp"
+  },
+  "sponsor2": {
+    "name": "JANG JINHO",
+    "affiliation": "",
+    "image": "jinho.webp"
+  },
+  "sponsor3": {
+    "name": "PARK JONGUK",
+    "affiliation": "Neuro Associates",
+    "image": "jonguk.webp"
+  },
+  "sponsor4": {
+    "name": "vivi",
+    "affiliation": "",
+    "image": "vivi.webp"
+  },
+  "sponsor5": {
+    "name": "LEE SUJIN",
+    "affiliation": "",
+    "image": "sujin.webp"
+  },
+  "sponsor6": {
+    "name": "KIM HYEONSU",
+    "affiliation": "SK PLANET",
+    "image": "hyunsu.webp"
+  },
+  "sponsor7": {
+    "name": "HOYEHROEI",
+    "affiliation": "",
+    "image": "hoyehroei.webp"
+  },
+  "sponsor8": {
+    "name": "KU BEOMMO",
+    "affiliation": "",
+    "image": "beommo.webp"
+  },
+  "sponsor9": {
+    "name": "LEE MINA",
+    "affiliation": "Apple Developer Academy @ POSTECH",
+    "image": "mina.webp"
+  },
+  "sponsor10": {
+    "name": "PARK JEMIN",
+    "affiliation": "SK PLANET",
+    "image": "jemin.webp"
+  },
+  "sponsor11": {
+    "name": "MUN SANGBONG",
+    "affiliation": "Flitto",
+    "image": "sangbong.webp"
+  },
+  "sponsor12": {
+    "name": "LEE GANGDEOK",
+    "affiliation": "SK PLANET",
+    "image": "gangdeok.webp"
+  }
+}
