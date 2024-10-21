@@ -2,14 +2,13 @@
 
 import React from "react";
 
-import { prefix } from "@/constants";
 
 export const DownloadTimeTable = ({ lng, label, hall }: { lng: string; label: string; hall: string }) => {
   return (
     <div className='flex justify-center items-center'>
       <button
         onClick={() => {
-          const file = `${prefix}/assets/2024/timetable/timetable_${lng}_${hall}.png`;
+          const file = `/assets/2024/timetable/timetable_${lng}_${hall}.png`;
           const link = document.createElement("a");
           link.href = file;
           link.target = '_blank';
