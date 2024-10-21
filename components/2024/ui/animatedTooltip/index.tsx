@@ -74,7 +74,7 @@ export const AnimatedTooltip = ({
             />
           ) : (
             <div className='avatar placeholder'>
-              <div className='bg-neutral text-neutral-content text-center whitespace-pre-wrap w-[100px] h-[100px] rounded-full'>
+              <div className='bg-neutral text-neutral-content text-center whitespace-pre-wrap w-[100px] h-[100px] rounded-full border-2 border-deepGreen-40'>
                 <span>{item.name}</span>
               </div>
             </div>
