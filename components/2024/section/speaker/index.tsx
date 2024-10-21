@@ -6,7 +6,7 @@ import { useTranslation } from "@/i18n";
 import { LangProps } from "@/i18n/settings";
 import Icon from "@/public/assets/2024/icons/spaker.svg";
 
-import { Avatar } from "@/components/2024";
+import { Avatar, DownloadTimeTable } from "@/components/2024";
 
 export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
   const { t } = await useTranslation(params.lng, "speaker");
@@ -24,6 +24,11 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
         <p className='text-center text-greenBlack-100 text-xl max-3xl:text-sm'>
           {t("subtitle")} <br />
         </p>
+        <div className='grid grid-cols-3 max-lg:grid-cols-1 gap-12 w-full'>
+          <DownloadTimeTable lng={params.lng} label={`${t("download")} - A Hall`} hall={"a"} />
+          <DownloadTimeTable lng={params.lng} label={`${t("download")} - B Hall`} hall={"b"} />
+          <DownloadTimeTable lng={params.lng} label={`${t("download")} - C Hall`} hall={"c"} />
+        </div>
         <div className='grid grid-cols-3 max-lg:grid-cols-1 gap-12 py-[75px] w-full'>
           {Array.from({ length: 24 }).map((_, index) => {
             if (index === 9) {
@@ -52,25 +57,25 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
                       />
                     </div>
 
-                    <div className="flex flex-col items-start">
-                      <div className="text-deepGreen-100 font-bold font-SFProDisplay mr-0.5 flex flex-col">
-                        <div className="flex gap-x-2">
+                    <div className='flex flex-col items-start'>
+                      <div className='text-deepGreen-100 font-bold font-SFProDisplay mr-0.5 flex flex-col'>
+                        <div className='flex gap-x-2'>
                           <span>{t(`speaker10.name`)}</span>
-                          <span
-                            className="text-[#FFA412] font-bold font-SFProDisplay">{t(`speaker10.nickname`)}</span>
+                          <span className='text-[#FFA412] font-bold font-SFProDisplay'>{t(`speaker10.nickname`)}</span>
                         </div>
                         {t(`speaker10.affiliation`) && (
-                          <span className="text-xs text-deepGreen-70">{`${t(`speaker10.affiliation`)}`}</span>
+                          <span className='text-xs text-deepGreen-70'>{`${t(`speaker10.affiliation`)}`}</span>
                         )}
                       </div>
-                      <div className="text-deepGreen-100 font-bold font-SFProDisplay mr-0.5 flex flex-col">
-                        <div className="flex gap-x-2">
+                      <div className='text-deepGreen-100 font-bold font-SFProDisplay mr-0.5 flex flex-col'>
+                        <div className='flex gap-x-2'>
                           <span>{t(`speaker10.nest.name`)}</span>
-                          <span
-                            className="text-[#FFA412] font-bold font-SFProDisplay">{t(`speaker10.nest.nickname`)}</span>
+                          <span className='text-[#FFA412] font-bold font-SFProDisplay'>
+                            {t(`speaker10.nest.nickname`)}
+                          </span>
                         </div>
                         {t(`speaker10.nest.affiliation`) && (
-                          <span className="text-xs text-deepGreen-70">{`${t(`speaker10.nest.affiliation`)}`}</span>
+                          <span className='text-xs text-deepGreen-70'>{`${t(`speaker10.nest.affiliation`)}`}</span>
                         )}
                       </div>
                     </div>
@@ -100,7 +105,9 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
                   <div className='text-deepGreen-100 font-bold font-SFProDisplay mr-0.5 flex flex-col'>
                     <div className='flex gap-x-2'>
                       <span>{t(`speaker${index + 1}.name`)}</span>
-                      <span className='text-[#FFA412] font-bold font-SFProDisplay'>{t(`speaker${index + 1}.nickname`)}</span>
+                      <span className='text-[#FFA412] font-bold font-SFProDisplay'>
+                        {t(`speaker${index + 1}.nickname`)}
+                      </span>
                     </div>
                     {t(`speaker${index + 1}.affiliation`) && (
                       <span className='text-xs text-deepGreen-70'>{`${t(`speaker${index + 1}.affiliation`)}`}</span>

@@ -1,24 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 import { useTranslation } from "@/i18n";
 import { LangProps } from "@/i18n/settings";
 import Sponsor from "@/public/assets/2024/icons/sponsor.svg";
+import Academy from "@/public/assets/2024/logos/apple_developer_academy.svg";
 import Datadog from "@/public/assets/2024/logos/datadog.svg";
 import Inflearn from "@/public/assets/2024/logos/inflearn.svg";
 import LottieFiles from "@/public/assets/2024/logos/lottieFiles.svg";
 import RevenueCat from "@/public/assets/2024/logos/revenueCat.svg";
-import Slid from '@/public/assets/2024/logos/slid.png';
-import Image from "next/image";
+import Slid from "@/public/assets/2024/logos/slid.png";
 
-const Card = () => {
-  return (
-    <div className='flex flex-col justify-center items-center'>
-      <div className='mb-5 w-[200px] h-[100px] bg-gray-200' />
-      <p className='text-greenBlack-100 text-xl font-bold'>name</p>
-    </div>
-  );
-};
 export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
   const { t } = await useTranslation(params.lng, "sponsor");
   return (
@@ -50,13 +43,16 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
         </div>
         <div className='w-full rounded-3xl flex flex-col justify-center items-center mb-[100px]'>
           <p className='text-greenBlack-100 font-semibold text-2xl mt-5 mb-20'>{t("in-kind")}</p>
-          <div className='flex gap-x-10 max-md:gap-x-5 items-center'>
-          <Link href={"https://www.inflearn.com/"} target='_blank' className='max-md:scale-50'>
-            <Inflearn />
-          </Link>
-          <Link href={"https://home.slid.cc/"} target='_blank' className='max-md:scale-50'>
-            <Image src={Slid} width={170} height={39} alt='slid'/>
-          </Link>
+          <div className='flex flex-col gap-y-20 max-md:gap-x-5 items-center'>
+            <Link href={"https://www.inflearn.com/"} target='_blank' className='max-md:scale-50'>
+              <Inflearn />
+            </Link>
+            <Link href={"https://home.slid.cc/"} target='_blank' className='max-md:scale-50'>
+              <Image src={Slid} width={170} height={39} alt='slid' />
+            </Link>
+            <Link href={"https://developeracademy.postech.ac.kr/"} target='_blank' className='scale-50 max-md:scale-[30%]'>
+              <Academy />
+            </Link>
           </div>
         </div>
       </div>
