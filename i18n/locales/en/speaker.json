@@ -11,7 +11,7 @@
     "title": "Swift 6 for all",
     "description": "Swift occupies a central position in the Apple ecosystem. Let's talk about the newly announced Swift 6.0 and the future direction of Swift!",
     "sns": "https://www.linkedin.com/in/soohwan-cho-60468a19b",
-    "time": "Goguryeo (A Hall) 11:00 - 11:40",
+    "time": "Goguryeo (A Hall) 10:30 - 11:10",
     "img": "soohwan_joshua_cho.webp"
   },
   "speaker2": {
@@ -23,7 +23,7 @@
     "title": "First step to develop visionOS, that starts vividly",
     "description": "Sharing vivid stories from the first encounter with Vision Pro at WWDC24 to the purchase and development experience. Let`s start together! visionOS \uD83E\uDDD1\u200D\uD83D\uDD2C",
     "sns": "https://www.linkedin.com/in/vivi-kim",
-    "time": "Baekje (B Hall) 11:00 - 11:40",
+    "time": "Baekje (B Hall) 10:30 - 11:10",
     "img": "vivi.webp"
   },
   "speaker3": {
@@ -35,7 +35,7 @@
     "title": "Why Your View Stutters (feat. Instruments)",
     "description": "Introducing the process of detecting and debugging hangs in SwiftUI-based apps using Instruments.",
     "sns": "http://www.linkedin.com/in/sangho-cho",
-    "time": "Silla (C Hall) 11:00 - 11:40",
+    "time": "Silla (C Hall) 10:30 - 11:10",
     "img": "sangho_cho.webp"
   },
   "speaker4": {
@@ -47,7 +47,7 @@
     "title": "The magic of SwiftUI animations",
     "description": "Curious about SwiftUI animations? Join me on a swift journey from the basics to advanced topics in the talk full of videos and case studies so when we are done, the first thing you will do is enchant your app with some eye candies!",
     "sns": "https://x.com/myridiphis",
-    "time": "Goguryeo (A Hall) 12:50 - 13:30",
+    "time": "Goguryeo (A Hall) 11:20 - 12:00",
     "img": "pavel.webp"
   },
   "speaker5": {
@@ -59,7 +59,7 @@
     "title": "Exploring Accessible Spatial Interactions",
     "description": "Every major Apple platform was driven by an innovative input model. And Vision Pro continues that trend, opening the door to potentially becoming one of the most advanced assistive devices until now",
     "sns": "",
-    "time": "Baekje (B Hall) 12:50 - 13:30",
+    "time": "Baekje (B Hall) 11:20 - 12:00",
     "img": "elkraneo.webp"
   },
   "speaker6": {
@@ -71,7 +71,7 @@
     "title": "Building Intuitive Developer Tools in Swift",
     "description": "Create developer tools in Swift! This talk explains how to build intutive developer tools and improve Developer Experience.",
     "sns": "https://twitter.com/giginet",
-    "time": "Silla (C Hall) 12:50 - 13:30",
+    "time": "Silla (C Hall) 11:20 - 12:00",
     "img": "giginet.webp"
   },
   "speaker7": {
@@ -83,7 +83,7 @@
     "title": "Widgets, Widgets Everywhere and Not a Pixel to Spare",
     "description": "Interactive widgets evolve across Apple devices in iOS 18, iPadOS 18, watchOS 11, & macOS 15. Learn implementation, App Intents usage, & design tips to create powerful, pixel-perfect user experiences.",
     "sns": "https://x.com/rudrankriyam",
-    "time": "Goguryeo (A Hall) 13:40 - 14:20",
+    "time": "Goguryeo (A Hall) 13:10 - 13:50",
     "img": "rudrank.webp"
   },
   "speaker8": {
@@ -95,7 +95,7 @@
     "title": "Drop the Beat - Making games for visionOS with native technology stack",
     "description": "This session give a brief introduction of making visionOS games with Swift/RealityKit/ARKit",
     "sns": "https://x.com/xchester16",
-    "time": "Baekje (B Hall) 13:40 - 14:20",
+    "time": "Baekje (B Hall) 13:10 - 13:50",
     "img": "xChester.webp"
   },
   "speaker9": {
@@ -107,7 +107,7 @@
     "title": "Designing Next-Generation AI Experiences with Apple Intelligence",
     "description": "Learn about Apple’s generative AI, 'Apple Intelligence,' unveiled at WWDC24. Analyze the innovative application of deep learning technology in Apple Intelligence and explain its core architecture in depth. Propose ways to design beyond the limits of iOS applications using next-generation AI technology and explore its practical applications. This is an opportunity to think together about the new possibilities that AI will open up for the future of iOS development.",
     "sns": "http://linkedin.com/in/jaeeun-lee-bb5592a2",
-    "time": "Silla (C Hall) 13:40 - 14:20",
+    "time": "Silla (C Hall) 13:10 - 13:50",
     "img": "jaeeun.webp"
   },
   "speaker10": {
@@ -119,7 +119,7 @@
     "title": "Monitoring to keep an eye on everything happening in your mobile application",
     "description": "It is difficult to check the events occurring in a mobile app. \nIn this session, we will introduce how to track issues by checking everything that happens in a mobile app through Datadog, how to improve UI/UX through Session Replay, and how to gain insights by tracking user behavior.",
     "sns": "https://www.linkedin.com/in/yooniversedev",
-    "time": "Goguryeo (A Hall) 14:30 - 15:10",
+    "time": "Goguryeo (A Hall) 14:00 - 14:40",
     "img": "kevin.webp",
     "nest": {
       "name": "Wudu Son",
@@ -130,7 +130,7 @@
       "title": "Monitoring to keep an eye on everything happening in your mobile application",
       "description": "It is difficult to check the events occurring in a mobile app. \nIn this session, we will introduce how to track issues by checking everything that happens in a mobile app through Datadog, how to improve UI/UX through Session Replay, and how to gain insights by tracking user behavior.",
       "sns": "https://www.linkedin.com/in/wudu-s-640a98190 ",
-      "time": "Goguryeo (A Hall) 14:30 - 15:10",
+      "time": "Goguryeo (A Hall) 14:00 - 14:40",
       "img": "wudu.webp"
     }
   },
@@ -143,7 +143,7 @@
     "title": "Design for Everyone",
     "description": "An inclusive app or game is not only usable by different people, but also welcomes people from diverse backgrounds and perspectives. Discover how you can design inclusive content for your interface, language, imagery, and marketing materials and support the broadest possible range of people with your app or game.",
     "sns": "https://www.linkedin.com/in/changwoo-kim-4a1942a0/",
-    "time": "Baekje (B Hall) 14:30 - 15:10",
+    "time": "Baekje (B Hall) 14:00 - 14:40",
     "img": "changwoo_kim.webp"
   },
   "speaker12": {
@@ -155,7 +155,7 @@
     "title": "Implementing AI Companion on VisionOS",
     "description": "Explore Vision Pro HW/SW technology and market trends, and delve into Apple Intelligence.",
     "sns": "https://www.linkedin.com/in/jaydenchoe",
-    "time": "Silla (C Hall) 14:30 - 15:10",
+    "time": "Silla (C Hall) 14:00 - 14:40",
     "img": "jayden.webp"
   },
   "speaker13": {
@@ -167,7 +167,7 @@
     "title": "Knowledge gained while working on location-based services",
     "description": "I will share the knowledge I have gained while working at a company that provides location-based services.",
     "sns": "www.linkedin.com/in/taehyeonjakelee",
-    "time": "Goguryeo (A Hall) 15:20 - 15:40",
+    "time": "Goguryeo (A Hall) 14:50 - 15:10",
     "img": "jake.webp"
   },
   "speaker14": {
@@ -179,7 +179,7 @@
     "title": "Preparing for the visionOS Era: Human-Spatial Interface",
     "description": "visionOS is a familiar yet unfamiliar environment. It has become an era where developers need to understand people and space better than users. We will look at the changes from the Macintosh interface to the Vision Pro spatial interface.",
     "sns": "https://x.com/godrm",
-    "time": "Baekje (B Hall) 15:20 - 15:40",
+    "time": "Baekje (B Hall) 14:50 - 15:10",
     "img": "godrm.webp"
   },
   "speaker15": {
@@ -191,7 +191,7 @@
     "title": "Prepare Your App for Apple Intelligence",
     "description": "We've all heard about Apple Intelligence. Brief walktthrough about what it is, and a look at how you can integrate it into your app.",
     "sns": "https://www.linkedin.com/in/klemenkosir?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-    "time": "Silla (C Hall) 15:20 - 15:40",
+    "time": "Silla (C Hall) 14:50 - 15:10",
     "img": "klemen.webp"
   },
   "speaker16": {
@@ -203,7 +203,7 @@
     "title": "A to Z of macOS Automation",
     "description": "Introducing various methods to automate the macOS environment and sharing actual cases and experiences. I will mainly introduce and share how to utilize various technologies provided by macOS, such as Launchd, defaults cli, and AppleScript.\nFinally, I will share the current state of my ongoing automation and the insights I have gained.",
     "sns": "",
-    "time": "Goguryeo (A Hall) 15:50 - 16:10",
+    "time": "Goguryeo (A Hall) 15:30 - 15:50",
     "img": "subin_kim.webp"
   },
   "speaker17": {
@@ -215,7 +215,7 @@
     "title": "Creating User-Centric Software",
     "description": "To survive in the App Store, you must create user-centric software. I would like to share what I have learned over about 10 years of developing apps in the App Store.",
     "sns": "",
-    "time": "Baekje (B Hall) 15:50 - 16:10",
+    "time": "Baekje (B Hall) 15:30 - 15:50",
     "img": "kei.webp"
   },
   "speaker18": {
@@ -227,7 +227,7 @@
     "title": "A System for Friendly Errors in Fintech Apps",
     "description": "Introducing a system to create friendly errors closest to the user.",
     "sns": "https://www.linkedin.com/in/joongkyu-park/",
-    "time": "Silla (C Hall) 15:50 - 16:10",
+    "time": "Silla (C Hall) 15:30 - 15:50",
     "img": "park_jungkyu.webp"
   },
   "speaker19": {
@@ -239,7 +239,7 @@
     "title": "My app development journey, What developers do.",
     "description": "To advance as a developer....",
     "sns": "",
-    "time": "Goguryeo (A Hall) 16:20 - 16:40",
+    "time": "Goguryeo (A Hall) 16:00 - 16:20",
     "img": "mb_kwon.webp"
   },
   "speaker20": {
@@ -251,7 +251,7 @@
     "title": "Save SumOne: The Great Rating Improvement Operation",
     "description": "If there are multiple apps with the same purpose in the store, which one would you choose? This session talks about how to stand out in the harsh app market with high ratings.",
     "sns": "https://www.linkedin.com/in/jeffgukang/",
-    "time": "Baekje (B Hall) 16:20 - 16:40",
+    "time": "Baekje (B Hall) 16:00 - 16:20",
     "img": "gobi.webp"
   },
   "speaker21": {
@@ -263,7 +263,7 @@
     "title": "Meet Swift Testing: Transforming the Way iOS Developers Test",
     "description": "We will dive into why testing is crucial for robust iOS development, explore Apple’s new Swift Testing library, and compare it to XCTest. I’ll also share insights from my own journey of migrating tests, highlighting key benefits and challenges along the way.",
     "sns": "https://x.com/riana_soumi",
-    "time": "Silla (C Hall) 16:20 - 16:40",
+    "time": "Silla (C Hall) 16:00 - 16:20",
     "img": "riana.webp"
   },
   "speaker22": {
@@ -275,7 +275,7 @@
     "title": "Become an Early Adopter of the Xcode's Next Generation",
     "description": "Learn how to become an Early Adopter of new Xcode and its Beta, tackle OSS issues, Swift bugs, new APIs, and Swift Assist, and release quickly post-Xcode launch, from experiences in LINE app.",
     "sns": "https://twitter.com/___freddi___",
-    "time": "Goguryeo (A Hall) 16:50 - 17:30",
+    "time": "Goguryeo (A Hall) 16:30 - 17:10",
     "img": "freddi.webp"
   },
   "speaker23": {
@@ -287,7 +287,7 @@
     "title": "Say Goodbye to Copying! Write Completely Safe Code with Swift's New Feature",
     "description": "Did you know that we have been living in a Copyable world? But beyond the wall, there existed Noncopyable!!\nLet's learn about the newly introduced Ownership concept and how to write safe and explicit code :)",
     "sns": "",
-    "time": "Baekje (B Hall) 16:50 - 17:10",
+    "time": "Baekje (B Hall) 16:30 - 16:50",
     "img": "neil.webp"
   },
   "speaker24": {
@@ -299,7 +299,7 @@
     "title": "The Evolution of iOS Performance Optimization",
     "description": "The content focuses on performance optimization strategies related to memory, startup time, and package size. I will present the most effective current solutions. I will also discuss the evolution of these strategies.",
     "sns": "https://x.com/daiming_cn",
-    "time": "Silla (C Hall) 16:50 - 17:30",
+    "time": "Silla (C Hall) 16:30 - 17:10",
     "img": "daiming.webp"
   }
 }
