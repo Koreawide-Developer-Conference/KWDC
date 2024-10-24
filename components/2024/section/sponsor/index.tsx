@@ -101,7 +101,7 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
               id: indi_t(`sponsor${idx + 1}.name`),
               name: indi_t(`sponsor${idx + 1}.name`),
               affiliation: indi_t(`sponsor${idx + 1}.affiliation`),
-              image: idx === 0 ? "" : indi_t(`sponsor${idx + 1}.image`),
+              image: indi_t(`sponsor${idx + 1}.image`),
             }))}
           />
         </div>
