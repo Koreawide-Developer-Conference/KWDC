@@ -6,6 +6,7 @@ import { useTranslation } from "@/i18n";
 import { LangProps } from "@/i18n/settings";
 import Sponsor from "@/public/assets/2024/icons/sponsor.svg";
 import Academy from "@/public/assets/2024/logos/apple_developer_academy.svg";
+import AcademyVertical from "@/public/assets/2024/logos/apple_developer_academy_vertical.svg";
 import AWSKRUG from "@/public/assets/2024/logos/awskrug.svg";
 import Datadog from "@/public/assets/2024/logos/datadog.svg";
 import Inflearn from "@/public/assets/2024/logos/inflearn.svg";
@@ -49,12 +50,15 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
         </div>
         <div className='w-full rounded-3xl flex flex-col justify-center items-center mb-[100px]'>
           <p className='text-greenBlack-100 font-semibold text-2xl mt-5 mb-20'>{t("in-kind")}</p>
-          <div className='flex max-md:flex-col max-md:gap-y-10 gap-x-10 max-md:gap-x-5 items-center justify-center'>
+          <div className='flex max-md:flex-col max-md:gap-y-5 max-md:gap-x-5 items-center justify-center'>
             <Link href={"https://www.inflearn.com/"} target='_blank' className='max-md:scale-50'>
               <Inflearn />
             </Link>
-            <Link href={"https://developeracademy.postech.ac.kr/"} target='_blank' className='pt-3'>
+            <Link href={"https://developeracademy.postech.ac.kr/"} target='_blank' className='pt-3 max-md:hidden'>
               <Academy />
+            </Link>
+            <Link href={"https://developeracademy.postech.ac.kr/"} target='_blank' className='pt-3 md:hidden'>
+              <AcademyVertical />
             </Link>
             <Link href={"https://home.slid.cc/"} target='_blank' className='max-md:scale-50'>
               <Image src={Slid} width={170} height={39} alt='slid' />
