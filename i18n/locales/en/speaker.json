@@ -153,8 +153,8 @@
     "nickname": "Jayden",
     "category": "Develop",
     "introduction": "I am an AI service SW/HW developer. I will cover the philosophy/market trends of Vision Pro's SW/HW and AI development/Apple Intelligence on Vision Pro.",
-    "title": "Implementing AI Companion on VisionOS",
-    "description": "Explore Vision Pro HW/SW technology and market trends, and delve into Apple Intelligence.",
+    "title": "Implementing AI Docent Companion on VisionOS",
+    "description": "In this session, I will provide an in-depth exploration of the development process for an AI Docent Companion using Apple Vision Pro’s hardware, software frameworks, and toolkits. I will delve into the technical challenges and solutions, highlighting the integration of AI capabilities to deliver an immersive and interactive user experience.",
     "sns": "https://www.linkedin.com/in/jaydenchoe",
     "time": "Silla (C Hall) 14:00 - 14:40",
     "img": "jayden.webp"

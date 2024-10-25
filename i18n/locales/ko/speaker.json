@@ -153,8 +153,8 @@
     "nickname": "Jayden",
     "category": "개발",
     "introduction": "인공지능 서비스 SW/HW 개발자입니다. 비전 프로의 sw/hw 철학/시장 동향과 비전 프로에서 인공지능 개발/애플 인텔리전스를 다루고자 합니다. ",
-    "title": "VisionOS에서 구현하는 AI Companion",
-    "description": "Sup/ Vision Pro HW / SW 기술과 시장 트렌드를 파헤치고 애플 인텔리전스를 톺아봅니다",
+    "title": "VisionOS AI 도슨트 컴패니언 제작기",
+    "description": "본 세션에서는 애플 비전 프로 하드웨어, 소프트웨어 프레임워크, 관련 툴킷을 활용하여 AI 도슨트 컴패니언 서비스를 개발하는 과정을 상세히 설명합니다. 개발 중 경험했던 기술적 이슈의 설명과 함께 애플 비전 프로 상에서 AI 기술을 통합하여 몰입감 있는 XR  사용자 경험 서비스를 제작하는 방법을 공유합니다.",
     "sns": "https://www.linkedin.com/in/jaydenchoe",
     "time": "신라 (C홀) 14:00 - 14:40",
     "img": "jayden.webp"
