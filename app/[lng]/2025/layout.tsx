@@ -1,8 +1,7 @@
-import React from "react";
 
 import { LangProps } from "@/i18n/settings";
 
-import { Footer, Navigation } from "@/components/2025";
+import { Footer } from "@/components/2025";
 import "@/styles/fonts/AppleSDGothicNeo.css";
 
 
@@ -10,7 +9,6 @@ import "@/styles/fonts/AppleSDGothicNeo.css";
 export default function RootLayout({ children, params }: Readonly<LangProps>) {
   return (
     <main className='bg-white text-white overflow-x-hidden flex flex-col items-center'>
-      <Navigation params={params} />
       {children}
       <Footer params={params} />
     </main>
