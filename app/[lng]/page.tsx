@@ -4,5 +4,5 @@ import { fallbackLng, languages } from '@/i18n/settings';
 
 export default async function Page({ params: { lng } }: { params: { lng: string }}) {
   if (languages.indexOf(lng) < 0) lng = fallbackLng;
-  redirect(`/${lng}/2024`);
+  redirect(`/${lng}/2025`);
 }
