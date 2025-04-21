@@ -16,6 +16,7 @@
     "@react-three/drei": "^9.108.1",
     "@react-three/fiber": "^8.16.8",
     "@types/node-fetch": "^2.6.11",
+    "@vercel/functions": "^1.4.1",
     "accept-language": "^3.0.20",
     "clsx": "^2.1.1",
     "firebase": "^10.10.0",
