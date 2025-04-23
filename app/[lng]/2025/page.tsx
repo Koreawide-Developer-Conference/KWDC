@@ -17,7 +17,9 @@ export const metadata: Metadata = {
 export default function KWDC2025({ params }: any) {
   return (
     <div className='flex flex-col w-full'>
-      <TBD params={params}/>
+      <TBD params={params} idx={1} />
+      <TBD params={params} idx={2} />
+      <TBD params={params} idx={3} />
     </div>
   );
 }
