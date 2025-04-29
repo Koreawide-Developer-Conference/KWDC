@@ -9,5 +9,5 @@ export const openGraphImage2024 = {
 };
 
 export const openGraphImage2025 = {
-  images: [`${prefix}/images/og-image-2024.png`],
+  images: [`${prefix}/images/og-image-2025.png`],
 };
