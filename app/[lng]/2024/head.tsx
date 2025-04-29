@@ -12,12 +12,12 @@ export default async function MainHead({
 
   return (
     <>
-      <title>{t("title")}</title>
-      <meta name='description' content={t("description")} />
+      <title>{t("2024.title")}</title>
+      <meta name='description' content={t("2024.description")} />
       <meta name='og:image' content={`${prefix}/images/og-image-2024.png`} />
-      <meta name='og:title' content={t("title")} />
-      <meta name='og:site_name' content={t("title")} />
-      <meta name='og:description' content={t("description")} />
+      <meta name='og:title' content={t("2024.title")} />
+      <meta name='og:site_name' content={t("2024.title")} />
+      <meta name='og:description' content={t("2024.description")} />
       <meta name='twitter:image' content={`${prefix}/images/og-image-2024.png`} />
     </>
   );

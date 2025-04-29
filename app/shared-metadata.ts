@@ -7,3 +7,7 @@ export const openGraphImage2023 = {
 export const openGraphImage2024 = {
   images: [`${prefix}/images/og-image-2024.png`],
 };
+
+export const openGraphImage2025 = {
+  images: [`${prefix}/images/og-image-2025.png`],
+};

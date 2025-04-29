@@ -1,4 +1,11 @@
 {
-  "title": "KWDC24",
-  "description": "It's a leap year, 다음 세상으로의 도약"
+  "2024": {
+    "title": "KWDC24",
+    "description": "It's a leap year, 다음 세상으로의 도약"
+  },
+  "2025": {
+    "title": "KWDC25",
+    "description": "It's a leap year, 다음 세상으로의 도약",
+    "place": "양재 aT센터"
+  }
 }
