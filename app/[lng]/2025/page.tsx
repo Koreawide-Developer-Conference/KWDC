@@ -6,10 +6,10 @@ import { TBD } from "@/components/2025/tbd";
 
 export const metadata: Metadata = {
   title: "KWDC25",
-  description: "Keep Weaving Discover Connection, 엮는 사이, 이어지는 우리.",
+  description: "Keep Weaving Discover Connectivity, 엮는 사이, 이어지는 우리.",
   openGraph: {
     title: "KWDC25",
-    description: "Keep Weaving Discover Connection, 엮는 사이, 이어지는 우리.",
+    description: "Keep Weaving Discover Connectivity, 엮는 사이, 이어지는 우리.",
     ...openGraphImage2025,
   },
 };
