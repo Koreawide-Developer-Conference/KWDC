@@ -31,6 +31,16 @@ const nextConfig = {
         destination: "https://hello-kwdc.github.io/",
         permanent: true,
       },
+      {
+        source: '/2025/sponsor',
+        destination: 'https://forms.gle/gfbidUhcenWiLU1z6',
+        permanent: true,
+      },
+      {
+        source: '/2025/speaker',
+        destination: 'https://forms.gle/zt2T8dqxXw3q25Zf9',
+        permanent: true,
+      }
     ];
   },
   transpilePackages: ["three"],
