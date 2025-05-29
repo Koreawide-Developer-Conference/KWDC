@@ -30,8 +30,8 @@ export const TBD: React.FC<LangProps> = async ({ params }) => {
             {t("2025.place")}
           </p>
           <div className='mt-10 flex items-center text-[#63916C] gap-x-5 max-lg:flex-col max-lg:gap-y-3 pointer-events-auto font-semibold'>
-            <Link className='px-4 py-2 border rounded-lg border-[#e5e7eb] bg-white cta_shadow' href={"/2025/sponsor"}>{t("2025.sponsor_title")}</Link>
-            <Link className='px-4 py-2 border rounded-lg border-[#e5e7eb] bg-white cta_shadow' href={"/2025/speaker"}>{t("2025.speaker_title")}</Link>
+            <Link className='px-4 py-2 border rounded-lg border-[#e5e7eb] bg-white cta_shadow min-w-[200px]' href={"/2025/sponsor"}>{t("2025.sponsor_title")}</Link>
+            <Link className='px-4 py-2 border rounded-lg border-[#e5e7eb] bg-white cta_shadow min-w-[200px]' href={"/2025/speaker"}>{t("2025.speaker_title")}</Link>
           </div>
         </div>
       </div>
