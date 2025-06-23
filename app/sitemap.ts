@@ -9,10 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
   return [
     {
-      url: "https://kwdc.dev/",
+      url: "https://kwdc.dev/2025",
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 1,
+      priority: 1.0,
     },
     {
       url: "https://kwdc.dev/2024",
@@ -21,7 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: "https://kwdc.dev/2024",
+      url: "https://kwdc.dev/2023",
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.5,
