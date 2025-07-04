@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 import { openGraphImage2025 } from "@/app/shared-metadata";
-import { TBD } from "@/components/2025/tbd";
+import { HeroSection } from "@/components/2025/section";
 
 
 export const metadata: Metadata = {
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 export default async function KWDC2025({ params }: any) {
   const awaitedParams = await params;
   return (
-    <div className='flex flex-col w-full'>
-      <TBD params={awaitedParams} />
+    <div className='flex flex-col w-full bg_2025'>
+      <HeroSection params={awaitedParams} />
     </div>
   );
 }

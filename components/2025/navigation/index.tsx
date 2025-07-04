@@ -9,7 +9,7 @@ import React from "react";
 import { GLOBAL_TICKET_LINK, TICKET_LINK } from "@/constants";
 import { LangProps, languages } from "@/i18n/settings";
 import Chevron from "@/public/assets/2024/icons/chevron_down_white.svg";
-import Logo from "@/public/assets/2024/images/logo.svg";
+import Logo from "@/public/assets/2025/icons/kwdc25_white.svg";
 
 
 export const Navigation: React.FC<LangProps> = ({ params }) => {
@@ -44,17 +44,17 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
         setTicketLink(GLOBAL_TICKET_LINK);
       }
     })
-  },[])
+  },[]) 
 
 
   return (
-    <nav className='p-0 fixed top-0 z-30 w-full flex justify-center items-center h-12 bg-gray-50 bg-opacity-50 backdrop-blur-md'>
+    <nav className='p-0 fixed top-0 z-30 w-full flex justify-center items-center h-12 nav_2025_gradient'>
       <div className='navbar-start flex justify-between items-center max-w-[1440px] w-full text-xs max-3xl:px-4 md:px-20'>
         <a href={`/${params.lng}/2024`} onClick={scrollToTop}>
           <Logo />
         </a>
         <div className='flex text-white items-center md:gap-x-5'>
-          <Link href={`/${params.lng}/2024/#overview`} onClick={scrollToSection("overview")} className='p-3 max-sm:hidden'>
+          {/* <Link href={`/${params.lng}/2024/#overview`} onClick={scrollToSection("overview")} className='p-3 max-sm:hidden'>
             Overview
           </Link>
           <Link href={`/${params.lng}/2024/#speakers`} onClick={scrollToSection("speakers")} className='p-3 max-sm:hidden'>
@@ -65,7 +65,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
           </Link>
           <Link href={`/${params.lng}/2024/organizer`} onClick={scrollToSection("speakers")} className='p-3 max-sm:hidden'>
             Organizers
-          </Link>
+          </Link> */}
           {languages
             .filter((lang) => lang !== params?.lng)
             .map((lang) => (
@@ -73,7 +73,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
                 {lang === "ko" ? "한국어" : lang === "en" ? "English" : "日本語"}
               </Link>
             ))}
-          <div className='dropdown text-deepGreen-100 md:hidden'>
+          {/* <div className='dropdown text-deepGreen-100 md:hidden'>
             <div tabIndex={0} role='button' className='btn btn-ghost'>
               <Chevron />
             </div>
@@ -110,7 +110,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
                   ))}
               </li>
             </ul>
-          </div>
+          </div> */}
           <div
             className='rounded-[30px] bg-brightGreen-100 py-2 px-7 cursor-pointer border border-solid border-white transition duration-200 hover:bg-transparent text-deepGreen-100 hover:text-white'>
             <Link href={ticketLink} target={"_blank"}>
