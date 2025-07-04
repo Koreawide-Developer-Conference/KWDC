@@ -12,10 +12,10 @@ export const HeroSection: React.FC<LangProps> = async ({ params }) => {
   const { t } = await useTranslation(params.lng, "common");
   return (
     <section className='flex flex-col pt-12 lg:h-screen min-h-screen w-full items-center font-Pretendard'>
-      <div className='w-full relative max-lg:h-[146px]'>
+      <div className='w-full relative max-lg:h-[146px] max-h-[582px]'>
         <Image src={Object.src} alt={'object'} width={1920} height={582} className='w-full max-h-[582px] object-fill max-lg:h-[146px]' />
-        <div className='absolute max-lg:w-[245px] max-lg:h-[45px] top-0 bottom-0 left-0 right-0 m-auto flex justify-center'>
-          <Image src={Logo.src} alt={'logo'} width={86} height={16} className='max-lg:w-[86px] max-lg:h-[16px] w-[245px] h-[45px] object-contain' />
+        <div className='absolute max-lg:w-[245px] max-lg:h-[45px] w-[245px] h-[45px] top-0 bottom-0 left-0 right-0 m-auto flex justify-center'>
+          <Image src={Logo.src} alt={'logo'} width={245} height={45} className='max-lg:w-[86px] max-lg:h-[16px] w-[245px] h-[45px] object-contain' />
         </div>
       </div>
       <div className='max-w-[1440px] max-3xl:px-4 lg:px-20 w-full items-center flex flex-col max-3xl:justify-center mt-8 max-lg:mt-4'>
