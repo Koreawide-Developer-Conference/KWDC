@@ -8,15 +8,16 @@ import { Analytics } from "@/components/analytics";
 import "../globals.css";
 
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
-  params: { lng },
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: {
+  params: Promise<{
     lng: string;
-  };
+  }>;
 }>) {
+  const { lng } = await params;
   return (
     <html lang={lng} dir={dir(lng)} data-theme="light">
       <head>

@@ -14,10 +14,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function KWDC2025({ params }: any) {
+export default async function KWDC2025({ params }: any) {
+  const awaitedParams = await params;
   return (
     <div className='flex flex-col w-full'>
-      <TBD params={params} />
+      <TBD params={awaitedParams} />
     </div>
   );
 }

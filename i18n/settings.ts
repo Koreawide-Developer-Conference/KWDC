@@ -13,6 +13,14 @@ export type LangProps = {
   };
 }
 
+export type AsyncLangProps = {
+  children?: React.ReactNode;
+  params: Promise<{
+    lng: LangTypes;
+    id?: string;
+  }>;
+}
+
 export function getOptions(
   lng = fallbackLng,
   ns: string | string[] = defaultNS

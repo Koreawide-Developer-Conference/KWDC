@@ -15,7 +15,8 @@ export const metadata: Metadata = {
 };
 
 
-export default async function Page({ params: { lng } }: { params: { lng: string }}) {
+export default async function Page({ params }: { params: Promise<{ lng: string }>}) {
+  let { lng } = await params;
   if (languages.indexOf(lng) < 0) lng = fallbackLng;
   redirect(`/${lng}/2025`);
 }
