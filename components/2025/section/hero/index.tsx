@@ -8,6 +8,7 @@ import { LiquidGlassCard } from "@/components/2025/card";
 
 import Object from "@/public/assets/2025/images/main_asset.png";
 import Logo from "@/public/assets/2025/images/kwdc25_black.png";
+import { TICKET_LINK } from "@/constants";
 
 export const HeroSection: React.FC<LangProps> = async ({ params }) => {
   const { t } = await useTranslation(params.lng, "common");
@@ -34,7 +35,7 @@ export const HeroSection: React.FC<LangProps> = async ({ params }) => {
             {t("2025.place")}
           </p>
         </div>
-        <Link href='https://www.koreawebdesignconference.org/2025/ticket' target='_blank' className='mt-[52px] max-lg:mt-[28px] transition-transform hover:scale-105'>
+        <Link href={TICKET_LINK} target='_blank' className='mt-[52px] max-lg:mt-[28px] transition-transform hover:scale-105'>
           <LiquidGlassCard 
             className="py-4 w-[250px] max-lg:w-[70px] max-lg:py-1"
             rounded="rounded-full"
