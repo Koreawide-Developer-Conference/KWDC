@@ -6,128 +6,63 @@
   font-family: "Pretendard";
   font-weight: 100;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot");
-  src:
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot?#iefix") format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.ttf") format("truetype");
+  src: url("/fonts/Pretendard-Thin.otf") format("opentype");
   font-display: swap;
-  unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 200;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot");
-  src:
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.ttf") format("truetype");
+  src: url("/fonts/Pretendard-ExtraLight.otf") format("opentype");
   font-display: swap;
-  unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 300;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot");
-  src:
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot?#iefix") format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.ttf") format("truetype");
+  src: url("/fonts/Pretendard-Light.otf") format("opentype");
   font-display: swap;
-  unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 400;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot");
-  src:
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot?#iefix") format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.ttf") format("truetype");
+  src: url("/fonts/Pretendard-Regular.otf") format("opentype");
   font-display: swap;
-  unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 500;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
-  src:
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix") format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf") format("truetype");
+  src: url("/fonts/Pretendard-Medium.otf") format("opentype");
   font-display: swap;
-  unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 600;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot");
-  src:
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.ttf") format("truetype");
+  src: url("/fonts/Pretendard-SemiBold.otf") format("opentype");
   font-display: swap;
-  unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 700;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
-  src:
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix") format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf") format("truetype");
+  src: url("/fonts/Pretendard-Bold.otf") format("opentype");
   font-display: swap;
-  unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 800;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
-  src:
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf") format("truetype");
+  src: url("/fonts/Pretendard-ExtraBold.otf") format("opentype");
   font-display: swap;
-  unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
 }
 @font-face {
   font-family: "Pretendard";
   font-weight: 900;
   font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot");
-  src:
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot?#iefix") format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf") format("truetype");
-  font-display: swap;
-  unicode-range: U+AC00-D7A3, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
-}
-@font-face {
-  font-family: Pretendard;
-  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  unicode-range: U+0041-005A, U+0061-007A;
+  src: url("/fonts/Pretendard-Black.otf") format("opentype");
   font-display: swap;
 }
 
@@ -190,4 +125,120 @@ section {
 
 .cta_shadow {
   box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 15px, rgba(255, 255, 255, 0.3) 0px 0px 30px, rgba(255, 255, 255, 0.1) 0px 0px 45px;
+}
+
+.nav_2025_gradient {
+  background: linear-gradient(90deg, #C8D7C2 0.31%, #6BA48B 99.82%);
+}
+
+.bg_2025 {
+  background: rgba(107, 164, 139, 0.10);
+}
+
+.cta_2025_gradient {
+  /* Drop Shadow */
+  box-shadow:
+    0px 3.23px 3.23px 0px rgba(0, 0, 0, 0.15),
+    0px 6.46px 6.46px 0px rgba(0, 0, 0, 0.10),
+    0px 9.69px 9.69px 0px rgba(0, 0, 0, 0.05);
+
+  /* Background Blur */
+  backdrop-filter: blur(38.9px);
+  -webkit-backdrop-filter: blur(38.9px);
+}
+
+/* Liquid Glass 디자인 스타일 */
+.liquid-glass-card {
+  position: relative;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.1) 0%, 
+    rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 
+    0 8px 32px 0 rgba(65, 80, 74, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  transform: translateZ(0);
+  will-change: transform;
+  animation: liquidFloat 8s ease-in-out infinite;
+}
+
+.liquid-glass-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.2) 0%, 
+    transparent 50%, 
+    rgba(255, 255, 255, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.liquid-glass-card:hover::before {
+  opacity: 1;
+}
+
+.liquid-glass-glow {
+  animation: glowPulse 6s ease-in-out infinite;
+}
+
+.liquid-glass-highlight {
+  animation: highlightShift 10s ease-in-out infinite;
+}
+
+.liquid-glass-ambient {
+  animation: ambientGlow 12s ease-in-out infinite;
+}
+
+@keyframes liquidFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  25% { transform: translateY(-3px) rotate(0.5deg); }
+  50% { transform: translateY(-6px) rotate(0deg); }
+  75% { transform: translateY(-3px) rotate(-0.5deg); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { 
+    box-shadow: 
+      0 8px 32px 0 rgba(65, 80, 74, 0.15),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  }
+  50% { 
+    box-shadow: 
+      0 12px 48px 0 rgba(65, 80, 74, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4),
+      inset 0 -1px 0 rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes highlightShift {
+  0%, 100% { transform: translateX(0); opacity: 0.4; }
+  50% { transform: translateX(10px); opacity: 0.6; }
+}
+
+@keyframes ambientGlow {
+  0%, 100% { opacity: 0.6; }
+  33% { opacity: 0.8; }
+  66% { opacity: 0.4; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-glass-card,
+  .liquid-glass-glow,
+  .liquid-glass-highlight,
+  .liquid-glass-ambient {
+    animation: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .liquid-glass-card {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+  }
 }

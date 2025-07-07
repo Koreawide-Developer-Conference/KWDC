@@ -3,11 +3,11 @@
     "title": "KWDC24",
     "description": "It's a leap year"
   },
-  "2025" : {
-    "title": "KWDC24",
-    "description": "It's a leap year",
-    "place": "27 Gangnam-daero, Seoul",
-    "speaker_title": "Together, as a KWDC speaker",
-    "sponsor_title": "Together, as a KWDC sponsor"
+  "2025": {
+    "title": "Keep Weaving,\nDiscover Connection.",
+    "description": "엮는 사이, 이어지는 우리.",
+    "date": "Friday, September 5, 2025",
+    "place": "Yangjae aT Center, Seoul",
+    "ticket_purchase": "Buy Ticket"
   }
 }
