@@ -9,7 +9,9 @@ import React from "react";
 import { GLOBAL_TICKET_LINK, TICKET_LINK } from "@/constants";
 import { LangProps, languages } from "@/i18n/settings";
 import Logo from "@/public/assets/2025/icons/kwdc25_white.svg";
-import { useTranslation } from "@/i18n";
+import Chevron from "@/public/assets/2024/icons/chevron_down_white.svg";
+
+
 
 
 export const Navigation: React.FC<LangProps> = ({ params }) => {
@@ -73,12 +75,12 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
                 {lang === "ko" ? "한국어" : lang === "en" ? "English" : "日本語"}
               </Link>
             ))}
-          {/* <div className='dropdown text-deepGreen-100 md:hidden'>
+          <div className='dropdown text-deepGreen-100 md:hidden'>
             <div tabIndex={0} role='button' className='btn btn-ghost'>
               <Chevron />
             </div>
             <ul tabIndex={0} className="menu dropdown-content bg-brightGreen-10 rounded-box z-[1] mt-4 w-36 p-2 shadow">
-              <li>
+              {/* <li>
                 <Link href={`/${params.lng}/2024#overview`} className="p-3">
                   Overview
                 </Link>
@@ -97,7 +99,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
                 <Link href={`/${params.lng}/2024/organizer`} className="p-3">
                   Organizers
                 </Link>
-              </li>
+              </li> */}
               <li>
                 {languages
                   .filter((lang) => lang !== params?.lng)
@@ -110,7 +112,7 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
                   ))}
               </li>
             </ul>
-          </div> */}
+          </div>
           <div className="relative py-2 px-7 cursor-pointer transition duration-200 hover:scale-105 rounded-[30px] bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:bg-white/20">
             <Link href={ticketLink} target={"_blank"} className="text-white hover:text-green-200 transition-colors relative z-10">
               Buy Tickets
