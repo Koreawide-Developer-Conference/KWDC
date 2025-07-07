@@ -1,4 +1,4 @@
-export const TICKET_LINK = "https://booking.naver.com/booking/5/bizes/987066";
+export const TICKET_LINK = "https://www.ticketa.co/events/12";
 export const GLOBAL_TICKET_LINK="https://lu.ma/fqzhe7ca"
 export const DISCORD_LINK = "https://discord.gg/wvptvf7MqR";
 export const YOUTUBE_LINK = "https://www.youtube.com/@KWDC23";

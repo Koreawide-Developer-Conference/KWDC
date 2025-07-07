@@ -8,8 +8,8 @@ import React from "react";
 
 import { GLOBAL_TICKET_LINK, TICKET_LINK } from "@/constants";
 import { LangProps, languages } from "@/i18n/settings";
-import Chevron from "@/public/assets/2024/icons/chevron_down_white.svg";
 import Logo from "@/public/assets/2025/icons/kwdc25_white.svg";
+import { useTranslation } from "@/i18n";
 
 
 export const Navigation: React.FC<LangProps> = ({ params }) => {
@@ -111,11 +111,11 @@ export const Navigation: React.FC<LangProps> = ({ params }) => {
               </li>
             </ul>
           </div> */}
-          <div
-            className='rounded-[30px] bg-brightGreen-100 py-2 px-7 cursor-pointer border border-solid border-white transition duration-200 hover:bg-transparent text-deepGreen-100 hover:text-white'>
-            <Link href={ticketLink} target={"_blank"}>
+          <div className="relative py-2 px-7 cursor-pointer transition duration-200 hover:scale-105 rounded-[30px] bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg hover:bg-white/20">
+            <Link href={ticketLink} target={"_blank"} className="text-white hover:text-green-200 transition-colors relative z-10">
               Buy Tickets
             </Link>
+            <div className="absolute inset-0 rounded-[30px] bg-gradient-to-br from-white/20 to-white/5 opacity-0 hover:opacity-100 transition-opacity duration-300" />
           </div>
         </div>
       </div>
