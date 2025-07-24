@@ -1,5 +1,5 @@
 export const TICKET_LINK = "https://www.ticketa.co/events/12";
-export const GLOBAL_TICKET_LINK="https://lu.ma/fqzhe7ca"
+export const GLOBAL_TICKET_LINK="https://www.ticketa.co/events/12"
 export const DISCORD_LINK = "https://discord.gg/wvptvf7MqR";
 export const YOUTUBE_LINK = "https://www.youtube.com/@KWDC23";
 export const INSTAGRAM_LINK = "https://www.instagram.com/hellokwdc/";
