@@ -86,9 +86,6 @@ body {
 
   scroll-behavior: smooth;
   overscroll-behavior: none;
-  touch-action: none;
-  -webkit-overflow-scrolling: touch;
-
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
@@ -122,26 +119,29 @@ section {
 }
 
 .hero_gradient {
-    background: linear-gradient(180deg, #E8EEF0 80%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #e8eef0 80%, #ffffff 100%);
 }
 
 .cta_shadow {
-  box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 15px, rgba(255, 255, 255, 0.3) 0px 0px 30px, rgba(255, 255, 255, 0.1) 0px 0px 45px;
+  box-shadow:
+    rgba(255, 255, 255, 0.5) 0px 0px 15px,
+    rgba(255, 255, 255, 0.3) 0px 0px 30px,
+    rgba(255, 255, 255, 0.1) 0px 0px 45px;
 }
 
 .nav_2025_gradient {
-  background: linear-gradient(90deg, #C8D7C2 0.31%, #6BA48B 99.82%);
+  background: linear-gradient(90deg, #c8d7c2 0.31%, #6ba48b 99.82%);
 }
 
 .bg_2025 {
-  background: #F4F4F4;
+  background: #f4f4f4;
 }
 
 .cta_2025_gradient {
   /* Drop Shadow */
   box-shadow:
     0px 3.23px 3.23px 0px rgba(0, 0, 0, 0.15),
-    0px 6.46px 6.46px 0px rgba(0, 0, 0, 0.10),
+    0px 6.46px 6.46px 0px rgba(0, 0, 0, 0.1),
     0px 9.69px 9.69px 0px rgba(0, 0, 0, 0.05);
 
   /* Background Blur */
@@ -152,13 +152,11 @@ section {
 /* Liquid Glass 디자인 스타일 */
 .liquid-glass-card {
   position: relative;
-  background: linear-gradient(135deg, 
-    rgba(255, 255, 255, 0.1) 0%, 
-    rgba(255, 255, 255, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 
+  box-shadow:
     0 8px 32px 0 rgba(65, 80, 74, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.3),
     inset 0 -1px 0 rgba(255, 255, 255, 0.1);
@@ -168,14 +166,11 @@ section {
 }
 
 .liquid-glass-card::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background: linear-gradient(135deg, 
-    rgba(255, 255, 255, 0.2) 0%, 
-    transparent 50%, 
-    rgba(255, 255, 255, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, transparent 50%, rgba(255, 255, 255, 0.1) 100%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -197,21 +192,31 @@ section {
 }
 
 @keyframes liquidFloat {
-  0%, 100% { transform: translateY(0px) rotate(0deg); }
-  25% { transform: translateY(-3px) rotate(0.5deg); }
-  50% { transform: translateY(-6px) rotate(0deg); }
-  75% { transform: translateY(-3px) rotate(-0.5deg); }
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-3px) rotate(0.5deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-3px) rotate(-0.5deg);
+  }
 }
 
 @keyframes glowPulse {
-  0%, 100% { 
-    box-shadow: 
+  0%,
+  100% {
+    box-shadow:
       0 8px 32px 0 rgba(65, 80, 74, 0.15),
       inset 0 1px 0 rgba(255, 255, 255, 0.3),
       inset 0 -1px 0 rgba(255, 255, 255, 0.1);
   }
-  50% { 
-    box-shadow: 
+  50% {
+    box-shadow:
       0 12px 48px 0 rgba(65, 80, 74, 0.25),
       inset 0 1px 0 rgba(255, 255, 255, 0.4),
       inset 0 -1px 0 rgba(255, 255, 255, 0.2);
@@ -219,14 +224,28 @@ section {
 }
 
 @keyframes highlightShift {
-  0%, 100% { transform: translateX(0); opacity: 0.4; }
-  50% { transform: translateX(10px); opacity: 0.6; }
+  0%,
+  100% {
+    transform: translateX(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateX(10px);
+    opacity: 0.6;
+  }
 }
 
 @keyframes ambientGlow {
-  0%, 100% { opacity: 0.6; }
-  33% { opacity: 0.8; }
-  66% { opacity: 0.4; }
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  33% {
+    opacity: 0.8;
+  }
+  66% {
+    opacity: 0.4;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -245,30 +264,24 @@ section {
   }
 }
 
-
 /* Prevent pull-to-refresh on mobile */
 html {
   overscroll-behavior: none;
-  touch-action: none;
 }
 
-/* Additional mobile-specific scroll prevention */
+/* Additional mobile-specific scroll settings */
 @media (max-width: 768px) {
   body {
-    position: fixed;
-    overflow: hidden;
     -webkit-overflow-scrolling: touch;
     touch-action: manipulation;
   }
 
   html,
   body {
-    height: 100vh;
-    height: -webkit-fill-available;
-    overscroll-behavior-y: none;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
   }
 }
-
 
 /* Prevent zoom on double tap */
 * {
@@ -281,8 +294,10 @@ html {
   border: 1px solid var(--liquid-glass-border);
   box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.15),
-    inset 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.15), 0 0 20px rgba(255, 255, 255, 0.1);
+    inset 0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15),
+    0 0 20px rgba(255, 255, 255, 0.1);
   transition: all var(--liquid-flow-duration) cubic-bezier(0.23, 1, 0.32, 1);
   position: relative;
   transform-origin: center center;
@@ -471,8 +486,10 @@ html {
   transform: translateY(-2px);
   box-shadow:
     0 12px 40px rgba(0, 0, 0, 0.15),
-    inset 0 2px 4px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.15), 0 0 20px rgba(255, 255, 255, 0.1);
+    inset 0 2px 4px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.15),
+    0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .liquid-glass:active {

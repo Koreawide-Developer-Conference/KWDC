@@ -7,6 +7,8 @@ import { LangProps } from "@/i18n/settings";
 
 import { Avatar } from "@/components/2024";
 
+import { LiquidButton, LiquidGlass } from "../../liquidGlass";
+
 export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
   const { t } = await useTranslation(params.lng, "speaker");
 
@@ -16,73 +18,73 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
       id='speakers'
     >
       <div className='max-w-[1440px] max-3xl:px-0 lg:px-20 min-h-screen w-full flex flex-col items-center justify-center'>
-        <div>
+        <LiquidButton
+          className='rounded-full transition-all duration-300 shadow-2xl'
+          style={{ padding: "16px 50px" }}
+          rippleEffect={false}
+        >
           <h2 className='text-4xl max-3xl:text-xl font-bold text-deepGreen-100'>{t("2025.title")}</h2>
-        </div>
-        <p className='text-center text-greenBlack-70 text-xl max-3xl:text-sm whitespace-pre-wrap mt-5'>{t("2025.description")}</p>
+        </LiquidButton>
+        <p className='text-center text-greenBlack-70 text-xl max-3xl:text-sm whitespace-pre-wrap mt-5'>
+          {t("2025.description")}
+        </p>
         <br />
         {/* <DownloadTimeTable lng={params.lng} label={`${t("download")}`} /> */}
-        <div className='grid grid-cols-3 max-lg:grid-cols-1 gap-12 py-[75px] w-full'>
+        <div className='grid grid-cols-3 max-lg:grid-cols-1 gap-12 py-[75px] w-full max-lg:px-5'>
           {Array.from({ length: 24 }).map((_, index) => {
-            if (index === 9) {
-              return (
-                <Link
-                  href={`/${params.lng}/2024/speaker/10`}
-                  key={index}
-                  className='bg-brightGreen-100 rounded-xl w-full h-[230px] py-4 px-3.5 flex flex-col justify-around max-3xl:hover:scale-105 transition-transform duration-300'
-                >
-                  <div className='flex flex-col'>
-                    <p className='text-deepGreen-70 font-SFProDisplay mb-2'>{t(`speaker10.category`)}</p>
-                    <p className='text-deepGreen-100 font-bold font-SFProDisplay mb-2'>{t(`speaker10.title`)}</p>
-                    <p className='text-deepGreen-70 font-SFProDisplay'>{t(`speaker10.time`)}</p>
-                  </div>
-                  <div className='py-2 flex items-center gap-x-2'>
-                    <div className='avatar-group -space-x-2 rtl:space-x-reverse'>
-                      <Avatar
-                        name={t(`speaker10.name`)}
-                        src={`${prefix}/assets/2024/images/speaker/${t(`speaker10.img`)}`}
-                        alt={t(`speaker10.name`)}
-                      />
-                      <Avatar
-                        name={t(`speaker10.nest.name`)}
-                        src={`${prefix}/assets/2024/images/speaker/${t(`speaker10.nest.img`)}`}
-                        alt={t(`speaker10.nest.name`)}
-                      />
-                    </div>
-
-                    <div className='flex flex-col items-start'>
-                      <div className='text-deepGreen-100 font-bold font-SFProDisplay mr-0.5 flex flex-col'>
-                        <div className='flex gap-x-2'>
-                          <span>{t(`speaker10.name`)}</span>
-                          <span className='text-[#FFA412] font-bold font-SFProDisplay'>{t(`speaker10.nickname`)}</span>
-                        </div>
-                        {t(`speaker10.affiliation`) && (
-                          <span className='text-xs text-deepGreen-70'>{`${t(`speaker10.affiliation`)}`}</span>
-                        )}
-                      </div>
-                      <div className='text-deepGreen-100 font-bold font-SFProDisplay mr-0.5 flex flex-col'>
-                        <div className='flex gap-x-2'>
-                          <span>{t(`speaker10.nest.name`)}</span>
-                          <span className='text-[#FFA412] font-bold font-SFProDisplay'>
-                            {t(`speaker10.nest.nickname`)}
-                          </span>
-                        </div>
-                        {t(`speaker10.nest.affiliation`) && (
-                          <span className='text-xs text-deepGreen-70'>{`${t(`speaker10.nest.affiliation`)}`}</span>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              );
-            }
             return (
-              <Link
-                href={`/${params.lng}/2024/speaker/${index + 1}`}
-                key={index}
-                className='bg-brightGreen-100 rounded-xl w-full h-[230px] py-4 px-3.5 flex flex-col justify-around max-3xl:hover:scale-105 transition-transform duration-300'
-              >
-                <div className='flex flex-col'>
+              <div key={index} className='flex flex-col items-center justify-center'>
+                <LiquidButton
+                  variant='primary'
+                  size='xl'
+                  rippleEffect={false}
+                  className='shadow-2xl w-full h-[70px] !p-2 !rounded-full flex items-center justify-center m-2 transition-all duration-300 !bg-[#41504A73]'
+                  // style={{
+                  //   width: "96px",
+                  //   height: "96px",
+                  //   padding: "0",
+                  //   borderRadius: "50%",
+                  //   display: "flex",
+                  //   alignItems: "center",
+                  //   justifyContent: "center",
+                  //   margin: "8px",
+                  // }}
+                >
+                  <p className='text-white font-bold font-SFProDisplay text-center'>{t(`speaker${index + 1}.title`)}</p>
+                </LiquidButton>
+                <Link
+                  href={`/${params.lng}/2025/speaker/${index + 1}`}
+                  key={index}
+                  className='rounded-xl w-full py-4 px-3.5 flex flex-col justify-around max-3xl:hover:scale-105 transition-transform duration-300'
+                >
+                  <LiquidGlass
+                    variant='panel'
+                    intensity='medium'
+                    rippleEffect={false}
+                    flowOnHover={false}
+                    stretchOnDrag={false}
+                    className='w-full aspect-square rounded-[67px] relative !bg-[#41504A73]'
+                    contentClassName='flex flex-col items-start justify-end max-3xl:hover:scale-105 transition-transform duration-300 aspect-square'
+                  >
+                    <div className='absolute -top-10 -left-14 max-lg:-top-10 max-lg:-left-10'>
+                      <Avatar
+                        size={200}
+                        mobileSize={150}
+                        name={t(`speaker${index + 1}.name`)}
+                        src={`${prefix}/assets/2024/images/speaker/${t(`speaker${index + 1}.img`)}`}
+                        alt={t(`speaker${index + 1}.name`)}
+                      />
+                    </div>
+                    <div className='flex flex-col text-2xl'>
+                      <span className='text-white font-bold'>{t(`speaker${index + 1}.name`)}</span>
+                      {t(`speaker${index + 1}.affiliation`) && (
+                        <span className='text-lg text-white/70 font-SFProDisplay'>
+                          {`${t(`speaker${index + 1}.affiliation`)}`}
+                        </span>
+                      )}
+                    </div>
+                  </LiquidGlass>
+                  {/* <div className='flex flex-col'>
                   <p className='text-deepGreen-70 font-SFProDisplay mb-2'>{t(`speaker${index + 1}.category`)}</p>
                   <p className='text-deepGreen-100 font-bold font-SFProDisplay mb-2'>
                     {t(`speaker${index + 1}.title`)}
@@ -106,8 +108,9 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
                       <span className='text-xs text-deepGreen-70'>{`${t(`speaker${index + 1}.affiliation`)}`}</span>
                     )}
                   </div>
-                </div>
-              </Link>
+                </div> */}
+                </Link>
+              </div>
             );
           })}
         </div>
