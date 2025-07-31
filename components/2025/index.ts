@@ -1,4 +1,5 @@
 export * from "./navigation";
 export * from "./divider";
 export * from "./footer";
-export * from "./card";
+export * from './section';
+export * from './liquidGlass';
