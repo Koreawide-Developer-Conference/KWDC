@@ -25,6 +25,8 @@ export const AnimatedTooltip = ({
     x.set(event.nativeEvent.offsetX - halfWidth);
   };
 
+  const MotionDiv = motion.div as any;
+
   return (
     <div className='flex gap-10 flex-wrap justify-center items-center'>
       {items.map((item, idx) => (
@@ -36,7 +38,7 @@ export const AnimatedTooltip = ({
         >
           <AnimatePresence mode='popLayout'>
             {hoveredIndex === item.id && (
-              <motion.div
+              <MotionDiv
                 initial={{ opacity: 0, y: 20, scale: 0.6 }}
                 animate={{
                   opacity: 1,
@@ -60,7 +62,7 @@ export const AnimatedTooltip = ({
                 <div className='absolute left-10 w-[40%] z-30 -bottom-px bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px ' />
                 <div className='font-bold text-white relative z-30 text-base'>{item.name}</div>
                 {/*{item.affiliation && <div className='text-white text-xs'>{item.affiliation}</div>}*/}
-              </motion.div>
+              </MotionDiv>
             )}
           </AnimatePresence>
           {item.image ? (
