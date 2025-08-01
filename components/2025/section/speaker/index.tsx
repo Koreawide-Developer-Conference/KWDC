@@ -30,8 +30,8 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
         </p>
         <br />
         {/* <DownloadTimeTable lng={params.lng} label={`${t("download")}`} /> */}
-        <div className='grid grid-cols-3 max-lg:grid-cols-1 gap-12 py-[75px] w-full max-lg:px-5'>
-          {Array.from({ length: 24 }).map((_, index) => {
+        <div className='grid grid-cols-3 max-xl:grid-cols-2 max-lg:grid-cols-1 gap-12 py-[75px] w-full max-lg:px-5'>
+          {Array.from({ length: 13 }).map((_, index) => {
             return (
               <div key={index} className='flex flex-col items-center justify-center'>
                 <LiquidButton
@@ -39,18 +39,10 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
                   size='xl'
                   rippleEffect={false}
                   className='shadow-2xl w-full h-[70px] !p-2 !rounded-full flex items-center justify-center m-2 transition-all duration-300 !bg-[#41504A73]'
-                  // style={{
-                  //   width: "96px",
-                  //   height: "96px",
-                  //   padding: "0",
-                  //   borderRadius: "50%",
-                  //   display: "flex",
-                  //   alignItems: "center",
-                  //   justifyContent: "center",
-                  //   margin: "8px",
-                  // }}
                 >
-                  <p className='text-white font-bold font-SFProDisplay text-center'>{t(`speaker${index + 1}.title`)}</p>
+                  <p className='text-white font-bold font-SFProDisplay text-center'>
+                    {t(`2025.speaker${index + 1}.category`)}
+                  </p>
                 </LiquidButton>
                 <Link
                   href={`/${params.lng}/2025/speaker/${index + 1}`}
@@ -70,16 +62,16 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
                       <Avatar
                         size={200}
                         mobileSize={150}
-                        name={t(`speaker${index + 1}.name`)}
-                        src={`${prefix}/assets/2024/images/speaker/${t(`speaker${index + 1}.img`)}`}
-                        alt={t(`speaker${index + 1}.name`)}
+                        name={t(`2025.speaker${index + 1}.name`)}
+                        src={`${prefix}/assets/2024/images/speaker/${t(`2025.speaker${index + 1}.img`)}`}
+                        alt={t(`2025.speaker${index + 1}.name`)}
                       />
                     </div>
                     <div className='flex flex-col text-2xl'>
-                      <span className='text-white font-bold'>{t(`speaker${index + 1}.name`)}</span>
-                      {t(`speaker${index + 1}.affiliation`) && (
+                      <span className='text-white font-bold'>{t(`2025.speaker${index + 1}.name`)}</span>
+                      {t(`2025.speaker${index + 1}.affiliation`) && (
                         <span className='text-lg text-white/70 font-SFProDisplay'>
-                          {`${t(`speaker${index + 1}.affiliation`)}`}
+                          {`${t(`2025.speaker${index + 1}.affiliation`)}`}
                         </span>
                       )}
                     </div>
