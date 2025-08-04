@@ -47,7 +47,7 @@ export default async function SpeakerDetail({ params }: any) {
             <Image
               width={300}
               height={600}
-              src={`${prefix}/assets/2024/images/speaker/profile/${t(`2025.speaker${id}.img`).replace(".webp", ".png")}`}
+              src={`${prefix}/assets/2025/images/speaker/${t(`2025.speaker${id}.img`)}`}
               alt={t(`2025.speaker${id}.name`)}
               className='w-1/3 max-h-[600px] max-3xl:w-1/5 max-2xl:w-1/3 max-xl:w-1/2 object-contain object-bottom'
             />
