@@ -11,7 +11,7 @@
       "title": "Hangeul and the Apple Orchard",
       "description": "With the theme of 'Hangul and the Apple Ecosystem,' I want to technologize how the Hangul language we use every day is represented and processed in the digital environment, especially in Apple's macOS and iOS.\n\nHangul is a unique writing system, but its first encounter with computers was fraught with trial and error. From the complete vs. combinatorial code debate, to the limitations of past encoding standards like KS X 1001, the early computerization of Hangul was a story of technical compromise and historical context that led to the current Unicode-based environment. Before we get started, we'll briefly review this history.\n\nWe'll then describe how Hangul is represented in the current Unicode system. We'll explain how consonants and vowels combine to form Hangul, how code points are organized in Unicode, and the nature of perfective and consonant-separated forms.\n\nThis structure means that storing, comparing, and sorting Hangul requires special handling. Specifically, macOS uses a normalization method called Normalization Form D (NFD) internally to handle this, while Windows uses Normalization Form C (NFC), and this difference causes strings to be recognized differently between systems, even for the same Hangul character. This can lead to broken filenames, failed string comparisons, and other issues.\n\nFor example, a folder zipped on macOS may have broken filenames when unzipped on Windows, or two Hangul strings may look the same in Swift code but are actually treated differently, causing bugs.\nAnother real-world example is the problem that occurs when you enter a Hangul path in Xcode when running a script or setting an environment variable.\nThe file will definitely exist, but APIs like fileManager.fileExists(atPath:) or Bundle.path(forResource:) won't find it. This is due to encoding differences, as the input is stored in NFC (perfect), while the actual file system is stored in NFD (non-fragmented).\n\nIn this session, we'll walk through some of these real-world examples and show you with code what you need to consider when dealing with Hangul in Swift and Apple environments.\n\nFinally, Hangul is not just a localization target, but a language in its own right with a complex structure and way of expression. The talk will conclude with suggestions for platform-level considerations to provide a better experience for Hangul users, as well as improvements that developers can implement in their code.",
       "sns": "https://github.com/Juhwa-Lee1023",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "10:20 ~ 10:30",
       "img": "juhwa_lee.webp"
     },
     "speaker2": {
@@ -23,7 +23,7 @@
       "title": "SharePlay: What Can You Do With It?",
       "description": "0. What is SharePlay?\nHere's a year-by-year overview of SharePlay's features and API evolution.\n\n1. What can I use it for?\nThere are two main experiences that SharePlay offers (viewing media together / writing apps together)\nWe'll take a quick look at each to see what value it can provide.\n\n2. Let's take a quick look at GroupActivites.\nFramework documentation and share your takeaways.\nGroupActivity definition (GroupActivityMetadata)\nGroupSession\nGroupSessionMessenger(.reliable, .unreliable)\nGroupSessionJournal (fileTransfer)\nLate Joiner workaround\nGroupActivitySharingController\nSpatialTemplate Learn the role and usage of the core classes.\n\n2. How can you implement it? We'll showcase an example project at\nand walk through the code to explain what APIs we used to create the functionality and what our design intentions were.\n\n4. Lessons learned and tips\nWe'll share how we tested the functionality of our implemented projects, the challenges and tips we experienced while implementing the sample projects, and provide links to official documentation and repositories to help participants apply them to their own projects after the session.\n\n",
       "sns": "https://www.linkedin.com/in/sung-jong-will-kim-547348153/",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "11:00 ~ 11:20",
       "img": "sungjong_kim.webp"
     },
     "speaker3": {
@@ -35,7 +35,7 @@
       "title": "How can I find and run test code written with Swift Testing?",
       "description": "Exploring the Inner Workings of Swift Testing\nThe Swift Testing library being an open source project offers a significant advantage: we can directly examine and analyze its internal implementation. This session will leverage this advantage to understand the core principles of how test code is recognized and executed at runtime. Going beyond simply using Swift Testing's basic functionality, this provides a fundamental understanding of how our written test code operates within the system.\n\nThe Secrets of Runtime Dynamic Discovery and Execution\nOne of the core aspects of this session is exploring methods for dynamically discovering and executing code at runtime. Swift Testing goes beyond simply finding and executing predefined test code. Through this session, we plan to introduce amazing techniques for dynamically finding and executing arbitrary types, functions, or even specific code blocks that we define ourselves at runtime. This process will provide developers with flexibility and powerful control capabilities beyond imagination. Through this, developers will be able to construct more sophisticated and diverse environments.\n\nTo understand and implement these runtime dynamic discovery and execution techniques, basic knowledge of the Mach-O binary format is essential. Mach-O is the binary format that constitutes executable files, libraries, bundles, etc., used in Apple operating systems such as macOS and iOS. The session will cover basic knowledge of the Mach-O binary format's structure and operation. Through this, participants will be able to clearly understand the mechanism by which Swift Testing internally interacts with Mach-O binaries to find and execute test code.",
       "sns": "https://github.com/minsone",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "10:30 ~ 10:50",
       "img": "minsone.webp"
     },
     "speaker4": {
@@ -47,7 +47,7 @@
       "title": "No Shaders? No Worries. Let's Talk Metal Pipeline.",
       "description": "Metal is Apple's high-performance, low-level graphics API that allows developers to directly control complex graphics processing. However, for many developers, Metal feels like a high barrier-to-entry technology. This is because understanding shader languages or GPU internal architecture seems necessary. Recently, while SwiftUI has provided an environment where simple shader effects can be easily applied, many developers use it 'by feel' without structurally understanding how the GPU operates internally and how rendering is performed.\n\nThis session aims to help UIKit or SwiftUI developers who have never worked with Metal to clearly understand Metal's rendering pipeline structure and utilize it in actual apps. Rather than focusing on shader implementation, we concentrate on the pipeline structure and flow itself, explaining with visual diagrams what roles objects like MTLDevice, MTLCommandQueue, and MTLRenderPassDescriptor play and how they operate.\n\nMetal's basic rendering flow is simple. Understanding the series of processes of preparing resources, creating commands, then passing them to the GPU to be drawn on screen is the key. This presentation conveys this process more intuitively. Additionally, based on the structural improvements of the latest Metal 4 announced at WWDC25, including CommandEncoder, Barrier API, and Argument Table, we'll also introduce simpler and more efficient pipeline configuration methods than before.\n\nUltimately, the purpose of this session is to make Metal perceived not simply as an advanced graphics expert's tool, but as a practical technology stack that can be sufficiently utilized in iOS/macOS apps. Understanding just the structure can make Metal a powerful performance optimization tool. Through the presentation, you will no longer find Metal difficult and will come to accept it as a technology you can confidently introduce where needed.",
       "sns": "https://x.com/nekodoko315",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "11:40 ~ 12:00",
       "img": "kim_minguk.webp"
     },
     "speaker5": {
@@ -59,7 +59,7 @@
       "title": "AI as Apple & AI as a Developer",
       "description": "Stories about AI and the Apple ecosystem, and AI utilization as a developer.",
       "sns": "",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "14:20 ~ 14:40",
       "img": "lee_jae_eun.webp"
     },
     "speaker6": {
@@ -71,7 +71,7 @@
       "title": "Build your verification process with PassKit / ID Verifier",
       "description": "The integration of government-issued IDs into smartphones is rapidly expanding across the globe. Under international standards such as ISO/IEC 18013-5 and the 23220 series, a growing number of digital identity solutions are being deployed—not only by major U.S. platforms like Apple and Google, but also by the European Union with its own Wallet, and by Samsung in South Korea.\n\nApple now offers APIs that allow iPhones to perform identity and age verification using mobile driver's licenses (mDLs) and mobile documents (mdocs). These APIs support both in-app identity checks and secure in-person verification using proximity-based protocols.\n\nIn this session, we will explore the current international landscape of mobile identity, review the key capabilities of Apple's verification APIs, and discuss how these technologies can be used in real-world applications. Through code examples and use cases, we'll consider the broader implications and future potential of mobile-based identity verification for developers, service providers, and end users.",
       "sns": "https://x.com/d-date",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "13:10 ~ 13:30",
       "img": "daiki_matsudate.webp"
     },
     "speaker7": {
@@ -83,7 +83,7 @@
       "title": "Thoughtful Spatial Design: Exploring Biology from Cells to Atoms",
       "description": "In this session, I'll explore how thoughtful spatial design brings the microscopic world of cells and atoms into human-scale experiences. Drawing from the development of CellWalk, an Apple Design Awards Finalist for Visuals and Graphics, I'll demonstrate how our app enables learners to intuitively navigate biological structures—from entire cells down to individual atoms—across vast scales on visionOS, iOS, and iPad.\n\nWe'll start by introducing CellWalk, emphasizing our mission to inspire the next generation of biologists. I'll describe our primary audience, including high-school biology and pre-med students, and our broad, diverse community of users, such as scientists and lifelong learners.\n\nNext, I'll provide an accessible overview of the advanced visualization technology we've developed for Apple Vision Pro, highlighting the educational possibilities unlocked by the capability to visualize 3D whole-cell models with billions of atoms.\n\nI'll then discuss key design challenges, including maintaining user comfort during dramatic scale transitions and effectively managing the complexity inherent in detailed molecular models. I'll share practical strategies we've implemented, such as careful selection of dynamic color palettes, purposeful use of lighting and focus, intuitive scale controls, slicing and our \"fish tank\" metaphor to keep experiences engaging and approachable.\n\nAnother critical design consideration involves translating extensive, scientifically accurate datasets—comprising thousands of authentic 3D protein structures—into intuitive experiences suitable even for high-school biology students. I'll highlight our approach to making complex scientific data understandable and engaging for all audience levels.\n\nComfort and accessibility are central to our design approach. One of our biggest challenges is presenting vast biological structures—from entire cells to atomic detail—while maintaining a sense of orientation and ease for the user. I'll discuss how we design spatial experiences that feel natural and inclusive, ensuring users of all backgrounds can engage without discomfort or overwhelm.\n\nFinally, I'll reflect on the future of spatial computing in education, exploring emerging opportunities and sharing my vision for how thoughtful design can transform immersive learning. The session will be highly visual, featuring numerous videos and graphics to vividly illustrate design concepts and user experiences.",
       "sns": "https://x.com/timd_ca",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "16:20 ~ 16:40",
       "img": "tim_davison.webp"
     },
     "speaker8": {
@@ -95,7 +95,7 @@
       "title": "Understand Swift's performance from the Array: motivation, evolution, and future",
       "description": "One of the things that is essential to keep an eye on the evolution of Swift in recent is the \"concept of performance.\"\n\nFor example, let's look at SE-0453. In this, a fixed-length array type called Inline Array is introduced. By using this, you can write code that has the feel of an Array but has better performance than an Array.\n\nNow, here are some questions. Why is the Inline Array type provided, and when should it be used? Why is the existing Array a problem? And what exactly is the \"performance\" that we Swift Developers should be concerned about, as written in SE-0453 and many other Evolutions?\n\nThese questions are unlikely to be felt in daily development, and there are few opportunities to understand them deeply. However, in order for Swift to become a language that is loved on more platforms (such as embedded systems), it is essential to understand these questions, evolution, and motivations.\n\nTherefore, in this talk, we will unravel these questions from the Inline Array proposal SE-0453, its implementation, other performance-related implementations, and roadmaps. Specifically, let's go through the following content to decipher SE-0453 and the Swift roadmap, and enter the world of Swift performance together.\n\n- The history and performance of arrays - Let's look back at Inline as a C array\n- Heap, buffer, and stack (and their misunderstandings and true understanding)\n- Exploring the \"unnoticed\" Swift performance in everyday code\n- The future of language and platforms seen from the challenge of Swift\n\nBy unravelling various aspects of programming and Swift through this talk, you will gain understanding, motivation, and insight into Swift performance from a perspective that is not limited to InlineArray.\n\nIn addition, you will learn hidden prospects and hints for Swift to be widely used not only in daily application development but also on many other platforms.\n\nLet's take a look at the future of Swift together!",
       "sns": "https://x.com/___freddi___",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "11:20 ~ 11:40",
       "img": "yuki_aki.webp"
     },
     "speaker9": {
@@ -107,7 +107,7 @@
       "title": "The power of prototyping: How to bring your ideas to life",
       "description": "",
       "sns": "https://www.linkedin.com/in/changwoo-kim-4a1942a0/",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "17:00 ~ 17:40",
       "img": "changwoo_kim.webp"
     },
     "speaker10": {
@@ -119,7 +119,7 @@
       "title": "The power of prototyping: How to bring your ideas to life",
       "description": "",
       "sns": "https://x.com/toyochang",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "17:00 ~ 17:40",
       "img": "masashi_toyota.webp"
     },
     "speaker11": {
@@ -131,7 +131,7 @@
       "title": "Get the Most Out of. he App Review",
       "description": "Stories about App Review from Apple's App Review Communication team.",
       "sns": "",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "16:00 ~ 16:20",
       "img": "han_lee.webp"
     },
     "speaker12": {
@@ -143,7 +143,7 @@
       "title": "",
       "description": "",
       "sns": "https://x.com/danieledrisian",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "14:40 ~ 15:00",
       "img": "daniel_edrisian.webp"
     },
     "speaker13": {
@@ -155,7 +155,7 @@
       "title": "Go beyond actor boundary",
       "description": "This talk describes the latest technique to synchronously cross the actor boundary of Swift concurrency. Actor boundary is a powerful concept of Swift concurrency to prevent data races, but it imposes a strong restriction on APIs which does not fit in the modern Swift concurrency concept. This becomes an obstacle when you adopt a legacy thread-based APIs to a modern Swift 6 based code base.\nFortunately, so many solutions for this problem were introduced to Swift and OS APIs these days. This talk introduces these techniques for safely using legacy thread-based APIs on Swift 6 strict concurrency checking, as demonstrated by an issue I encountered in a project to play just intonation chords in Swift.\nPlaying a sound with Swift is not a difficult thing. In order to play a just intonation chord for an arbitrary time without any clipping noise, we need to render the waveform over time, rather than looping a pre-computed waveform. We need to manage the phase of each frequency component of the chord as a state variable, and calculate the waveform with the phases while sequentially advancing them.\nWe need to calculate the waveform in the callback which is called by the system. The waveform value has to be set to the array variable which is given as the block parameter. This needs to be set synchronously and the callback is not isolated to any actor context. While this callback block must be Sendable, the conversion rule of the Objective-C callback API for Swift allows passing a non-Sendable closure by Swift 6.1. This causes a crash due to a runtime violation of the actor context check. Although this runtime crash is prevented by the compile-time check since Swift 6.2, the problem still remains: How can we calculate and set the waveform in a Sendable closure while accessing actor isolated state variables?\nIn this talk, I describe the two major ways to tackle this problem. The first one is a combination of custom actor executor and DispatchQueue. The idea is to use DispatchQueue.sync(execute:) to synchronously execute waveform computation callbacks and custom actor executor jobs. I will show the implementation flow, solving the Sendable check by the compiler and the actor context check by the Swift runtime.\nThe second one is a more direct solution: using lock APIs like OSAllocatedUnfairLock and Mutex. We can easily cross the actor boundaries with these thread locking APIs, but we need to pay attention to the operation atomicity to avoid a race condition.\nThis talk concludes with the comparison of these two solutions for using legacy thread-based APIs on Swift 6.",
       "sns": "https://x.com/himeshi_tech",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
+      "time": "10:30 ~ 10:50",
       "img": "akimu_hirai.webp"
     },
     "speaker14": {
@@ -167,8 +167,9 @@
       "title": "",
       "description": "",
       "sns": "",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
-      "img": "oh_gwan_sik.webp"
+      "time": "16:50 ~ 17:10",
+      "img": "oh_gwan_sik.webp",
+      "isHidden": true
     },
     "speaker15": {
       "name": "Ota",
@@ -177,10 +178,11 @@
       "category": "",
       "introduction": "",
       "title": "",
-      "description": "Stories from Apple.",
+      "description": "",
       "sns": "",
-      "time": "Goguryeo (A Hall) 10:30 - 11:10",
-      "img": "ota.webp"
+      "time": "14:00 ~ 14:20",
+      "img": "ota.webp",
+      "isHidden": true
     }
   },
   "title": "Leading a Leap into Imagination",
