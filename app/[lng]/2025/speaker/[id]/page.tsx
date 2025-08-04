@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: any) {
     openGraph: {
       title: "KWDC25",
       description: `${t(`2025.speaker${params.id}.title`)} - ${t(`2025.speaker${params.id}.name`)}`,
-      images: [`/api/og?id=${params.id}&lng=${params.lng}`],
+      images: [`/api/2025/og?id=${params.id}&lng=${params.lng}`],
     },
   };
 }
