@@ -63,7 +63,7 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
                         size={200}
                         mobileSize={150}
                         name={t(`2025.speaker${index + 1}.name`)}
-                        src={`${prefix}/assets/2024/images/speaker/${t(`2025.speaker${index + 1}.img`)}`}
+                        src={`${prefix}/assets/2025/images/speaker/${t(`2025.speaker${index + 1}.img`)}`}
                         alt={t(`2025.speaker${index + 1}.name`)}
                       />
                     </div>
