@@ -3,9 +3,10 @@ import React from "react";
 import { useTranslation } from "@/i18n";
 
 import { LiquidGlass } from "@/components/2025";
+import { TimetableDownloadButton } from "@/components/2025/section/timetableDownloadButton";
 
 type TimetableEvent = {
-  start: string; // HH:MM
+  start: string;
   durationMin: number;
   title: string;
   speaker?: string;
@@ -21,34 +22,32 @@ const EVENTS: TimetableEvent[] = [
   {
     start: "10:20",
     durationMin: 10,
-    title: "일반 10분",
+    title: "Session 10분",
     speakerKeys: ["2025.speaker1"],
     kind: "talk",
   },
-  { start: "10:30", durationMin: 20, title: "일반 20분", speakerKeys: ["2025.speaker13"], kind: "talk" },
+  { start: "10:30", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker13"], kind: "talk" },
   { start: "10:50", durationMin: 10, title: "Break Time", kind: "break" },
-  { start: "11:00", durationMin: 20, title: "일반 20분", speakerKeys: ["2025.speaker2"], kind: "talk" },
-  { start: "11:20", durationMin: 20, title: "일반 20분", speakerKeys: ["2025.speaker8"], kind: "talk" },
-  { start: "11:40", durationMin: 20, title: "일반 20분", speakerKeys: ["2025.speaker4"], kind: "talk" },
+  { start: "11:00", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker2"], kind: "talk" },
+  { start: "11:20", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker8"], kind: "talk" },
+  { start: "11:40", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker4"], kind: "talk" },
   { start: "12:00", durationMin: 60, title: "Launch", description: "(1시간)", kind: "break" },
-  { start: "13:10", durationMin: 20, title: "일반 20분", speakerKeys: ["2025.speaker6"], kind: "talk" },
-  { start: "13:30", durationMin: 20, title: "일반 20분", speakerKeys: ["2025.speaker3"], kind: "talk" },
+  { start: "13:10", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker6"], kind: "talk" },
+  { start: "13:30", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker3"], kind: "talk" },
   { start: "13:50", durationMin: 10, title: "Break Time", kind: "break" },
   { start: "14:00", durationMin: 20, title: "TBA", speakerKeys: ["2025.speaker15"], kind: "talk" },
-  { start: "14:20", durationMin: 20, title: "일반 20분", speakerKeys: ["2025.speaker5"], kind: "talk" },
-  { start: "14:40", durationMin: 20, title: "일반 20분", speakerKeys: ["2025.speaker12"], kind: "talk" },
+  { start: "14:20", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker5"], kind: "talk" },
+  { start: "14:40", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker12"], kind: "talk" },
   { start: "15:00", durationMin: 50, title: "Networking", kind: "network" },
   { start: "16:00", durationMin: 20, title: "Apple 20분", speakerKeys: ["2025.speaker11"], kind: "apple" },
-  { start: "16:20", durationMin: 20, title: "일반 20분", speakerKeys: ["2025.speaker7"], kind: "talk" },
+  { start: "16:20", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker7"], kind: "talk" },
   { start: "16:40", durationMin: 10, title: "Break Time", kind: "break" },
-  { start: "16:50", durationMin: 20, title: "일반 20분", speakerKeys: ["2025.speaker14"], kind: "talk" },
+  { start: "16:50", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker14"], kind: "talk" },
   {
     start: "17:10",
     durationMin: 40,
     title: "Apple 40분",
     speakerKeys: ["2025.speaker9", "2025.speaker10"],
-    description:
-      "프로토타이핑의 힘: 여러분의 아이디어를 실현하는 방법 — The power of prototyping: How to bring your ideas to life",
     kind: "apple",
   },
   { start: "17:50", durationMin: 10, title: "Closing", kind: "closing" },
@@ -73,13 +72,23 @@ export default async function TimetablePage({ params }: any) {
           </div>
         </header>
 
-        <div className='relative'>
+        <div className='relative px-4 md:px-8 xl:px-16 text-gray-900' id='timetable-capture'>
           {/* center guideline for large screens */}
           <div className='hidden md:block absolute left-28 top-0 bottom-0 w-px bg-gray-200/70' />
 
           <ul className='space-y-4 md:space-y-6'>
             {EVENTS.map((e) => {
-              const speakerNames = e.speakerKeys ? e.speakerKeys.map((k) => t(`${k}.name`)).join(" / ") : e.speaker;
+              const speakerNames = e.speakerKeys
+                ? e.speakerKeys
+                    .map((k) => {
+                      const name = t(`${k}.name`);
+                      const affiliation = t(`${k}.affiliation`);
+                      const affText =
+                        typeof affiliation === "string" && affiliation.trim().length > 0 ? ` @ ${affiliation}` : "";
+                      return `${name}${affText}`;
+                    })
+                    .join(" / ")
+                : e.speaker;
               const talkTitle = e.speakerKeys && e.speakerKeys.length > 0 ? t(`${e.speakerKeys[0]}.title`) : undefined;
               const talkIntro =
                 e.speakerKeys && e.speakerKeys.length > 0 ? t(`${e.speakerKeys[0]}.introduction`) : undefined;
@@ -145,6 +154,7 @@ export default async function TimetablePage({ params }: any) {
             })}
           </ul>
         </div>
+        <TimetableDownloadButton targetId='timetable-capture' />
       </div>
     </section>
   );

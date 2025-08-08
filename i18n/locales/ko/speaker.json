@@ -140,9 +140,9 @@
       "affiliation": "Alex Sidebar",
       "nickname": "",
       "category": "Agentic Coding",
-      "introduction": "Agentic Coding",
-      "title": "Agentic Coding",
-      "description": "Agentic Coding에 대한 이야기를 다룹니다.",
+      "introduction": "",
+      "title": "",
+      "description": "",
       "sns": "https://x.com/danieledrisian",
       "time": "14:40 ~ 15:00",
       "img": "daniel_edrisian.webp"
@@ -173,7 +173,7 @@
     },
     "speaker15": {
       "name": "TBA",
-      "affiliation": "TBA",
+      "affiliation": "",
       "nickname": "",
       "category": "TBA",
       "introduction": "",
