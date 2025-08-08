@@ -22,6 +22,7 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
           className='rounded-full transition-all duration-300 shadow-2xl'
           style={{ padding: "16px 50px" }}
           rippleEffect={false}
+          size='sm'
         >
           <h2 className='text-4xl max-3xl:text-xl font-bold text-deepGreen-100'>{t("2025.title")}</h2>
         </LiquidButton>
@@ -29,14 +30,15 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
           {t("2025.description")}
         </p>
         <br />
-        <LiquidButton
-          className='rounded-full transition-all duration-300 shadow-2xl'
-          style={{ padding: "16px 50px" }}
-          rippleEffect={true}
-          variant='primary'
-        >
-          <h2 className='text-4xl max-3xl:text-xl font-bold text-deepGreen-100'>{t("2025.timetable")}</h2>
-        </LiquidButton>
+        <Link href={`/${params.lng}/2025/timetable`}>
+          <LiquidButton
+            className='rounded-full transition-all duration-300 shadow-2xl'
+            rippleEffect={true}
+            variant='primary'
+          >
+            <h2 className='text-2xl max-3xl:text-lg font-bold text-deepGreen-100'>{t("2025.timetable")}</h2>
+          </LiquidButton>
+        </Link>
         <div className='grid grid-cols-3 max-xl:grid-cols-2 max-lg:grid-cols-1 gap-12 py-[75px] w-full max-lg:px-5'>
           {Array.from({ length: 15 }).map((_, index) => {
             return (

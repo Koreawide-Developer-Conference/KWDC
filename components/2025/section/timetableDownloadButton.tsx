@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback, useState } from "react";
+import React, { useCallback } from "react";
 
 import { toPng } from "html-to-image";
 
@@ -13,14 +13,11 @@ export function TimetableDownloadButton({
   targetId?: string;
   label?: string;
 }) {
-  const [downloading, setDownloading] = useState(false);
-
   const handleDownload = useCallback(async () => {
     const node = document.getElementById(targetId);
     if (!node) return;
 
     try {
-      setDownloading(true);
       const rect = node.getBoundingClientRect();
       const targetWidth = 1000; // fixed output width
       const scale = targetWidth / rect.width;
@@ -43,14 +40,14 @@ export function TimetableDownloadButton({
       link.download = `kwdc-2025-timetable.png`;
       link.href = dataUrl;
       link.click();
-    } finally {
-      setDownloading(false);
+    } catch (error) {
+      console.error("Error downloading timetable:", error);
     }
   }, [targetId]);
 
   return (
     <div className='w-full flex items-center justify-center mt-6 md:mt-8'>
-      <LiquidButton onClick={handleDownload} loading={downloading} variant='primary' size='lg'>
+      <LiquidButton onClick={handleDownload} variant='primary' size='lg'>
         <span className='!text-gray-900'>{label}</span>
       </LiquidButton>
     </div>
