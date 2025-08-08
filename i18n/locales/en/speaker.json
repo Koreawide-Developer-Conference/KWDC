@@ -2,6 +2,7 @@
   "2025": {
     "title": "Sessions and Speakers",
     "description": "Developers, designers, and creators from various languages and regions share stories \nwoven from their own experiences and perspectives.\nOn this stage where technology, creativity, and reality intersect, \nwe will all encounter new patterns of connection.",
+    "timetable": "Session Timetable",
     "speaker1": {
       "name": "Juhwa Lee",
       "affiliation": "SK Planet",
@@ -60,7 +61,7 @@
       "description": "Stories about AI and the Apple ecosystem, and AI utilization as a developer.",
       "sns": "",
       "time": "14:20 ~ 14:40",
-      "img": "lee_jae_eun.webp"
+      "img": "jaeeun.webp"
     },
     "speaker6": {
       "name": "Daiki Matsudate",
@@ -96,7 +97,7 @@
       "description": "One of the things that is essential to keep an eye on the evolution of Swift in recent is the \"concept of performance.\"\n\nFor example, let's look at SE-0453. In this, a fixed-length array type called Inline Array is introduced. By using this, you can write code that has the feel of an Array but has better performance than an Array.\n\nNow, here are some questions. Why is the Inline Array type provided, and when should it be used? Why is the existing Array a problem? And what exactly is the \"performance\" that we Swift Developers should be concerned about, as written in SE-0453 and many other Evolutions?\n\nThese questions are unlikely to be felt in daily development, and there are few opportunities to understand them deeply. However, in order for Swift to become a language that is loved on more platforms (such as embedded systems), it is essential to understand these questions, evolution, and motivations.\n\nTherefore, in this talk, we will unravel these questions from the Inline Array proposal SE-0453, its implementation, other performance-related implementations, and roadmaps. Specifically, let's go through the following content to decipher SE-0453 and the Swift roadmap, and enter the world of Swift performance together.\n\n- The history and performance of arrays - Let's look back at Inline as a C array\n- Heap, buffer, and stack (and their misunderstandings and true understanding)\n- Exploring the \"unnoticed\" Swift performance in everyday code\n- The future of language and platforms seen from the challenge of Swift\n\nBy unravelling various aspects of programming and Swift through this talk, you will gain understanding, motivation, and insight into Swift performance from a perspective that is not limited to InlineArray.\n\nIn addition, you will learn hidden prospects and hints for Swift to be widely used not only in daily application development but also on many other platforms.\n\nLet's take a look at the future of Swift together!",
       "sns": "https://x.com/___freddi___",
       "time": "11:20 ~ 11:40",
-      "img": "yuki_aki.webp"
+      "img": "freddi.webp"
     },
     "speaker9": {
       "name": "Changwoo Kim",
@@ -160,29 +161,27 @@
     },
     "speaker14": {
       "name": "Oh Gwan Sik",
-      "affiliation": "",
+      "affiliation": "LINE PLUS",
       "nickname": "",
-      "category": "",
-      "introduction": "",
-      "title": "",
-      "description": "",
-      "sns": "",
+      "category": "Design System",
+      "introduction": "The process of building a design system for efficient collaboration for small organizations",
+      "title": "Design system referred to by the designer",
+      "description": "1. The Reality Designers Face \n2. Token system from a designer's point of view \n3. Change the way you collaborate with developers \n4. Design system benefits \n5. Actual Project Application Cases \n6. Deployment Guide for Small Organizations \n7. Transforming Collaboration \n8. Open Source ABC Def \n9. Real-world Case Study",
+      "sns": "https://www.linkedin.com/in/gwansik-oh-8a0a7a171?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       "time": "16:50 ~ 17:10",
-      "img": "oh_gwan_sik.webp",
-      "isHidden": true
+      "img": "oh_gwan_sik.webp"
     },
     "speaker15": {
-      "name": "Ota",
-      "affiliation": "Apple",
+      "name": "TBA",
+      "affiliation": "TBA",
       "nickname": "",
-      "category": "",
+      "category": "TBA",
       "introduction": "",
-      "title": "",
+      "title": "TBA",
       "description": "",
       "sns": "",
       "time": "14:00 ~ 14:20",
-      "img": "ota.webp",
-      "isHidden": true
+      "img": "tba.webp"
     }
   },
   "title": "Leading a Leap into Imagination",
