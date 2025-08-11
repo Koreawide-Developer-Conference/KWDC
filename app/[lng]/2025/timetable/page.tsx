@@ -97,7 +97,7 @@ export default async function TimetablePage({ params }: any) {
                 (e.title.toLowerCase().includes("launch") || e.title.toLowerCase().includes("lunch"));
               const talkIntro =
                 e.speakerKeys && e.speakerKeys.length > 0
-                  ? t(`${e.speakerKeys[0]}.introduction`)
+                  ? t(`${e.speakerKeys[0]}.description`)
                   : isCheckInEvent
                     ? t("2025.check-in")
                     : isLunchEvent
