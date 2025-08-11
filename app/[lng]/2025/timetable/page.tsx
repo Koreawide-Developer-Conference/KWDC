@@ -62,7 +62,8 @@ const formatDuration = (min: number) => {
 const formatTime = (hhmm: string) => hhmm;
 
 export default async function TimetablePage({ params }: any) {
-  const { t } = await useTranslation(params.lng, "speaker");
+  const { lng } = await params;
+  const { t } = await useTranslation(lng, "speaker");
   return (
     <section className='w-full bg-gradient-to-b from-brightGreen-90 to-white py-10 md:py-16'>
       <div className='mx-auto w-full max-w-6xl px-4 md:px-6 text-gray-900 py-10'>
