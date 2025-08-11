@@ -6,15 +6,18 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV === "production",
   },
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
-        hostname: 'develop.kwdc.dev'
+        hostname: "develop.kwdc.dev",
       },
       {
-        hostname: 'kwdc.dev'
-      }
-    ]
+        hostname: "kwdc.dev",
+      },
+      {
+        hostname: "localhost",
+      },
+    ],
   },
   webpack: (config) => {
     config.module.rules.push({
@@ -32,15 +35,15 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/2025/sponsor',
-        destination: 'https://forms.gle/gfbidUhcenWiLU1z6',
+        source: "/2025/sponsor",
+        destination: "https://forms.gle/gfbidUhcenWiLU1z6",
         permanent: true,
       },
       {
-        source: '/2025/speaker',
-        destination: 'https://forms.gle/zt2T8dqxXw3q25Zf9',
+        source: "/2025/speaker",
+        destination: "https://forms.gle/zt2T8dqxXw3q25Zf9",
         permanent: true,
-      }
+      },
     ];
   },
   transpilePackages: ["three"],

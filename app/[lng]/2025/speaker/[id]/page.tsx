@@ -1,0 +1,111 @@
+import Image from "next/image";
+import React from "react";
+
+import { prefix } from "@/constants";
+import { translation, useTranslation } from "@/i18n";
+
+export async function generateMetadata({ params }: any) {
+  const { t } = await translation(params.lng, "speaker");
+
+  return {
+    title: "KWDC25",
+    description: `${t(`2025.speaker${params.id}.title`)} - ${t(`2025.speaker${params.id}.name`)}`,
+    openGraph: {
+      title: "KWDC25",
+      description: `${t(`2025.speaker${params.id}.title`)} - ${t(`2025.speaker${params.id}.name`)}`,
+      images: [`/api/2025/og?id=${params.id}&lng=${params.lng}`],
+    },
+  };
+}
+
+export default async function SpeakerDetail({ params }: any) {
+  const id = params?.id;
+  const { t } = await useTranslation(params.lng, "speaker");
+
+  return (
+    <section className='flex flex-col pt-12 h-full min-h-screen h- w-screen bg-white items-center'>
+      <div className='max-3xl:px-4 lg:px-20 w-full flex flex-col max-3xl:justify-center hero_gradient items-center'>
+        <div className='max-w-[1280px] w-full max-h-[600px] overflow-hidden flex flex-col'>
+          <div className='border-b border-b-deepGreen-100 mb-8 flex justify-between'>
+            <p className='font-semibold text-deepGreen-100 text-3xl mb-2.5 mt-10 max-3xl:text-xl'>
+              {t(`2025.speaker${id}.title`)}
+            </p>
+          </div>
+          <div className='flex items-center justify-between'>
+            <div>
+              <div className='text-2xl text-greenBlack-100 font-bold whitespace-pre-wrap max-3xl:text-sm flex items-center'>
+                <span>{t(`2025.speaker${id}.name`)}</span>
+                {t(`2025.speaker${id}.nickname`) && <span>&nbsp;({t(`2025.speaker${id}.nickname`)})</span>}
+              </div>
+              <p className='text-2xl text-greenBlack-100 font-light whitespace-pre-wrap max-3xl:text-sm '>
+                {t(`2025.speaker${id}.affiliation`)}
+              </p>
+              <p className='text-xl text-greenBlack-100 font-extralight whitespace-pre-wrap max-3xl:text-sm max-w-[700px]'>
+                {t(`2025.speaker${id}.introduction`)}
+              </p>
+            </div>
+            <Image
+              width={300}
+              height={600}
+              src={`${prefix}/assets/2025/images/speaker/${t(`2025.speaker${id}.img`)}`}
+              alt={t(`2025.speaker${id}.name`)}
+              className='w-1/3 max-h-[600px] max-3xl:w-1/5 max-2xl:w-1/3 max-xl:w-1/2 object-contain object-bottom'
+            />
+          </div>
+          )
+        </div>
+      </div>
+      <div className='max-w-[1440px] max-3xl:px-4 lg:px-20 lg:py-20 w-full flex flex-col max-3xl:justify-center bg-white'>
+        <p className='font-semibold text-deepGreen-100 text-3xl my-10 max-3xl:text-xl'>{t(`2025.speaker${id}.time`)}</p>
+        <p className='text-xl text-greenBlack-100 font-light mb-10 max-3xl:text-sm whitespace-pre-wrap'>
+          {t(`2025.speaker${id}.description`).replaceAll(". ", ".\n").replaceAll("? ", "?\n").replaceAll("! ", "!\n")}
+        </p>
+        {t(`2025.speaker${id}.sns`) && (
+          <div className='text-greenBlack-100 flex items-center relative'>
+            <a target='_blank' href={t(`2025.speaker${id}.sns`)} className='absolute -left-1'>
+              {t(`2025.speaker${id}.sns`).includes("linkedin") && (
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='32'
+                  height='32'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  className='icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin'
+                >
+                  <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                  <path d='M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z' />
+                  <path d='M8 11l0 5' />
+                  <path d='M8 8l0 .01' />
+                  <path d='M12 16l0 -5' />
+                  <path d='M16 16v-3a2 2 0 0 0 -4 0' />
+                </svg>
+              )}
+              {(t(`2025.speaker${id}.sns`).includes("x.com") || t(`2025.speaker${id}.sns`).includes("twitter.com")) && (
+                <svg
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='32'
+                  height='32'
+                  viewBox='0 0 24 24'
+                  fill='none'
+                  stroke='currentColor'
+                  strokeWidth='2'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  className='icon icon-tabler icons-tabler-outline icon-tabler-brand-x'
+                >
+                  <path stroke='none' d='M0 0h24v24H0z' fill='none' />
+                  <path d='M4 4l11.733 16h4.267l-11.733 -16z' />
+                  <path d='M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772' />
+                </svg>
+              )}
+            </a>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
