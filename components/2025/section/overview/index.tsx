@@ -11,7 +11,7 @@ export const OverviewSection: React.FC<LangProps> = async ({ params }) => {
   const { t } = await useTranslation(params.lng, "overview");
 
   return (
-    <section className='flex flex-col pt-[180px] max-lg:pt-[0px] max-lg:px-[35px] h-[70vh] w-full items-center font-Pretendard max-lg:pb-[120px]'>
+    <section className='flex flex-col pt-[180px] max-lg:pt-[0px] max-lg:px-[35px] h-full min-h-[70vh] w-full items-center font-Pretendard max-lg:pb-[120px]'>
       <LiquidGlass
         variant='panel'
         intensity='medium'
