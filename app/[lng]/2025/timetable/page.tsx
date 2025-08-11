@@ -31,7 +31,7 @@ const EVENTS: TimetableEvent[] = [
   { start: "11:00", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker2"], kind: "talk" },
   { start: "11:20", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker8"], kind: "talk" },
   { start: "11:40", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker4"], kind: "talk" },
-  { start: "12:00", durationMin: 60, title: "Launch", description: "(1시간)", kind: "break" },
+  { start: "12:00", durationMin: 60, title: "Lunch", description: "(1시간)", kind: "break" },
   { start: "13:10", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker6"], kind: "talk" },
   { start: "13:30", durationMin: 20, title: "Session 20분", speakerKeys: ["2025.speaker3"], kind: "talk" },
   { start: "13:50", durationMin: 10, title: "Break Time", kind: "break" },
@@ -90,8 +90,18 @@ export default async function TimetablePage({ params }: any) {
                     .join(" / ")
                 : e.speaker;
               const talkTitle = e.speakerKeys && e.speakerKeys.length > 0 ? t(`${e.speakerKeys[0]}.title`) : undefined;
+              const isCheckInEvent = typeof e.title === "string" && e.title.toLowerCase().includes("check");
+              const isLunchEvent =
+                typeof e.title === "string" &&
+                (e.title.toLowerCase().includes("launch") || e.title.toLowerCase().includes("lunch"));
               const talkIntro =
-                e.speakerKeys && e.speakerKeys.length > 0 ? t(`${e.speakerKeys[0]}.introduction`) : undefined;
+                e.speakerKeys && e.speakerKeys.length > 0
+                  ? t(`${e.speakerKeys[0]}.introduction`)
+                  : isCheckInEvent
+                    ? t("2025.check-in")
+                    : isLunchEvent
+                      ? t("2025.lunch")
+                      : undefined;
               const categories = e.speakerKeys
                 ? Array.from(
                     new Set(

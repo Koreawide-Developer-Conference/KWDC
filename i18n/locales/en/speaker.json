@@ -3,6 +3,8 @@
     "title": "Sessions and Speakers",
     "description": "Developers, designers, and creators from various languages and regions share stories \nwoven from their own experiences and perspectives.\nOn this stage where technology, creativity, and reality intersect, \nwe will all encounter new patterns of connection.",
     "timetable": "Session Timetable",
+    "check-in": "Coffee, drinks, and snacks will be provided during the event, but may run out early.",
+    "lunch": "Catering lunch box provided. Choose between Korean food or sandwich.",
     "speaker1": {
       "name": "Juhwa Lee",
       "affiliation": "SK Planet",
@@ -136,14 +138,14 @@
       "img": "han_lee.webp"
     },
     "speaker12": {
-      "name": "Daniel Edrisian",
-      "affiliation": "Alex Sidebar",
+      "name": "TBA",
+      "affiliation": "TBA",
       "nickname": "",
-      "category": "Agentic Coding",
+      "category": "TBA",
       "introduction": "",
       "title": "",
       "description": "",
-      "sns": "https://x.com/danieledrisian",
+      "sns": "",
       "time": "14:40 ~ 15:00",
       "img": "daniel_edrisian.webp"
     },
