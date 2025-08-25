@@ -35,7 +35,7 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
           <p className='text-greenBlack-100 font-semibold text-2xl mt-5 mb-20'>{t("2025.community_sponsor")}</p>
           <div className='flex gap-x-20 max-md:flex-col max-md:gap-y-10 max-md:gap-x-5 items-center'>
             <Link href={"https://www.flitto.com"} target='_blank' className='flex flex-col justify-center items-center'>
-              <div className='h-[120px] gap-x-5 flex justify-center'>
+              <div className='h-[120px] gap-x-5 flex justify-center items-center'>
                 <Image
                   src={`${prefix}/assets/2025/images/sponsor/flitto_vertical.png`}
                   alt='Flitto Logo'
