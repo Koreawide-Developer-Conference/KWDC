@@ -5,7 +5,6 @@ import React from "react";
 import { useTranslation } from "@/i18n";
 import { LangProps } from "@/i18n/settings";
 import RevenueCat from "@/public/assets/2024/logos/revenueCat.svg";
-import BTLogo from "@/public/assets/2025/images/sponsor/bt_logo.png";
 
 export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
   const { t } = await useTranslation(params.lng, "sponsor");
@@ -15,14 +14,14 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
       id='sponsors'
     >
       <div className='flex flex-col justify-center items-center w-full max-w-[1440px]'>
-        <p className='text-greenBlack-100 font-bold text-4xl max-3xl:text-2xl mt-5 '>{t("2025.title")}</p>
+        <p className='text-greenBlack-100 font-bold text-4xl max-3xl:text-2xl mt-5 mb-10'>{t("2025.title")}</p>
 
         <div className='w-full rounded-3xl flex flex-col justify-center items-center mb-[100px]'>
-          <Link href={"https://www.revenuecat.com/"} target='_blank' className='max-md:scale-50'>
-            <RevenueCat />
-          </Link>
           <Link href={"https://www.beyondtech.co.kr/"} target='_blank' className='max-md:scale-50'>
-            <Image src={"/assets/2025/images/sponsor/bt_logo.png"} alt='BT Logo' width={110 * 2} height={113 * 2} />
+            <Image src={"/assets/2025/images/sponsor/bt_logo.png"} alt='BT Logo' width={1000 / 3} height={632 / 3} />
+          </Link>
+          <Link href={"https://www.revenuecat.com/"} target='_blank' className='scale-[70%]'>
+            <RevenueCat />
           </Link>
         </div>
 
