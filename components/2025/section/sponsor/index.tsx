@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import { prefix } from "@/constants";
 import { useTranslation } from "@/i18n";
 import { LangProps } from "@/i18n/settings";
 import RevenueCat from "@/public/assets/2024/logos/revenueCat.svg";
@@ -18,7 +19,12 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
 
         <div className='w-full rounded-3xl flex flex-col justify-center items-center mb-[100px]'>
           <Link href={"https://www.beyondtech.co.kr/"} target='_blank' className='max-md:scale-50'>
-            <Image src={"/assets/2025/images/sponsor/bt_logo.png"} alt='BT Logo' width={1000 / 3} height={632 / 3} />
+            <Image
+              src={`${prefix}/assets/2025/images/sponsor/bt_logo.png`}
+              alt='BT Logo'
+              width={1000 / 3}
+              height={632 / 3}
+            />
           </Link>
           <Link href={"https://www.revenuecat.com/"} target='_blank' className='scale-[70%]'>
             <RevenueCat />
@@ -31,14 +37,14 @@ export const SponsorSection: React.FC<LangProps> = async ({ params }) => {
             <Link href={"https://www.flitto.com"} target='_blank' className='flex flex-col justify-center items-center'>
               <div className='h-[120px] gap-x-5 flex justify-center'>
                 <Image
-                  src={"/assets/2025/images/sponsor/flitto_vertical.png"}
+                  src={`${prefix}/assets/2025/images/sponsor/flitto_vertical.png`}
                   alt='Flitto Logo'
                   width={110 * 2}
                   height={113 * 2}
                   className='object-contain max-lg:w-[80px]'
                 />
                 <Image
-                  src={"/assets/2025/images/sponsor/flitto_lt.png"}
+                  src={`${prefix}/assets/2025/images/sponsor/flitto_lt.png`}
                   alt='Flitto Logo'
                   width={343}
                   height={113}
