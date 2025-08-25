@@ -40,7 +40,7 @@ export const SpeakerSection: React.FC<LangProps> = async ({ params }) => {
           </LiquidButton>
         </Link>
         <div className='grid grid-cols-3 max-xl:grid-cols-2 max-lg:grid-cols-1 gap-12 py-[75px] w-full max-lg:px-5'>
-          {Array.from({ length: 15 }).map((_, index) => {
+          {Array.from({ length: 14 }).map((_, index) => {
             return (
               <div key={index} className='flex flex-col items-center justify-center'>
                 <LiquidButton

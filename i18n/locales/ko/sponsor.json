@@ -4,5 +4,9 @@
   "platinum": "플래티넘 후원사",
   "gold": "골드 후원사",
   "in-kind": "현물 후원사",
-  "community": "커뮤니티 파트너"
+  "community": "커뮤니티 파트너",
+  "2025": {
+    "title": "SPONSORS",
+    "community_sponsor": "COMMUNITY SPONSORS"
+  }
 }

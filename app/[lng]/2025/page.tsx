@@ -33,7 +33,7 @@ export default async function KWDC2025({ params }: any) {
       <HeroSection params={awaitedParams} />
       <OverviewSection params={awaitedParams} />
       <SpeakerSection params={awaitedParams} />
-      {/* <SponsorSection params={awaitedParams} /> */}
+      <SponsorSection params={awaitedParams} />
     </div>
   );
 }

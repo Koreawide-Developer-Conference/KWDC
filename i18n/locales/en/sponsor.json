@@ -4,5 +4,9 @@
   "platinum": "Platinum Sponsorship",
   "gold": "Gold Sponsorship",
   "in-kind": "In-kind Sponsorship",
-  "community": "Community Partner"
+  "community": "Community Partner",
+  "2025": {
+    "title": "SPONSORS",
+    "community_sponsor": "COMMUNITY SPONSORS"
+  }
 }
