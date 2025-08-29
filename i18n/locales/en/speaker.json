@@ -138,16 +138,16 @@
       "img": "han.webp"
     },
     "speaker12": {
-      "name": "TBA",
-      "affiliation": "",
-      "nickname": "",
-      "category": "TBA",
+      "name": "Ota Kohei",
+      "affiliation": "Software Engineer at Apple",
+      "nickname": "Kohei",
+      "category": "Swift, System Engineering, Containers, Cloud",
       "introduction": "",
-      "title": "TBA",
-      "description": "",
-      "sns": "",
+      "title": "Understanding Apple’s Containerization Framework - Starting from the Basics",
+      "description": "Introduction to Containerization Ecosystem in Swift",
+      "sns": "https://x.com/_inductor_",
       "time": "14:40 ~ 15:00",
-      "img": "daniel_edrisian.webp"
+      "img": "ota_kohei.webp"
     },
     "speaker13": {
       "name": "Akimu Hirai",

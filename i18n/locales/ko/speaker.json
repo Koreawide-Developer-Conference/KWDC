@@ -138,16 +138,16 @@
       "img": "han.webp"
     },
     "speaker12": {
-      "name": "TBA",
-      "affiliation": "",
-      "nickname": "",
-      "category": "TBA",
+      "name": "Ota Kohei",
+      "affiliation": "Software Engineer at Apple",
+      "nickname": "Kohei",
+      "category": "Swift, System Engineering, Containers, Cloud",
       "introduction": "",
-      "title": "TBA",
-      "description": "",
-      "sns": "",
+      "title": "Apple의 컨테이너화 프레임워크 이해하기 - 기초부터 시작하기",
+      "description": "Swift에서의 컨테이너화 생태계 소개",
+      "sns": "https://x.com/_inductor_",
       "time": "14:40 ~ 15:00",
-      "img": "daniel_edrisian.webp"
+      "img": "ota_kohei.webp"
     },
     "speaker13": {
       "name": "Akimu Hirai",
